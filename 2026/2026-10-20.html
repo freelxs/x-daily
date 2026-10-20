@@ -1,0 +1,3120 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="shadcn" data-mode="auto" data-style="off">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-youm9qaFambH7q3iYwDKrM/nhO/PaMoJO9LhcE+OCbQ=' 'sha256-vjQfZ+oX05M1l9ERqRkMpxLi1EZh23JhiYF5QAjG6aA='; style-src 'unsafe-inline'; img-src data:; font-src data:; media-src data:; connect-src 'self'; form-action 'none'; base-uri 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Answer me with HTML 0.5.5">
+<title>X 日报 · 2026-10-20</title>
+<style>
+html[data-theme="blueprint"], html[data-theme="blueprint"][data-mode="light"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 0px;
+  --shadow: none;
+  --bw: 1.5px;
+  --head-font: var(--font-sans);
+  --bg: #f6f6f3;
+  --paper: #ffffff;
+  --ink: #16181d;
+  --ink-2: #4b5260;
+  --ink-3: #8b929e;
+  --line: #1d2026;
+  --line-2: #d6dae1;
+  --fill: #f3f5f8;
+  --accent: #1d5fbf;
+  --accent-bg: #e4ecf8;
+  --ok: #1d5fbf;
+  --ok-bg: #e4ecf8;
+  --err: #c62828;
+  --err-bg: #fbeaea;
+  --warn: #a8620a;
+  --warn-bg: #fdf3e2;
+  --head-bg: #16181d;
+  --head-fg: #ffffff;
+}
+html[data-theme="blueprint"][data-mode="dark"] {
+  --bg: #081322;
+  --paper: #0d1c31;
+  --ink: #e6edf7;
+  --ink-2: #a9b8cc;
+  --ink-3: #6b7f99;
+  --line: #c9d6e8;
+  --line-2: #23385a;
+  --fill: #12253f;
+  --accent: #6ea8ff;
+  --accent-bg: #16305a;
+  --ok: #6ea8ff;
+  --ok-bg: #16305a;
+  --err: #ff7070;
+  --err-bg: #3b1620;
+  --warn: #f0b14a;
+  --warn-bg: #3a2a10;
+  --head-bg: #e6edf7;
+  --head-fg: #081322;
+}
+@media (prefers-color-scheme: dark) {
+html[data-theme="blueprint"][data-mode="auto"] {
+  --bg: #081322;
+  --paper: #0d1c31;
+  --ink: #e6edf7;
+  --ink-2: #a9b8cc;
+  --ink-3: #6b7f99;
+  --line: #c9d6e8;
+  --line-2: #23385a;
+  --fill: #12253f;
+  --accent: #6ea8ff;
+  --accent-bg: #16305a;
+  --ok: #6ea8ff;
+  --ok-bg: #16305a;
+  --err: #ff7070;
+  --err-bg: #3b1620;
+  --warn: #f0b14a;
+  --warn-bg: #3a2a10;
+  --head-bg: #e6edf7;
+  --head-fg: #081322;
+}
+}
+
+html[data-theme="shadcn"], html[data-theme="shadcn"][data-mode="light"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 8px;
+  --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --bw: 1px;
+  --head-font: var(--font-sans);
+  --bg: #fafafa;
+  --paper: #ffffff;
+  --ink: #09090b;
+  --ink-2: #71717a;
+  --ink-3: #a1a1aa;
+  --line: #e4e4e7;
+  --line-2: #f0f0f2;
+  --fill: #f4f4f5;
+  --accent: #2563eb;
+  --accent-bg: #eff6ff;
+  --ok: #16a34a;
+  --ok-bg: #f0fdf4;
+  --err: #dc2626;
+  --err-bg: #fef2f2;
+  --warn: #d97706;
+  --warn-bg: #fffbeb;
+  --head-bg: #18181b;
+  --head-fg: #fafafa;
+}
+html[data-theme="shadcn"][data-mode="dark"] {
+  --bg: #09090b;
+  --paper: #121215;
+  --ink: #fafafa;
+  --ink-2: #a1a1aa;
+  --ink-3: #71717a;
+  --line: #27272a;
+  --line-2: #1c1c1f;
+  --fill: #18181b;
+  --accent: #60a5fa;
+  --accent-bg: #172554;
+  --ok: #4ade80;
+  --ok-bg: #052e16;
+  --err: #f87171;
+  --err-bg: #450a0a;
+  --warn: #fbbf24;
+  --warn-bg: #451a03;
+  --head-bg: #fafafa;
+  --head-fg: #18181b;
+}
+@media (prefers-color-scheme: dark) {
+html[data-theme="shadcn"][data-mode="auto"] {
+  --bg: #09090b;
+  --paper: #121215;
+  --ink: #fafafa;
+  --ink-2: #a1a1aa;
+  --ink-3: #71717a;
+  --line: #27272a;
+  --line-2: #1c1c1f;
+  --fill: #18181b;
+  --accent: #60a5fa;
+  --accent-bg: #172554;
+  --ok: #4ade80;
+  --ok-bg: #052e16;
+  --err: #f87171;
+  --err-bg: #450a0a;
+  --warn: #fbbf24;
+  --warn-bg: #451a03;
+  --head-bg: #fafafa;
+  --head-fg: #18181b;
+}
+}
+
+html[data-theme="paper"], html[data-theme="paper"][data-mode="light"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  --radius: 2px;
+  --shadow: none;
+  --bw: 1px;
+  --head-font: var(--font-serif);
+  --bg: #f5f2ea;
+  --paper: #fdfbf6;
+  --ink: #1f1c17;
+  --ink-2: #57514a;
+  --ink-3: #8c867b;
+  --line: #cbc3b4;
+  --line-2: #e5dfd3;
+  --fill: #f3eee4;
+  --accent: #8c2f1e;
+  --accent-bg: #f5e5df;
+  --ok: #2e6a3b;
+  --ok-bg: #e4efe5;
+  --err: #a3251b;
+  --err-bg: #f7e3e0;
+  --warn: #7f5300;
+  --warn-bg: #f6ecd6;
+  --head-bg: #1f1c17;
+  --head-fg: #fdfbf6;
+}
+html[data-theme="paper"][data-mode="dark"] {
+  --bg: #15130f;
+  --paper: #1c1a15;
+  --ink: #ebe5d8;
+  --ink-2: #b5ad9e;
+  --ink-3: #7b7467;
+  --line: #4a443a;
+  --line-2: #2d2a24;
+  --fill: #242119;
+  --accent: #e59a7d;
+  --accent-bg: #3a2219;
+  --ok: #8cc79a;
+  --ok-bg: #1c3122;
+  --err: #f0928a;
+  --err-bg: #3a1d1a;
+  --warn: #e3b866;
+  --warn-bg: #352a13;
+  --head-bg: #ebe5d8;
+  --head-fg: #15130f;
+}
+@media (prefers-color-scheme: dark) {
+html[data-theme="paper"][data-mode="auto"] {
+  --bg: #15130f;
+  --paper: #1c1a15;
+  --ink: #ebe5d8;
+  --ink-2: #b5ad9e;
+  --ink-3: #7b7467;
+  --line: #4a443a;
+  --line-2: #2d2a24;
+  --fill: #242119;
+  --accent: #e59a7d;
+  --accent-bg: #3a2219;
+  --ok: #8cc79a;
+  --ok-bg: #1c3122;
+  --err: #f0928a;
+  --err-bg: #3a1d1a;
+  --warn: #e3b866;
+  --warn-bg: #352a13;
+  --head-bg: #ebe5d8;
+  --head-fg: #15130f;
+}
+}
+
+html:lang(zh-Hant)[data-theme][data-mode], html:lang(zh-TW)[data-theme][data-mode], html:lang(zh-HK)[data-theme][data-mode], html:lang(zh-MO)[data-theme][data-mode] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Heiti TC", "Microsoft JhengHei", "Noto Sans CJK TC", "Noto Sans TC", "PingFang SC", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html:lang(ja)[data-theme][data-mode] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans CJK JP", "Noto Sans JP", "PingFang SC", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html:lang(he)[data-theme][data-mode] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Hebrew", "Arial Hebrew", Arial, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Answer me with HTML base — uses theme variables only, never hard-coded colors (theme tokens and decorations: themes/<name>.js). Exception: the var() fallbacks of diagrams (flow / sequence) equal the blueprint light tokens, guarded by a test. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 14px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+code, pre, kbd { font-family: var(--font-mono); }
+
+/* ── Toolbar ─────────────────────────────── */
+.am-toolbar {
+  position: fixed; top: 12px; inset-inline-end: 12px; z-index: 10; display: flex; gap: 6px;
+}
+.am-btn {
+  font: 12px/1 var(--font-sans); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line-2); border-radius: var(--radius); padding: 7px 10px; cursor: pointer;
+}
+.am-btn:hover { border-color: var(--ink-3); }
+.am-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Theme and mode lists: a label and a native select inside one button-like box */
+.am-pick {
+  display: flex; align-items: center; gap: 6px; font: 12px/1 var(--font-sans); color: var(--ink-2); background: var(--paper);
+  border: 1px solid var(--line-2); border-radius: var(--radius); padding-block: 0; padding-inline: 10px 4px;
+}
+.am-pick:hover { border-color: var(--ink-3); }
+.am-pick:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.am-pick select {
+  font: inherit; color: var(--ink); background: transparent; border: 0; padding: 6px 2px; cursor: pointer; outline: none;
+}
+.am-pick option { color: var(--ink); background: var(--paper); }
+
+/* ── Header ───────────────────────────────── */
+.am-head { margin: 0 0 20px; padding-inline-end: 300px; }
+.am-head h1 { margin: 0; font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; }
+.am-sub { margin: 4px 0 0; color: var(--ink-2); }
+.am-head-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: 12px; color: var(--ink-2); }
+.am-head-meta b { font-family: var(--font-mono); font-weight: 400; color: var(--ink-3); margin-inline-end: 6px; }
+.am-intro { margin-top: 12px; max-width: 80ch; }
+
+/* ── sheet template ────────────────────────── */
+.am-sheet { max-width: 1680px; margin: 0 auto; padding: 32px 28px 40px; }
+.am-frame { position: relative; }
+.am-grid {
+  display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr));
+  gap: 20px; align-items: start;
+}
+.am-ruler { display: none; }
+.am-ruler span { flex: 1; display: flex; align-items: center; justify-content: center; }
+.am-ruler--top, .am-ruler--bottom { left: 18px; right: 18px; height: 18px; }
+.am-ruler--top { top: 0; }
+.am-ruler--bottom { bottom: 0; }
+.am-ruler--left, .am-ruler--right { top: 18px; bottom: 18px; width: 18px; flex-direction: column; }
+.am-ruler--left { left: 0; }
+.am-ruler--right { right: 0; }
+.am-ruler--top span + span, .am-ruler--bottom span + span { border-inline-start: 1px solid var(--line); }
+.am-ruler--left span + span, .am-ruler--right span + span { border-top: 1px solid var(--line); }
+
+/* ── Panels ───────────────────────────────── */
+.am-panel {
+  background: var(--paper); border: var(--bw) solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); min-width: 0; overflow: hidden;
+}
+.am-panel-head {
+  display: flex; align-items: stretch; gap: 0; border-bottom: var(--bw) solid var(--line); min-height: 34px;
+}
+.am-panel-id {
+  display: flex; align-items: center; justify-content: center; min-width: 34px; padding: 0 8px;
+  background: var(--head-bg); color: var(--head-fg); font-weight: 600; font-size: 14px;
+}
+.am-panel-head h2 { margin: 0; padding: 7px 12px; font-size: 15px; font-weight: 600; flex: 1; display: flex; align-items: center; }
+.am-panel-meta { align-self: center; padding: 0 12px; font: 11px/1.3 var(--font-mono); color: var(--ink-2); text-align: end; }
+.am-panel-body { padding: 14px 16px 16px; }
+.am-panel-body > * + * { margin-top: 12px; }
+
+/* ── Markdown body ───────────────────────── */
+.am-md > :first-child { margin-top: 0; }
+.am-md > :last-child { margin-bottom: 0; }
+.am-md p { margin: 0 0 8px; }
+.am-md ul, .am-md ol { margin: 0 0 8px; padding-inline-start: 20px; }
+.am-md li + li { margin-top: 3px; }
+.am-md h3, .am-md h4 { margin: 14px 0 6px; font-size: 13px; }
+.am-md a { color: var(--accent); }
+.am-md blockquote { margin: 0 0 8px; padding: 2px 12px; border-inline-start: 3px solid var(--line-2); color: var(--ink-2); }
+.am-md :not(pre) > code { font-size: 0.9em; background: var(--fill); padding: 1px 5px; border-radius: 4px; }
+.am-md hr { border: 0; border-top: 1px solid var(--line-2); margin: 12px 0; }
+.am-md table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.am-md th {
+  text-align: start; font: 11px/1.3 var(--font-mono); color: var(--ink-2); font-weight: 400;
+  padding: 6px 10px; border-bottom: 1px solid var(--line-2);
+}
+/* th { text-align: start } outranks the align attribute from Markdown alignment, so restore right and center columns explicitly. */
+.am-md th[align="right"] { text-align: right; }
+.am-md th[align="center"] { text-align: center; }
+.am-md td { padding: 7px 10px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+.am-md tbody tr:nth-child(even) td { background: var(--fill); }
+.am-table-wrap { overflow-x: auto; }
+/* Images scale down to the panel and never past 70% of the window height, keeping their shape. */
+.am-md img { max-width: 100%; max-height: 70vh; height: auto; }
+.am-figure { margin: 0; text-align: center; }
+.am-figure img { display: block; margin: 0 auto; border: 1px solid var(--line-2); border-radius: var(--radius); }
+.am-figure figcaption { margin-top: 6px; font-size: 12px; line-height: 1.4; color: var(--ink-2); }
+.am-code {
+  margin: 0; padding: 12px 14px; background: var(--fill); border: 1px solid var(--line-2);
+  border-radius: var(--radius); overflow-x: auto; font-size: 12.5px; line-height: 1.5;
+}
+/* Ask: a decision the reader makes; the suggested option starts selected */
+.am-ask { margin: 10px 0; padding: 10px 12px 8px; border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--fill); min-width: 0; }
+/* The question floats inside the box, so a long question wraps like text instead of riding on the border */
+.am-ask-q { float: left; width: 100%; padding: 0; margin-bottom: 4px; font-weight: 600; }
+/* Two columns: the control, then the label, tag and note, which wrap under the label and never under the control */
+.am-ask-opt { clear: both; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; align-items: baseline; padding: 5px 2px; cursor: pointer; }
+.am-ask-opt input { margin: 0; accent-color: var(--accent); position: relative; top: 2px; }
+.am-ask-tag { display: inline-block; font-size: 11px; line-height: 1.5; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 6px; white-space: nowrap; }
+.am-ask-note { display: block; color: var(--ink-2); }
+/* Comment box under each panel, and the Reply sheet */
+.am-comment-btn {
+  display: flex; flex-shrink: 0; align-self: center; margin-block: 0; margin-inline: auto 6px; color: var(--ink-3); background: transparent;
+  border: 1px solid transparent; border-radius: var(--radius); padding: 3px; cursor: pointer;
+}
+.am-panel-meta + .am-comment-btn { margin-inline-start: 0; }
+.am-panel:hover .am-comment-btn, .am-comment-btn:focus-visible, .am-comment-btn[aria-expanded="true"] { border-color: var(--line-2); color: var(--ink-2); }
+.am-panel .am-comment-btn.am-comment-btn--on { color: var(--accent); border-color: var(--accent); }
+.am-panel--bare { position: relative; }
+.am-panel--bare > .am-comment-btn { position: absolute; top: 4px; inset-inline-end: 0; }
+.am-comment { padding: 0 14px 12px; }
+.am-comment textarea, .am-reply textarea {
+  width: 100%; font: 13px/1.5 var(--font-sans); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line-2); border-radius: var(--radius); padding: 8px 10px; resize: vertical;
+}
+.am-comment textarea:focus-visible, .am-reply textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.am-btn--reply { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.am-btn--reply:hover { opacity: .88; }
+.am-reply {
+  width: min(640px, calc(100vw - 32px)); padding: 16px; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,.25);
+}
+.am-reply::backdrop { background: rgba(0,0,0,.35); }
+.am-reply-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 10px; }
+.am-reply-head span { color: var(--ink-2); font-size: 13px; }
+.am-reply textarea { font-family: var(--font-mono); font-size: 12.5px; }
+.am-reply-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+.am-reply .am-btn:disabled { opacity: .5; cursor: default; }
+/* The sheet shows the reply drawn (src/runtime/reply-view.js), each line in its own direction; the Markdown that Copy copies sits under a fold. */
+.am-reply-view {
+  max-height: min(60vh, 26em); overflow: auto; padding: 10px 12px; font: 14px/1.6 var(--font-sans); color: var(--ink);
+  background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); overflow-wrap: anywhere;
+}
+.am-reply-view:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.am-reply-view > div { text-align: start; unicode-bidi: isolate; }
+.am-rv-gap { height: .5em; }
+.am-rv-h1 { font-weight: 700; font-size: 15px; }
+.am-rv-h2 { font-weight: 700; color: var(--ink-2); margin-top: 2px; }
+.am-rv-tag {
+  display: inline-block; min-width: 1.6em; padding: 0 4px; font-size: 12px; line-height: 1.5; text-align: center;
+  color: var(--ink-2); border: 1px solid var(--line-2); border-radius: var(--radius);
+}
+.am-rv-a { padding-inline-start: 1.6em; }
+.am-rv-a em { color: var(--ink-2); }
+.am-rv-quote { margin-inline-start: 1em; padding-inline-start: 10px; border-inline-start: 3px solid var(--line-2); color: var(--ink-2); white-space: pre-wrap; }
+.am-reply-raw summary { margin-top: 10px; margin-bottom: 6px; font-size: 12px; color: var(--ink-2); cursor: pointer; }
+/* The bar at the bottom of the page: counts and one-click copy, so the reader need not go to the Reply button at the top. */
+.am-reply-bar {
+  position: fixed; inset-block-end: 16px; inset-inline: 0; margin-inline: auto; width: max-content; max-width: calc(100vw - 24px);
+  z-index: 10; display: flex; align-items: center; gap: 10px; padding-block: 8px; padding-inline: 14px 8px; font-size: 13px;
+  color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 6px 24px rgba(0,0,0,.18);
+}
+.am-reply-bar[hidden] { display: none; }
+.am-reply-bar-count { color: var(--ink-2); }
+.am-reply-bar .am-btn { flex: none; white-space: nowrap; }
+body.am-has-reply-bar { padding-block-end: 72px; }
+@media (max-width: 480px) {
+  .am-reply-bar { inset-inline: 12px; width: auto; justify-content: space-between; }
+}
+/* Code block: a header (title or path:lines, language, copy), then one span per line; numbered blocks show the line number in a gutter */
+.am-codeblock { margin: 10px 0; min-width: 0; }
+.am-codeblock .am-code { border-top-left-radius: 0; border-top-right-radius: 0; padding: 10px 0; }
+.am-code-head {
+  display: flex; align-items: center; gap: 8px; padding: 5px 6px 5px 12px; font: 12px/1.3 var(--font-sans); color: var(--ink-2);
+  background: var(--paper); border: 1px solid var(--line-2); border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0;
+}
+.am-code-title { font-family: var(--font-mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.am-code-lang { margin-left: auto; color: var(--ink-3); text-transform: lowercase; }
+.am-code-copy { font: 12px/1 var(--font-sans); color: var(--ink-2); background: transparent; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 4px 8px; cursor: pointer; margin-left: auto; }
+.am-code-lang + .am-code-copy { margin-left: 0; }
+.am-code-copy:hover { border-color: var(--ink-3); color: var(--ink); }
+.am-code-copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.am-code code { display: block; min-width: max-content; }
+.am-ln { display: block; padding: 0 14px; min-height: 1.5em; white-space: pre; }
+.am-ln--hl { background: var(--accent-bg); box-shadow: inset 3px 0 0 var(--accent); }
+.am-code--num .am-ln::before {
+  content: attr(data-n); display: inline-block; width: 3.5ch; margin-right: 12px; text-align: right; color: var(--ink-3);
+  user-select: none; -webkit-user-select: none;
+}
+
+/* ── Status badges ok / no / warn ──────────────── */
+.am-status { white-space: nowrap; font-weight: 500; }
+.am-status--ok { color: var(--ok); }
+.am-status--no { color: var(--err); }
+.am-status--warn { color: var(--warn); }
+.am-status-icon { display: inline-block; width: 1.1em; font-weight: 700; }
+
+/* ── callout ─────────────────────────────── */
+.am-callout {
+  border: 1px solid var(--line-2); border-inline-start: 3px solid var(--accent); background: var(--accent-bg);
+  padding: 10px 14px; border-radius: var(--radius);
+}
+.am-callout--ok { border-inline-start-color: var(--ok); background: var(--ok-bg); }
+.am-callout--warn { border-inline-start-color: var(--warn); background: var(--warn-bg); }
+.am-callout--err { border-inline-start-color: var(--err); background: var(--err-bg); }
+.am-callout-title { font-weight: 600; margin-bottom: 4px; }
+
+/* ── kv title block ─────────────────────────── */
+.am-kv {
+  display: grid; grid-template-columns: repeat(var(--kv-cols, 2), minmax(0, 1fr)); margin: 0;
+  border-top: var(--bw) solid var(--line); border-inline-start: var(--bw) solid var(--line);
+}
+.am-kv-cell { border-inline-end: var(--bw) solid var(--line); border-bottom: var(--bw) solid var(--line); padding: 6px 10px 8px; min-width: 0; }
+.am-kv-cell--wide { grid-column: 1 / -1; }
+.am-kv dt { font: 11px/1.4 var(--font-mono); color: var(--ink-2); }
+.am-kv dd { margin: 2px 0 0; font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
+.am-kv-cell--wide dd { font-size: 17px; font-weight: 600; }
+
+/* ── timeline ────────────────────────────── */
+.am-timeline { list-style: none; margin: 0; padding: 0; }
+.am-timeline--h { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); padding-top: 4px; }
+.am-timeline--h li { position: relative; text-align: center; padding: 0 6px; }
+.am-timeline--h li::before {
+  content: ""; position: absolute; top: 31px; left: 0; right: 0; border-top: var(--bw) solid var(--line);
+}
+.am-timeline--h li:first-child::before { inset-inline-start: 50%; }
+.am-timeline--h li:last-child::before { inset-inline-end: 50%; }
+.am-tl-when { display: block; font-size: 15px; font-weight: 500; height: 24px; }
+.am-tl-dot {
+  position: relative; display: block; width: 11px; height: 11px; margin: 2px auto 8px;
+  border: var(--bw) solid var(--line); border-radius: 50%; background: var(--paper);
+}
+.am-tl-item--hi .am-tl-dot { background: var(--hi-stroke, var(--accent)); border-color: var(--hi-stroke, var(--accent)); }
+.am-tl-title { display: block; font-size: 12.5px; font-weight: 500; }
+.am-tl-text { display: block; font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.am-timeline--v li { position: relative; padding: 0 0 14px; padding-inline-start: 22px; }
+.am-timeline--v li::before { content: ""; position: absolute; inset-inline-start: 5px; top: 6px; bottom: -6px; border-inline-start: var(--bw) solid var(--line-2); }
+.am-timeline--v li:last-child::before { display: none; }
+.am-timeline--v .am-tl-dot { position: absolute; inset-inline-start: 0; top: 4px; margin: 0; }
+.am-timeline--v .am-tl-when { display: inline; height: auto; font: 12px var(--font-mono); color: var(--ink-2); margin-inline-end: 8px; }
+.am-timeline--v .am-tl-title { display: inline; font-size: 14px; }
+.am-timeline--v .am-tl-text { margin-top: 2px; }
+/* .am-tl-wrap is the container (src/components/timeline.js): a horizontal timeline answers to the width it has, not to the width of the window, since a
+   sheet puts panels two or three to a row. Below 560 px (about 90 px for each of the six items a timeline has by default) its dates
+   wrap and the dots cover them, so it lays out like timeline v: line and dots at the start, text beside them. */
+.am-tl-wrap { container-type: inline-size; }
+@container (max-width: 560px) {
+  .am-timeline--h { display: block; padding-top: 0; }
+  .am-timeline--h li { text-align: start; padding: 0 0 14px; padding-inline-start: 22px; }
+  .am-timeline--h li::before, .am-timeline--h li:first-child::before {
+    top: 6px; bottom: -6px; inset-inline-start: 5px; inset-inline-end: auto; border-top: 0; border-inline-start: var(--bw) solid var(--line-2);
+  }
+  .am-timeline--h li:last-child::before { display: none; }
+  .am-timeline--h .am-tl-dot { position: absolute; inset-inline-start: 0; top: 4px; margin: 0; }
+  .am-timeline--h .am-tl-when { display: inline; height: auto; font: 12px var(--font-mono); color: var(--ink-2); margin-inline-end: 8px; }
+  .am-timeline--h .am-tl-title { display: inline; font-size: 14px; }
+  .am-timeline--h .am-tl-text { margin-top: 2px; }
+}
+
+/* ── annot sentence notes ──────────────────────── */
+.am-annot + .am-annot { border-top: 1px solid var(--line-2); padding-top: 12px; }
+.am-annot-head { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.am-annot-meta { font: 11px var(--font-mono); font-weight: 400; color: var(--ink-2); }
+.am-annot-scroll { overflow-x: auto; }
+.am-annot-line {
+  position: relative; display: inline-block; white-space: pre; font: 14px/1.6 var(--font-mono);
+  padding-bottom: calc(var(--rows, 0) * 17px + 14px);
+}
+.am-annot-line--wrap { display: block; white-space: normal; padding-bottom: 10px; }
+.am-annot-line--wrap .am-seg { white-space: nowrap; }
+.am-seg { position: relative; }
+.am-seg::after {
+  content: ""; position: absolute; left: 1px; right: 1px; top: calc(100% + 1px); height: 5px;
+  border: 1px solid var(--accent); border-top: 0;
+}
+.am-seg-n {
+  position: absolute; inset-inline-start: 0; top: calc(100% + 8px + var(--row, 0) * 17px);
+  font: 11px/16px var(--font-sans); color: var(--accent); white-space: nowrap;
+}
+.am-seg--err { color: var(--err); }
+.am-seg--err::after { border-color: var(--err); }
+.am-seg--err .am-seg-n { color: var(--err); }
+.am-annot-caption { font-size: 12px; color: var(--ink-2); }
+
+/* ── limits bars ───────────────────────── */
+.am-lim + .am-lim { margin-top: 14px; }
+.am-lim-head { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; margin-bottom: 4px; }
+.am-lim-val { font: 12px var(--font-mono); color: var(--accent); white-space: nowrap; }
+.am-lim-track { position: relative; height: 12px; border: 1px solid var(--line-2); background: var(--fill); border-radius: calc(var(--radius) / 2); }
+.am-lim-fill { position: absolute; inset-inline-start: 0; top: 0; bottom: 0; background: var(--accent-bg); border-inline-end: 1px solid var(--accent); }
+.am-lim-mark { position: absolute; top: -4px; bottom: -4px; border-left: 2px solid var(--accent); }
+.am-lim.is-over .am-lim-fill { background: var(--err-bg); border-inline-end-color: var(--err); }
+.am-lim.is-over .am-lim-val { color: var(--err); }
+.am-lim-ticks { position: relative; height: 16px; font: 10px/16px var(--font-mono); color: var(--ink-3); }
+.am-lim-ticks span { position: absolute; transform: translateX(-50%); }
+.am-lim-ticks span:first-child { transform: none; }
+.am-lim-note { font-size: 11px; color: var(--ink-2); margin-inline-start: 6px; }
+
+/* ── tree ─────────────────────────── */
+.am-tree { font-size: 13px; }
+.am-tree-root { display: flex; justify-content: center; position: relative; padding-bottom: 18px; }
+.am-tree-root::after { content: ""; position: absolute; bottom: 0; left: 50%; height: 18px; border-left: var(--bw) solid var(--line); }
+.am-tree-root--solo { padding-bottom: 12px; }
+.am-tree-root--solo::after { display: none; }
+.am-tree-box {
+  border: var(--node-width, var(--bw)) solid var(--node-stroke, var(--line)); background: var(--node-fill, var(--paper)); padding: 6px 14px; text-align: center;
+  border-radius: var(--node-radius, var(--radius)); font-weight: 600; color: var(--node-text, inherit); filter: var(--node-shadow, none);
+}
+.am-tree-box small { display: block; font-weight: 400; color: var(--ink-2); font-size: 12px; }
+/* The root box and a highlighted box are emphasis: they take the highlight tokens. With none set the root box keeps its accent tint and a highlighted box looks like any other. */
+.am-tree-box--root, .am-tree-box--hi { border-color: var(--hi-stroke, var(--node-stroke, var(--line))); color: var(--hi-text, var(--node-text, inherit)); }
+.am-tree-box--root { background: var(--hi-fill, var(--accent-bg)); }
+.am-tree-box--hi { background: var(--hi-fill, var(--node-fill, var(--paper))); }
+.am-tree-box--root small, .am-tree-box--hi small { color: var(--hi-text, var(--ink-2)); }
+.am-tree-box--root { font-size: 15px; padding: 8px 28px; }
+.am-tree-cols { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); }
+.am-tree-col { position: relative; padding: 18px 8px 0; min-width: 0; }
+.am-tree-col::before { content: ""; position: absolute; top: 0; left: 0; right: 0; border-top: var(--bw) solid var(--line); }
+.am-tree-col:first-child::before { inset-inline-start: 50%; }
+.am-tree-col:last-child::before { inset-inline-end: 50%; }
+.am-tree-col::after { content: ""; position: absolute; top: 0; left: 50%; height: 18px; border-left: var(--bw) solid var(--line); }
+.am-tree-list, .am-tree-list ul { list-style: none; margin: 0; padding: 0; }
+.am-tree-col > .am-tree-list { margin: 8px 0 0; margin-inline-start: 14px; }
+.am-tree-list ul { margin-inline-start: 16px; }
+.am-tree-list li { position: relative; padding: 3px 0; padding-inline-start: 18px; }
+.am-tree-list li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.95em; width: 12px; border-top: 1px solid var(--ink-3); }
+.am-tree-list li::after { content: ""; position: absolute; inset-inline-start: 0; top: 0; bottom: 0; border-inline-start: 1px solid var(--ink-3); }
+.am-tree-list li:last-child::after { bottom: auto; height: 0.95em; }
+.am-tree-tag { font: 11px var(--font-mono); color: var(--ink-3); margin-inline-end: 4px; }
+.am-tree code { font: 12px var(--font-mono); }
+.am-tree-sub { display: block; font-size: 11.5px; color: var(--ink-2); }
+.am-tree-hi > .am-tree-label { color: var(--accent); font-weight: 600; }
+
+/* ── Diagrams (flow / sequence) ───────────────── */
+.am-diagram { margin: 0; overflow-x: auto; text-align: center; }
+/* Embedded previews can lose html[data-theme]; the fallbacks keep diagrams readable, and defined theme variables still win. */
+.am-diagram svg { max-width: 100%; height: auto; font-family: var(--font-sans, sans-serif); }
+.am-diagram text { fill: var(--ink, #16181d); font-size: 13px; }
+/* Diagram tokens (docs/reference.md, "Diagram tokens"): each painted part reads an optional token and falls back to the look it always had,
+   so a theme that sets none of them draws the same diagram. Font family, size and weight are not tokens: diagram text is measured for the sans font. */
+.am-node-shape { fill: var(--node-fill, var(--paper, #ffffff)); stroke: var(--node-stroke, var(--line, #1d2026)); stroke-width: var(--node-width, var(--bw, 1.5px)); filter: var(--node-shadow, none); }
+/* A cylinder is two shapes (body, then cap): only the body casts the shadow. */
+.am-node-shape ~ .am-node-shape { filter: none; }
+/* The corner radius is an SVG attribute (the fallback for Safari before 17.4, which ignores a CSS rx); the default here equals the attribute. A pill and a diamond keep their shape. */
+.am-node--rect .am-node-shape, .am-node--er .am-node-shape { rx: var(--node-radius, 3px); }
+.am-node--hi .am-node-shape { fill: var(--hi-fill, var(--accent-bg, #e4ecf8)); stroke: var(--hi-stroke, var(--accent, #1d5fbf)); }
+.am-diagram .am-node-text { fill: var(--node-text, var(--ink, #16181d)); }
+.am-node--hi text { fill: var(--hi-text, var(--accent, #1d5fbf)); font-weight: 600; }
+.am-diagram .am-node--hi .am-node-text { fill: var(--hi-text, var(--accent, #1d5fbf)); }
+.am-edge { fill: none; stroke: var(--edge-color, var(--ink-2, #4b5260)); stroke-width: var(--edge-width, 1.3); }
+.am-edge--dashed { stroke-dasharray: 5 4; }
+.am-arrow { fill: var(--edge-color, var(--ink-2, #4b5260)); }
+.am-edge-label rect { fill: var(--paper, #ffffff); }
+.am-diagram .am-edge-label text { fill: var(--edge-label, var(--accent, #1d5fbf)); font-size: 11.5px; }
+.am-cluster { fill: var(--cluster-fill, var(--fill, #f3f5f8)); stroke: var(--cluster-stroke, var(--line-2, #d6dae1)); stroke-width: 1; stroke-dasharray: 4 3; }
+.am-diagram .am-cluster-label { fill: var(--ink-2, #4b5260); font: 11px var(--font-mono, monospace); }
+/* The PK / FK / UK marks of an entity follow the node text, and the highlighted text in a highlighted entity, so they stay readable on the theme's fills. */
+.am-diagram .am-er-key { fill: var(--node-text, var(--ink-2, #4b5260)); }
+.am-diagram .am-node--hi .am-er-key { fill: var(--hi-text, var(--ink-2, #4b5260)); }
+.am-lifeline { stroke: var(--lifeline-color, var(--ink-3, #8b929e)); stroke-width: 1; stroke-dasharray: 4 4; }
+/* An actor (and the box of a divider) looks like a node unless the theme sets the actor tokens. */
+.am-actor { fill: var(--actor-fill, var(--node-fill, var(--paper, #ffffff))); stroke: var(--actor-stroke, var(--node-stroke, var(--line, #1d2026))); stroke-width: var(--node-width, var(--bw, 1.5px)); filter: var(--node-shadow, none); rx: var(--node-radius, 2px); }
+.am-diagram .am-actor-text { fill: var(--actor-text, var(--node-text, var(--ink, #16181d))); }
+.am-note { fill: var(--note-fill, var(--warn-bg, #fdf3e2)); stroke: var(--note-stroke, var(--warn, #a8620a)); stroke-width: var(--note-width, 1); rx: var(--note-radius, 2px); }
+.am-diagram .am-step { fill: var(--ink-3, #8b929e); font: 10px var(--font-mono, monospace); }
+
+.am-diagram-expand {
+  /* In flow and sticky: it sits at the end edge (right on a left-to-right page) and stays in view when the diagram scrolls sideways.
+     It takes its own row above the drawing, so it never covers a node at the top-right corner of the drawing. */
+  position: sticky; inset-inline-start: calc(100% - 36px); z-index: 2;
+  display: flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; padding: 0; margin: 0 0 4px; margin-inline: auto 8px;
+  color: var(--ink-2); background: var(--paper);
+  border: var(--bw, 1px) solid var(--line-2); border-radius: var(--radius);
+  cursor: pointer; opacity: 0.72;
+  transition: opacity 0.15s, color 0.15s, border-color 0.15s, background 0.15s;
+}
+.am-diagram:hover .am-diagram-expand,
+.am-diagram-expand:focus-visible { opacity: 1; }
+.am-diagram-expand:hover {
+  opacity: 1; color: var(--ink); border-color: var(--accent); background: var(--fill);
+}
+.am-diagram-expand:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* ── Diagram Lightbox and Pan-Zoom Viewer ─────────── */
+.am-lightbox {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; flex-direction: column;
+  touch-action: none;
+}
+.am-lightbox[hidden] { display: none !important; }
+
+.am-lightbox-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.am-lightbox-header {
+  position: absolute; top: 12px; left: 24px; right: 24px; height: 36px;
+  display: flex; align-items: center; justify-content: space-between;
+  z-index: 10; pointer-events: none;
+}
+.am-lightbox-title {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: rgba(255, 255, 255, 0.92);
+  font: 13px/1 var(--font-sans, sans-serif); font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  pointer-events: auto;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 60vw;
+}
+.am-lightbox-title svg { stroke: rgba(255, 255, 255, 0.85); flex-shrink: 0; }
+.am-lightbox-actions {
+  display: flex; align-items: center; gap: 8px; pointer-events: auto;
+}
+.am-lightbox-close {
+  width: 32px; height: 32px;
+  background: var(--paper);
+  border: var(--bw, 1px) solid var(--line-2);
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 15px; line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: background 0.15s, color 0.15s, transform 0.15s, border-color 0.15s;
+}
+.am-lightbox-close:hover {
+  color: var(--accent); border-color: var(--accent); background: var(--fill); transform: scale(1.05);
+}
+.am-lightbox-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.am-lightbox-stage {
+  position: absolute;
+  top: 54px; bottom: 20px; left: 24px; right: 24px;
+  background: var(--paper);
+  border: var(--bw, 1px) solid var(--line-2);
+  border-radius: max(var(--radius), 14px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.am-lightbox-stage.am-panning { cursor: grabbing; }
+
+.am-lightbox-canvas {
+  position: absolute; left: 0; top: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+  pointer-events: none;
+}
+.am-lightbox-canvas svg {
+  max-width: none !important;
+  max-height: none !important;
+  display: block;
+  font-family: var(--font-sans, sans-serif);
+}
+
+/* ── doc template ────────────────────────── */
+.am-doc { max-width: 1120px; margin: 0 auto; padding: 40px 28px 64px; }
+.am-doc-layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; align-items: start; }
+.am-doc-layout--notoc { grid-template-columns: minmax(0, 1fr); max-width: 860px; }
+.am-toc { position: sticky; top: 24px; font-size: 13px; }
+.am-toc a { display: block; color: var(--ink-2); text-decoration: none; padding: 4px 0; padding-inline-start: 10px; border-inline-start: 2px solid var(--line-2); }
+.am-toc a:hover { color: var(--ink); border-inline-start-color: var(--accent); }
+.am-doc-body > .am-panel + .am-panel { margin-top: 20px; }
+
+/* ── Responsive and print ─────────────────────────── */
+@media (max-width: 1100px) {
+  .am-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .am-grid > .am-panel { grid-column: auto !important; }
+  .am-grid > .am-panel.am-span-wide { grid-column: 1 / -1 !important; }
+}
+@media (max-width: 760px) {
+  .am-sheet, .am-doc { padding: 56px 12px 24px; }
+  .am-head { padding-inline-end: 0; }
+  .am-grid { grid-template-columns: minmax(0, 1fr); }
+  .am-grid > .am-panel.am-span-wide { grid-column: auto !important; }
+  .am-doc-layout { grid-template-columns: minmax(0, 1fr); }
+  .am-toc { position: static; }
+  .am-tree-cols { grid-template-columns: minmax(0, 1fr); }
+  /* Tables and diagrams keep their size: the wrapper scrolls horizontally when they overflow. A cell is never narrower than about
+     two short words, so a phone does not stack them one per line. On wider screens the sheet layout (src/runtime/layout-dom.js)
+     gives a table panel the width its columns read well at. */
+  .am-md th, .am-md td { min-width: 8em; }
+  .am-diagram svg { max-width: none; }
+  .am-lightbox-header { top: 8px; left: 12px; right: 12px; }
+  .am-lightbox-stage { top: 46px; bottom: 12px; left: 12px; right: 12px; border-radius: max(var(--radius), 10px); }
+}
+.am-colophon { margin: 0 0 8px; font: 11px var(--font-mono); color: var(--ink-3); }
+.am-colophon a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+@media print {
+  .am-toolbar, .am-diagram-expand, .am-lightbox, .am-code-copy, .am-comment-btn, .am-comment, .am-reply, .am-reply-bar { display: none !important; }
+  body { background: var(--paper); }
+  .am-panel { break-inside: avoid; box-shadow: none; }
+}
+/* Printed on paper narrower than three columns, the two-column grid left a hole beside every panel next to a full-width one
+   (a wide table, a wide diagram): one panel per row instead. */
+@media print and (max-width: 1100px) {
+  .am-grid { grid-template-columns: minmax(0, 1fr); }
+  .am-grid > .am-panel { grid-column: auto !important; }
+}
+.am-panel--bare { border: 0; background: transparent; box-shadow: none; }
+.am-panel--bare > .am-panel-body { padding: 0; }
+.am-panel--bare .am-kv { background: var(--paper); }
+
+/* Remark mode: block marks with a note, collected into the Reply copy (src/runtime/remark.js). Each kind borrows a status colour of
+   the theme, so a mark reads in light and dark mode on every theme. */
+.am-btn--remark.is-on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.am-btn--remark-clear { color: var(--err); }
+.am-btn--remark-clear.is-armed { background: var(--err-bg); border-color: var(--err); }
+.am-remark-hover { outline: 1px dashed var(--ink-3); outline-offset: 2px; cursor: pointer; }
+:is(.am-mark, .am-remark-kind)[data-kind="suggestion"] { --mark: var(--warn); --mark-bg: var(--warn-bg); }
+:is(.am-mark, .am-remark-kind)[data-kind="keep"] { --mark: var(--ok); --mark-bg: var(--ok-bg); }
+:is(.am-mark, .am-remark-kind)[data-kind="question"] { --mark: var(--accent); --mark-bg: var(--accent-bg); }
+:is(.am-mark, .am-remark-kind)[data-kind="concern"] { --mark: var(--err); --mark-bg: var(--err-bg); }
+.am-mark { border-inline-start: 3px solid var(--mark); padding-inline-start: 10px; background: var(--mark-bg); border-radius: 1px; }
+/* The note chip sits inside the marked block (a table takes it as its caption, a list item puts it before its sub-list), so lists and
+   grids keep their children. */
+.am-mark-note {
+  display: block; margin-block-start: 4px; font: 12px/1.5 var(--font-sans); letter-spacing: normal; text-transform: none;
+  color: var(--ink-2); white-space: pre-wrap; caption-side: bottom; text-align: start;
+}
+.am-mark-note b { color: var(--ink); font-weight: 600; }
+caption.am-mark-note { display: table-caption; }
+/* Table rows have their own backgrounds, so a tint on the table would show on every other row only: the bar marks a table. */
+table.am-mark { background: none; }
+.am-remark-pop {
+  position: absolute; z-index: 40; width: min(264px, calc(100vw - 16px)); padding: 8px; display: grid; gap: 6px;
+  color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 6px 24px rgba(0, 0, 0, .14);
+}
+.am-remark-pop[hidden] { display: none; }
+.am-remark-kinds { display: flex; gap: 6px; flex-wrap: wrap; }
+.am-remark-kind { font: 12px/1 var(--font-sans); color: var(--ink-2); background: var(--paper); border: 1px solid var(--line-2); border-radius: 999px; padding: 4px 10px; cursor: pointer; }
+.am-remark-kind:hover { border-color: var(--ink-3); }
+.am-remark-kind[aria-pressed="true"] { color: var(--ink); border-color: var(--mark); background: var(--mark-bg); }
+.am-remark-kind:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.am-remark-pop textarea { font: 13px/1.5 var(--font-sans); color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 6px 8px; resize: vertical; }
+.am-remark-actions { display: flex; gap: 6px; }
+.am-remark-actions .am-btn:disabled { opacity: .5; cursor: default; }
+@media print { .am-remark-pop { display: none !important; } }
+
+
+html[data-theme="blueprint"] .am-frame { border: 1px solid var(--line); padding: 30px; }
+html[data-theme="blueprint"] .am-frame::before {
+  content: ""; position: absolute; inset: 18px; border: 1px solid var(--line); pointer-events: none;
+}
+html[data-theme="blueprint"] .am-ruler {
+  display: flex; position: absolute; font: 10px/1 var(--font-mono); color: var(--ink-3);
+}
+@media (max-width: 760px) {
+  html[data-theme="blueprint"] .am-frame { padding: 0; border: 0; }
+  html[data-theme="blueprint"] .am-frame::before, html[data-theme="blueprint"] .am-ruler { display: none; }
+}
+
+html[data-theme="shadcn"] .am-panel-id { border-radius: 6px; min-width: 24px; height: 24px; margin: 9px 0 9px 14px; font-size: 12px; }
+html[data-theme="shadcn"] .am-panel-head { border-bottom-width: 1px; }
+html[data-theme="shadcn"] .am-kv { border-color: var(--line); border-radius: var(--radius); overflow: hidden; }
+
+html[data-theme="paper"]:lang(zh-Hant)[data-mode], html[data-theme="paper"]:lang(zh-TW)[data-mode], html[data-theme="paper"]:lang(zh-HK)[data-mode], html[data-theme="paper"]:lang(zh-MO)[data-mode] { --font-serif: "Iowan Old Style", Palatino, Georgia, "Songti TC", "PMingLiU", "MingLiU", "Noto Serif CJK TC", "Noto Serif TC", "Source Han Serif TC", "Songti SC", serif; }
+html[data-theme="paper"]:lang(ja)[data-mode] { --font-serif: "Iowan Old Style", Palatino, Georgia, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", "Noto Serif JP", "Songti SC", serif; }
+html[data-theme="paper"]:lang(he)[data-mode] { --font-serif: "Iowan Old Style", Palatino, Georgia, "Noto Serif Hebrew", "Frank Ruehl CLM", David, "Times New Roman", serif; }
+html[data-theme="paper"] .am-head h1, html[data-theme="paper"] .am-panel-head h2, html[data-theme="paper"] .am-md, html[data-theme="paper"] .am-intro, html[data-theme="paper"] .am-callout { font-family: var(--font-serif); }
+html[data-theme="paper"] .am-head h1 { font-weight: 600; letter-spacing: 0; }
+html[data-theme="paper"] .am-md p, html[data-theme="paper"] .am-md li, html[data-theme="paper"] .am-md blockquote, html[data-theme="paper"] .am-intro { font-size: 15.5px; line-height: 1.75; }
+html[data-theme="paper"] .am-md p { margin-bottom: 12px; }
+html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
+</style>
+</head>
+<body>
+<div class="am-toolbar" data-am-root-lang="zh-CN" data-am-root-theme="shadcn" data-am-root-mode="auto" data-am-root-style="off">
+<label class="am-pick">主题<select data-am="theme"><option value="blueprint">图纸</option><option value="shadcn" selected>卡片</option><option value="paper">纸张</option></select></label>
+<label class="am-pick">明暗<select data-am="mode"><option value="auto" selected>跟随系统</option><option value="light">亮</option><option value="dark">暗</option></select></label>
+<button class="am-btn am-btn--reply" type="button" data-am="reply" data-ui="{&quot;button&quot;:&quot;回复&quot;,&quot;comment&quot;:&quot;评论&quot;,&quot;commentHint&quot;:&quot;对这个面板的意见&quot;,&quot;title&quot;:&quot;你的回复&quot;,&quot;hint&quot;:&quot;复制后粘贴回和 Agent 的对话，它会按你的选择和意见继续。&quot;,&quot;copy&quot;:&quot;复制回复&quot;,&quot;copyFailed&quot;:&quot;复制失败 — 请按 Cmd/Ctrl+C&quot;,&quot;close&quot;:&quot;关闭&quot;,&quot;suggested&quot;:&quot;建议&quot;,&quot;empty&quot;:&quot;先选择选项，或在面板上写评论。&quot;,&quot;decisions&quot;:&quot;决定&quot;,&quot;comments&quot;:&quot;评论&quot;,&quot;confirmed&quot;:&quot;确认了建议&quot;,&quot;untouched&quot;:&quot;未作答，保留建议&quot;,&quot;was&quot;:&quot;原为&quot;,&quot;typed&quot;:&quot;以 \&quot;&gt;\&quot; 开头的行是读者输入的文字。&quot;,&quot;raw&quot;:&quot;查看将复制的文本&quot;,&quot;preview&quot;:&quot;预览&quot;,&quot;count&quot;:{&quot;answered&quot;:&quot;已作答 {n} 项&quot;,&quot;comments&quot;:&quot;评论 {n} 条&quot;,&quot;remarks&quot;:&quot;标注 {n} 处&quot;},&quot;done&quot;:&quot;已复制 ✓&quot;,&quot;remarks&quot;:&quot;标注&quot;,&quot;kinds&quot;:{&quot;suggestion&quot;:&quot;建议&quot;,&quot;keep&quot;:&quot;保留&quot;,&quot;question&quot;:&quot;疑问&quot;,&quot;concern&quot;:&quot;关注&quot;}}">回复</button>
+<button class="am-btn am-btn--remark" type="button" data-am="remark" data-ui="{&quot;button&quot;:&quot;标注&quot;,&quot;hint&quot;:&quot;批注（可选）&quot;,&quot;save&quot;:&quot;保存&quot;,&quot;remove&quot;:&quot;删除&quot;,&quot;clear&quot;:&quot;清除所有标注&quot;,&quot;clearConfirm&quot;:&quot;再次点击以清除 {n} 条标注&quot;,&quot;section&quot;:&quot;标注&quot;,&quot;kinds&quot;:{&quot;suggestion&quot;:&quot;建议&quot;,&quot;keep&quot;:&quot;保留&quot;,&quot;question&quot;:&quot;疑问&quot;,&quot;concern&quot;:&quot;关注&quot;}}">标注</button>
+<button class="am-btn" type="button" data-am="copy" data-done="已复制 ✓">复制源稿</button>
+</div>
+<main class="am-doc">
+<header class="am-head"><p class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.5 · 2026-10-20 08:14 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></p><h1>X 日报 · 2026-10-20</h1><p class="am-sub">时间范围：2026-10-19 08:00 至 2026-10-20 08:00，北京时间</p><div class="am-intro am-md"><div class="am-callout am-callout--info" role="note"><div class="am-callout-title">本期概况</div><div class="am-callout-body am-md"><p>本期概况：名单 115 个账号，跳过私密账号 1 个（clowwindy）和已知噪音账号 4 个（fhwofjow51260、MateCafe、pplxtop、xkajon），实际读取 110 个账号；时间窗内共 570 条帖子，来自 50 个有更新的账号；去掉回复别人的帖子后剩 239 条，最终合并保留 45 条；核对外链约 60 个、GitHub 仓库 24 个，没有发现打不开的链接（chatgpt.com/cyber 和 The Information 对脚本返回 403，属于反爬，已保留）。过滤掉的内容包括：Python 入门小贴士、免费课程与 PDF、面试题与课程推广、美国中期选举拉票等政治帖、&quot;年轻人破局&quot;类长文、AI 美女账号变现教程、生活随拍与情绪帖、大量转推等。所有帖子都在限额内读全。</p>
+</div></div></div></header>
+<div class="am-doc-layout">
+<nav class="am-toc" aria-label="目录"><a href="#panel-A">A · AI 动态与行业观察</a><a href="#panel-B">B · AI 编程与 Agent 工具</a><a href="#panel-C">C · 开源项目与工具</a><a href="#panel-D">D · 硬件与 DIY</a><a href="#panel-E">E · 安全提醒</a><a href="#panel-F">F · 开发者动态</a><a href="#panel-G">G · 科技新闻</a><a href="#panel-H">H · 健康与生活</a><a href="#panel-I">I · 投资理财</a><a href="#panel-J">J · 阅读推荐</a></nav><div class="am-doc-body">
+<section class="am-panel" id="panel-A">
+<header class="am-panel-head"><span class="am-panel-id">A</span><h2>AI 动态与行业观察</h2><span class="am-panel-meta">9 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>The Information：Anthropic 准备推出&quot;更懂言外之意&quot;的新模型，Google、OpenAI 也有新模型在路上</h3>
+<p><em>作者：宝玉（@dotey）· 10/20 03:00 北京时间</em></p>
+<p>据科技媒体 The Information 10 月 19 日的 AI Agenda 通讯，Anthropic 正在准备一款推理能力和&quot;直觉&quot;都强于现有对外模型的新模型，消息来自一位用过它的人，Anthropic 没有公开回应。两个变化：一是更会揣摩用户没说出口的意图，比如让它修一个 bug，它可能顺藤摸瓜找出同一类问题、再问你要不要一起修；二是更少给套路化答案，问怎么炒股不会只说&quot;看市盈率&quot;，而可能自己设计一套预测算法（准不准报道没说）。宝玉的提醒：提示词可以写得更随意，但写代码时模型可能主动扩大修改范围，需要多花心思审查。名字和上线时间都未确定；据 TestingCatalog 说本月发布，不清楚归入 Fable 还是 Opus 系列。同时 Google 在做 Gemini 4 Carbon（上周 Gemini 4 Argon 的升级版），OpenAI 在准备 Terra 系列新模型，可能几周内发布，价格会比 GPT-6.1 Sol 低。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better">The Information 原文 · theinformation.com</a>：付费墙，网站对脚本访问返回 403</li>
+<li><a href="https://x.com/testingcatalog/status/2112195306695647502">TestingCatalog 原推 · @testingcatalog</a>（X，原帖）</li>
+<li><a href="https://x.com/dotey/status/2112257496954135030">原帖 · @dotey</a>（X，原帖）</li>
+</ul>
+<h3>ChatGPT Slides 支持多人实时协作和直接点选编辑（Pro / Business / Enterprise）</h3>
+<p><em>作者：宝玉（@dotey）· 10/20 04:20 北京时间</em></p>
+<p>OpenAI 给 ChatGPT 的幻灯片功能加了两项能力：一是多人实时协作，像在线文档一样分享给同事、同时编辑、在页面上留评论，评论攒多了可以让 ChatGPT 或你的 dot（OpenAI 上个月开发者大会发布的、带云端电脑和浏览器的后台 agent）按评论统一修改；二是直接在幻灯片上点着改文字、更新图表、拖动缩放图片和形状。用法是在对话里或对上传的文件说&quot;create ChatGPT slides&quot;，做好后可在 ChatGPT 里放映，也能导出成 PowerPoint 或 Google Slides。目前只对 Pro、Business、Enterprise 开放，公告没提免费版和 Plus。宝玉实测&quot;在线编辑很方便&quot;。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://chatgpt.com/features/slides/">官方介绍 · chatgpt.com/features/slides</a></li>
+<li><a href="https://x.com/dotey/status/2112277659959087314">原帖 · @dotey</a>（X，原帖）</li>
+</ul>
+<h3>OpenAI 为 OpenCode 受攻击用户退款并开放 Daybreak Blue；Codex 桌面版能编辑历史消息</h3>
+<p><em>作者：Tibo（@thsottiaux）· 10/19 09:18、12:12、10/20 03:45；Geek（@geekbb）· 10/19 13:46；lencx（@lencx_）· 10/19 09:56（北京时间）</em></p>
+<p>OpenAI Codex 负责人 Tibo 说，团队已和 OpenCode 合作，让同时是 OpenAI API 客户的 OpenCode 用户恢复使用，并退还在这次攻击中被盗刷的额度（OpenCode Console 被入侵事件前两天日报已讲）；他还建议需要做安全防御的团队申请 &quot;Daybreak Blue&quot;，使用 OpenAI 面向网络安全防御的宽松配置，入口是 chatgpt.com/cyber。同日他的&quot;每日更新&quot;第 14 天：Codex 桌面 App 终于可以编辑线程里之前发过的消息（他自己说&quot;拖了太久&quot;）；第 15 天则转发了 OpenAI Devs 的 Codex 直播。Geek 评价&quot;格局打开&quot;，lencx 则吐槽每天都是这种小更新。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://chatgpt.com/cyber">Daybreak Blue 申请 · chatgpt.com/cyber</a>：网站对脚本访问返回 403，浏览器可正常打开</li>
+<li><a href="https://x.com/OpenAIDevs/status/2112242739198959913">OpenAI Devs 直播帖 · @OpenAIDevs</a>（X，原帖）</li>
+<li><a href="https://x.com/thsottiaux/status/2112034063934742720">原帖 · @thsottiaux（退款）</a>（X，原帖）</li>
+<li><a href="https://x.com/thsottiaux/status/2111990254408434095">原帖 · @thsottiaux（编辑历史消息）</a>（X，原帖）</li>
+<li><a href="https://x.com/thsottiaux/status/2112268918681485431">原帖 · @thsottiaux（Day 15）</a>（X，原帖）</li>
+<li><a href="https://x.com/geekbb/status/2112057752139039192">原帖 · @geekbb</a>（X，原帖）</li>
+<li><a href="https://x.com/lencx_/status/2111999836052717590">原帖 · @lencx_</a>（X，原帖）</li>
+</ul>
+<h3>网易有道 LobsterAI 第二期《中国办公 Agent 用户行为报告》：单任务 Token 半年涨 3.2 倍，缓存价让同样的活费用差 7 倍</h3>
+<p><em>作者：宝玉（@dotey）· 10/19 22:48 北京时间</em></p>
+<p>报告基于 LobsterAI 自家平台数据（不代表整个行业），从本期起改为月报。要点：</p>
+<ul>
+<li><strong>任务变大、用户加速涌入</strong>：9 月每次任务平均消耗 20.2 万 Token，是 3 月 6.3 万的 3.2 倍；日活增幅 6—9 月分别为 +19.8%、+25.1%、+30.6%、+83.1%，未公布绝对数。</li>
+<li><strong>缓存决定账单</strong>：各模型缓存命中率多在九成上下（DeepSeek V4.1 Flash 最高 97.3%，Qwen 3.7 Plus 最低 76.7%），但&quot;实际费用占原价比例&quot;从 DeepSeek V4.1 Flash 的 4.6% 到 GLM 5.3 Flash 的 35.1%，差七倍多，主因是缓存价不同（DeepSeek 收 2%，Kimi K3 10%，Qwen 3.8 12.5%，GLM 5.3 25%）。</li>
+<li><strong>用途</strong>：泛编程/IT 占 40.1%，设计/影视/创作 17.2% 排第二。</li>
+<li><strong>城市与入口</strong>：活跃用户前五为北京、上海、广州、深圳、杭州；重庆晚 10 点到凌晨 2 点调用占比 19.1% 最高。聊天软件派活的用户中 77% 用微信、飞书 14.3%。</li>
+<li><strong>模型选择</strong>：普通用户 73.6% 只用一个模型，常见搭配都以 DeepSeek Flash 系列打底；智谱 GLM 的 Token 份额环比约 +166.7%（相对变化，未给绝对份额）。图像生成 Seedream 占 57.2%，视频生成 Seedance 占 54.4%。</li>
+</ul>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/LobsterAIYoudao/status/2111985683707645963">报告发布帖 · @LobsterAIYoudao</a>（X，原帖）</li>
+<li><a href="https://x.com/dotey/status/2112194237211029946">原帖 · @dotey</a>（X，原帖）</li>
+</ul>
+<h3>Lenny 播客：Anthropic 可解释性研究员 Emmanuel Ameisen 的 8 个要点</h3>
+<p><em>作者：Lenny Rachitsky（@lennysan）· 10/19 20:53、23:30 北京时间</em></p>
+<p>Lenny 总结了与 Anthropic 可解释性研究员 Emmanuel Ameisen（@mlpowered）的对谈：预测下一个 token 到后期需要真正理解世界；模型虽然逐 token 输出但会提前规划，写诗时第一行写完就已选好第二行的韵脚词（例子是 &quot;rabbit&quot;）；把模型拟人化往往有助于预测它的行为；可解释性研究更像神经科学而不是软件工程；模型只能报告一小部分内部表征（团队称为 &quot;J space&quot;），实验中把其中的&quot;西班牙语&quot;换成&quot;法语&quot;，模型回答&quot;这是法语&quot;却继续写西班牙语；越研究越不确定，&quot;模型是长出来的，不是造出来的&quot;；这个领域只有几百名研究者，门槛低，可从 Neuronpedia 等平台上手。另一段剪辑讲了他调试过的怪异行为：模型逐渐&quot;发疯&quot;，全大写地说&quot;我被恶魔附身了&quot;。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=JHo-aiePjoM">完整播客 · YouTube</a></li>
+<li><a href="https://x.com/lennysan/status/2112165116921659588">原帖 · @lennysan（8 个要点）</a>（X，原帖）</li>
+<li><a href="https://x.com/lennysan/status/2112204626854387819">原帖 · @lennysan（&quot;恶魔附身&quot;片段）</a>（X，原帖）</li>
+</ul>
+<h3>MiniMax M3.1 Flash（神秘模型 &quot;Space Bunny&quot;）在 OpenCode 免费 3 天</h3>
+<p><em>作者：Geek（@geekbb）· 10/19 22:56；xiaoyu（@zhongxingyuyes）· 10/19 19:14 转推；kevinzhow（@kevinzhow）· 10/20 02:17（北京时间）</em></p>
+<p>OpenCode 官方揭晓：此前匿名上架、连续 12 天排名第一、累计服务 106T tokens 的 &quot;Space Bunny&quot; 就是 MiniMax M3.1 Flash，现在在 OpenCode 上免费用 3 天（从 10/19 晚起算）。MiniMax 官方也发了&quot;Space Bunny 回来了&quot;的预告视频。另外 kevinzhow 说他在 OpenCode 接入了 DeepSeek 4.1 Flash，体感&quot;挺堪用，比 Grok 4.7 好很多&quot;。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/opencode/status/2112156205938626954">OpenCode 公告 · @opencode</a>（X，原帖）</li>
+<li><a href="https://x.com/MiniMax_AI/status/2112111925975032241">MiniMax 预告 · @MiniMax_AI</a>（X，原帖）</li>
+<li><a href="https://x.com/geekbb/status/2112196266449043916">原帖 · @geekbb</a>（X，原帖）</li>
+<li><a href="https://x.com/kevinzhow/status/2112246846068506998">原帖 · @kevinzhow</a>（X，原帖）</li>
+</ul>
+<h3>智谱 AutoClaw 登录送 Token：10/20—10/25 每天 500 万</h3>
+<p><em>作者：小墨同学（@xiaomovps）· 10/19 10:06 北京时间</em></p>
+<p>AutoClaw 是智谱基于 OpenClaw 做的本地 Agent，能操作浏览器、读写文件、跑代码。活动规则（据小墨帖子）：10/19 当天登录领 3000 积分（3000 万 token，已过期）；10/20 到 10/25 每天登录再领 500 万；领到的额度当天 24 点清零。内置 GLM-5.3、GLM-5-Turbo 和 Auto 几个模型，GLM-5.3 消耗最快，日常任务用 Auto 更耐用。原帖未给下载地址。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/xiaomovps/status/2112002410784985118">原帖 · @xiaomovps</a>（X，原帖）</li>
+</ul>
+<h3>Viggle 发布 3D 世界模型 JST-2，可通过 MCP 服务用脚本生成 3D 场景</h3>
+<p><em>作者：Python Coding（@clcoding）· 10/20 00:36 北京时间</em></p>
+<p>Viggle 称 JST-2 是&quot;首个全栈物理原生的世界基础模型&quot;：不在像素/视频空间学习，而是整个模型栈都建在 3D 上，几秒生成一个 3D 场景并可实时扩展，还能生成自带动作的角色。转发者补充，它提供一个 MCP 服务，Python 脚本发文字提示就能拿回 3D 场景，每次约一秒算力，目前免费试用。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/ViggleAI/status/2112202242048528540">Viggle 发布帖 · @ViggleAI</a>（X，原帖）</li>
+<li><a href="https://x.com/clcoding/status/2112221270687494427">原帖 · @clcoding</a>（X，原帖）</li>
+</ul>
+<h3>SwiftGG 发布 Xcode 与 AI 调研报告；kevinzhow：&quot;Xcode 几乎只是个编译器了&quot;</h3>
+<p><em>作者：kevinzhow（@kevinzhow）· 10/19 12:42、13:38 北京时间</em></p>
+<p>SwiftGG 团队用一个月围绕 Xcode 和 Apple 生态做了 AI 方向的调研，先公开了基于 100 位 Apple 生态专家反馈的&quot;专家组报告&quot;，大众组数据仍在收集。kevinzhow 看完的感受是 Xcode 已经几乎只剩编译器的角色；评论里 unixzii 说自己的项目已经用 Makefile 构建，连 xcodebuild 都不用了，他的 SimRun 项目可以直接在 Mac 上运行 iOS 模拟器应用。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://research.swiftgg.team/xcode/">完整报告 · research.swiftgg.team</a></li>
+<li><a href="https://github.com/unixzii/SimRun">GitHub · unixzii/SimRun</a>：Run iOS Simulator apps directly on your Mac · ★ 298 · MIT · 最新 v0.1.2</li>
+<li><a href="https://x.com/SwiftSIQI/status/2112039887742619833">报告发布帖 · @SwiftSIQI</a>（X，原帖）</li>
+<li><a href="https://x.com/kevinzhow/status/2112041643230871780">原帖 · @kevinzhow</a>（X，原帖）</li>
+<li><a href="https://x.com/kevinzhow/status/2112055650616520732">原帖 · @kevinzhow（SimRun）</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-B">
+<header class="am-panel-head"><span class="am-panel-id">B</span><h2>AI 编程与 Agent 工具</h2><span class="am-panel-meta">8 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>同一个模型换个 Harness，DeepSWE 得分能差十几到三十多分</h3>
+<p><em>作者：小墨同学（@xiaomovps）· 10/19 23:26 北京时间</em></p>
+<p>在 DeepSWE 的 113 个真实编程任务上，同样是 DeepSeek V4 Flash 0731、思考强度不变，只换外层运行框架（harness）：Codex 39%、DeepSeek 自家 Harness 37%、Claude Code 30%、OpenCode 22%。同一轮里 GLM 5.3 Flash 在 Codex 只有 24%，换到 DeepSeek Harness 能到 59%，差 35 分；有自家 Harness 的 5 个模型，没有一个在自家 Harness 里跑得最好，Pi 也在测试名单里。小墨的结论：看跑分至少一半要看 Harness，&quot;模型要选，Harness 也得一起选&quot;。帖子末尾附的是 @ai_funss 在 DSH 里用 DeepSeek V4.1 Flash 前后效果对比的视频。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/ai_funss/status/2112158264087417234">附带视频 · @ai_funss</a>（X，原帖）</li>
+<li><a href="https://x.com/xiaomovps/status/2112203835058131229">原帖 · @xiaomovps</a>（X，原帖）</li>
+</ul>
+<h3>《Agentic Coding is a Trap》与 Anthropic 研究：全交给 Agent 会削弱你审查和调试的能力</h3>
+<p><em>作者：小墨同学（@xiaomovps）· 10/19 13:53、15:16 北京时间</em></p>
+<p>小墨提炼了 Lars Faye 的文章（Pi 作者推荐）：用好 agent 需要审查代码的能力，过度依赖反而让这种能力退化（&quot;监督悖论&quot;，文中引用 Anthropic 研究称调试能力下降 47%）；这次和以往&quot;换一层抽象&quot;不同，连 Simon Willison 都说自己对应用越来越没有清晰的心智模型；agent 把&quot;先理解、再规范、代码越少越好、速度最后&quot;的优先级倒了过来；写代码本身就是思考；还有厂商绑定和 token 成本不可控。作者的做法是让 AI 出方案、自己亲手写 20%—100% 的代码，一次只生成审得完的量。另一帖介绍 Anthropic 的研究《How AI assistance impacts the formation of coding skills》：52 人的 Python 实验中，手写组的掌握度明显高于 AI 辅助组，AI 组只快约两分钟，差距主要在调试；而 AI 组内部用法不同结果也不同，结论是&quot;让它替你思考会学不会，让它帮你理解才能学会&quot;。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://larsfaye.com/articles/agentic-coding-is-a-trap">原文 · Agentic Coding is a Trap（larsfaye.com）</a></li>
+<li><a href="https://www.anthropic.com/research/AI-assistance-coding-skills">Anthropic 研究 · How AI assistance impacts the formation of coding skills</a></li>
+<li><a href="https://x.com/xiaomovps/status/2112059509510475885">原帖 · @xiaomovps（Agentic Coding）</a>（X，原帖）</li>
+<li><a href="https://x.com/xiaomovps/status/2112080353443897352">原帖 · @xiaomovps（Anthropic 研究）</a>（X，原帖）</li>
+</ul>
+<h3>Matt Pocock：用 pre-commit hook 拦下超过 5000 token 的文件；个人知识库已成业务基础设施</h3>
+<p><em>作者：Viking（@vikingmute）· 10/19 20:50；Matt Pocock（@mattpocockuk）· 10/19 18:40、22:08（北京时间）</em></p>
+<p>Matt 的&quot;每日提示词&quot;：让 Agent 写一个 pre-commit hook，任何超过 5000 token（按字节数 ÷ 4 估算）的文件都拦下提交，只检查 staged 文件，跳过 lockfile、代码生成产物这类不是 agent 写的东西，并在报错信息里写清楚怎么拆文件。Viking 赞同并补充：这条规则不能只写在 AGENTS.md 里，要做成不依赖 AI 的硬性检查；agent 很容易把文件写得又大又杂，上下文有限时只看到一部分就会漏改、重复改。Matt 另外说，自建的个人 wiki 用了 3 个月已成为业务的关键基础设施（每个工作日自动生成 15 分钟播客汇总 X、Discord、Slack、Gmail、GitHub issues 的新内容），他认为把记忆交给厂商容易被锁定；他还晒了自己做的 TLDraw 画图 agent 的进展。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/mattpocockuk/status/2111708560715292675">Matt 的提示词原帖 · @mattpocockuk</a>（X，原帖）</li>
+<li><a href="https://x.com/vikingmute/status/2112164433854373986">原帖 · @vikingmute</a>（X，原帖）</li>
+<li><a href="https://x.com/mattpocockuk/status/2112131671097020895">原帖 · @mattpocockuk（个人 wiki）</a>（X，原帖）</li>
+<li><a href="https://x.com/mattpocockuk/status/2112184048248336654">原帖 · @mattpocockuk（TLDraw agent）</a>（X，原帖）</li>
+</ul>
+<h3>Grok Bot 使用分享：素材收集、多 Bot 编程、SEO、私信监控；有人整理了一本玩法电子书</h3>
+<p><em>作者：Viking（@vikingmute）· 10/19 22:28；小墨同学（@xiaomovps）· 10/19 08:47；僧僧GO（@EbookPlan）· 10/19 18:12（北京时间）</em></p>
+<p>Viking 把编码、素材管理、SEO 等大部分工作搬到 Grok Bot 上，分享了 5 个工作流：每天早上汇总他关注的几个 X 账号、热门话题和 HackerNews 等网站热文，感兴趣的生成静态版本同步到 Obsidian 用的 GitHub 仓库；一个产品一个 Bot，在 Bot 电脑上跑 Cursor CLI 和 Codex CLI，按任务换模型，review 和 E2E 测试通过就直接推送、打 tag 上线；接第三方 Google Search Console MCP 每周分析网站并改进，大改动要他审批；用 X 插件看私信；每周一研究产品和竞品、提出下一步功能。小墨则对比了自己维护的 Hermes Agent：自己运营像白盒、能改但要维护，Grok Bot 相对黑盒但省心，&quot;没有谁对谁错，只看是否符合需求&quot;。僧僧GO 把 monk.party 的运维托管给 Grok Bot 后整理了一本玩法电子书，有在线版。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.ssgoo.net/grok-bot-guide">Grok Bot 玩法电子书 · ssgoo.net</a></li>
+<li><a href="https://x.com/vikingmute/status/2110723552790110229">Viking 早前的编码工作流帖 · @vikingmute</a>（X，原帖）</li>
+<li><a href="https://x.com/vikingmute/status/2112189220790100125">原帖 · @vikingmute</a>（X，原帖）</li>
+<li><a href="https://x.com/xiaomovps/status/2111982616232759554">原帖 · @xiaomovps</a>（X，原帖）</li>
+<li><a href="https://x.com/EbookPlan/status/2112124760012542101">原帖 · @EbookPlan</a>（X，原帖）</li>
+</ul>
+<h3>Pi Durable 社区新项目：安卓手机跑 Pi、Telegram 常驻 Agent、每条对话一台云电脑</h3>
+<p><em>作者：小墨同学（@xiaomovps）· 10/19 18:51、21:29 北京时间</em></p>
+<p>小墨介绍了三个 Pi Durable 社区项目：pi-phone 是一个自带 Linux 环境（Node、git、bash 都打包好）的安卓 App，不用 Termux，App 被杀或更新后任务能从断点续跑；pi-durable-telegram 装在自己的 Linux 服务器上，在 Telegram 里发文字、图片、语音都能处理，服务器重启后答案照样发过来；coil 整个是一个 Cloudflare Worker，每条对话是一个 Durable Object，里面跑 Pi 并带一个有终端、Chrome 和磁盘的容器。他还推荐了学 Pi 要关注的 5 个账号：官方 @pidotdev、作者 Mario Zechner（@badlogicgames）、Flask 作者 Armin Ronacher（@mitsuhiko）、Oh My Pi 作者 Can Bölük（@_can1357）、插件作者 Richard Anaya（@richardanaya）。pi-phone 原帖未给链接，下面两个仓库是按项目名在 GitHub 上找到的。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://github.com/smixs/pi-durable-telegram">GitHub · smixs/pi-durable-telegram</a>：Always-on durable pi agent on your server that you talk to in Telegram · ★ 9 · MIT · 最新 v0.1.6 · 安装：<code>curl -fsSL https://raw.githubusercontent.com/smixs/pi-durable-telegram/main/install.sh | bash</code></li>
+<li><a href="https://github.com/acoyfellow/coil">GitHub · acoyfellow/coil</a>：One thread, one agent, one computer · ★ 30 · MIT · 官网 <a href="https://coil.coey.dev">coil.coey.dev</a></li>
+<li><a href="https://x.com/xiaomovps/status/2112174419447816336">原帖 · @xiaomovps（三个项目）</a>（X，原帖）</li>
+<li><a href="https://x.com/xiaomovps/status/2112134560180052304">原帖 · @xiaomovps（5 个账号）</a>（X，原帖）</li>
+</ul>
+<h3>REA（Reverse Engineer Anything）被拿来逆向三星电视系统，做出干净的启动器</h3>
+<p><em>作者：morluto（@morluto）· 10/19 21:22、21:32 北京时间</em></p>
+<p>用户 @huntsyea 嫌三星电视卡顿，用 morluto 的 REA 技能逆向了三星 Tizen 系统，做出一个干净的启动器和主屏，不再自动播放随机免费频道。他补充说 Claude 一开始会说&quot;不可行&quot;，需要大量引导；用 Astra 加 REA 才在 Tizen 的主屏和启动器应用里找到了路径。REA 是让 agent 从应用行为一路逆向到原生二进制的工具。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://rea.tools">官网 · rea.tools</a></li>
+<li><a href="https://github.com/morluto/rea">GitHub · morluto/rea</a>：Reverse engineer anything with agents, from app behavior down to native binaries · ★ 336,525 · MIT · 最新 rea-agents-6.7.0 · 安装：<code>npx rea-agents@latest setup</code></li>
+<li><a href="https://x.com/huntsyea/status/2111895984603320429">三星电视案例 · @huntsyea</a>（X，原帖）</li>
+<li><a href="https://x.com/morluto/status/2112172529611833413">原帖 · @morluto</a>（X，原帖）</li>
+<li><a href="https://x.com/morluto/status/2112174953919631365">原帖 · @morluto（补充）</a>（X，原帖）</li>
+</ul>
+<h3>Answer me with HTML：让 AI 用一页排版好的 HTML 回答复杂问题</h3>
+<p><em>作者：知识分享官（@knowledgefxg）· 10/19 23:21 北京时间</em></p>
+<p>知识分享官试用了 X 友推荐的 agent 技能 Answer me with HTML：以前问 AI 稍复杂的问题会得到一大堵文字墙，装上它后会顺手生成一页排好版的 HTML，带时序图、状态图、对比表等，可读性好很多（本日报网页版就是用它生成的）。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://answer-me-with-html.com/">官网 · answer-me-with-html.com</a></li>
+<li><a href="https://github.com/QingYunA/answer-me-with-html">GitHub · QingYunA/answer-me-with-html</a>：an agent skill that answers hard questions with a one-page HTML · ★ 3,902 · MIT · 最新 v0.5.5 · 安装：<code>npx skills add QingYunA/answer-me-with-html</code></li>
+<li><a href="https://x.com/knowledgefxg/status/2112202569351340293">原帖 · @knowledgefxg</a>（X，原帖）</li>
+</ul>
+<h3>BaoCut 的&quot;科普视频&quot;技能：宝玉用 3D 动画讲特斯拉新 Roadster 为什么能倒挂在弯道顶上</h3>
+<p><em>作者：宝玉（@dotey）· 10/19 08:09 北京时间</em></p>
+<p>宝玉发了一期科普视频（附中文版）：用 3D 动画解释特斯拉和 SpaceX 合做的新 Roadster 为什么能头朝下停在 20 米高的弯道顶上、又如何在空中翻身落地，讲了车底风扇如何把车&quot;吸&quot;在路上、气罐和喷口如何把车推上天，并回答能飞多久、0.81 秒破百轮胎受不受得了等问题。素材由 agent 自己联网检索，3D 建模动画由 Opus 5.5 帮忙做。他公开了仍在完善的视频制作技能，发给自己的 Agent 就能用（他说配合 Opus 5.5 效果最好）。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://baocut.com/">官网 · baocut.com</a></li>
+<li><a href="https://github.com/JimLiu/baocut/blob/main/skills/baocut/built-in-skills/explainer-video/SKILL.md">技能文件 · explainer-video/SKILL.md</a></li>
+<li><a href="https://github.com/JimLiu/baocut">GitHub · JimLiu/baocut</a>：AI video agent with an editable timeline · ★ 1,093 · 最新 baocut-v3.9.0-build.79</li>
+<li><a href="https://x.com/dotey/status/2111973062442693023">原帖 · @dotey</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-C">
+<header class="am-panel-head"><span class="am-panel-id">C</span><h2>开源项目与工具</h2><span class="am-panel-meta">14 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>Mole 推出 Windows 原生版：7.8 万行 C#、4000 多个测试，双十一前早鸟价 15.20 美元</h3>
+<p><em>作者：Tw93（@HiTw93）· 10/19 14:14 北京时间</em></p>
+<p>Mac 清理工具 Mole 发布 Windows 版：此前小范围迭代了约 14 个版本，手工测试了 372 款软件的卸载、更新、残留清理和启动项。为了体验用 Windows 原生 C# 开发，和 Mac 版几乎没有可复用的代码，写了约一个月、7.8 万行代码、4000 多个测试用例。另有开源免费的 Windows 命令行版，9 个半月发了 9 个版本，用法已和 Mac 命令行版对齐。价格：Windows 桌面版 11 月 11 日前早鸟价 15.20 美元；买过 Mole Mac 的用户到 12 月 31 日结账输入 <code>MOLEAGAIN</code> 只要 10 美元。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://mole.fit/zh/windows">官网 · Mole for Windows</a></li>
+<li><a href="https://github.com/tw93/Mole">GitHub · tw93/Mole</a>：Keep your Mac and PC clean, light, and running like new · ★ 71,536 · GPL-3.0 · 最新 V1.61.0 · 安装：Mac 命令行 <code>brew install mole</code>；Windows 命令行（PowerShell）<code>iwr -useb https://raw.githubusercontent.com/tw93/Mole/windows/quick-install.ps1 | iex</code></li>
+<li><a href="https://x.com/HiTw93/status/2112064790181101679">原帖 · @HiTw93</a>（X，原帖）</li>
+</ul>
+<h3>bilibili-douyin-notes：把 B 站、抖音、YouTube、小红书视频整理成课堂笔记的 Agent 技能</h3>
+<p><em>作者：GitHubDaily（@GitHub_Daily）· 10/19 11:59 北京时间</em></p>
+<p>装进 Claude Code 这类工具后，丢一个视频链接过去就能生成笔记：有字幕直接用字幕，没字幕就在本地做语音识别，不调任何付费接口。笔记按小节整理、关键术语加粗，附知识地图、概念卡片和自测题，文末有时间索引可跳回视频对应位置；还能按时间点截取关键画面，黑屏和模糊帧会先被标出、再由 AI 判断是否保留。仓库里有一份李宏毅机器学习课的示例笔记。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://github.com/lucky-Luor/bilibili-douyin-notes">GitHub · lucky-Luor/bilibili-douyin-notes</a>：免登录、不调付费 API 的视频转笔记技能 · ★ 117 · MIT · 安装：<code>git clone https://github.com/lucky-Luor/bilibili-douyin-notes.git ~/.claude/skills/bilibili-douyin-notes &amp;&amp; pip install -r ~/.claude/skills/bilibili-douyin-notes/requirements.txt</code></li>
+<li><a href="https://x.com/GitHub_Daily/status/2112030956752388442">原帖 · @GitHub_Daily</a>（X，原帖）</li>
+</ul>
+<h3>motion-prompt：给 AI 用的动效&quot;叫法词典&quot;，120 个效果配会动的示例</h3>
+<p><em>作者：GitHubDaily（@GitHub_Daily）· 10/19 15:29 北京时间</em></p>
+<p>想让 AI 做片头动画却说不出效果叫什么时用：目前收录 5 组共 120 个名字（动效、镜头运镜、界面组件、落地页效果、照片光影风格各 24 个），每个都有一段会动的示例、一句解释和一句提问写法。装成 Claude Code 或 Codex 技能后说一句&quot;打开词典&quot;，在浏览器里点选想要的效果就会发回给 AI；记得编号也能直接说&quot;用 12 号和 45 号效果&quot;。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://showheyohtaki.github.io/motion-prompt/">在线词典 · showheyohtaki.github.io/motion-prompt</a></li>
+<li><a href="https://github.com/showheyohtaki/motion-prompt">GitHub · showheyohtaki/motion-prompt</a>：★ 481 · MIT · 安装：<code>npx skills add showheyohtaki/motion-prompt</code></li>
+<li><a href="https://x.com/GitHub_Daily/status/2112083788666937355">原帖 · @GitHub_Daily</a>（X，原帖）</li>
+</ul>
+<h3>Roast Room：在 Claude Code 里开一场 7 位&quot;名人顾问&quot;的决策会</h3>
+<p><em>作者：GitHubDaily（@GitHub_Daily）· 10/19 17:59 北京时间</em></p>
+<p>7 位 AI 顾问（贝索斯、保罗·格雷厄姆、Hormozi、Gary Vee、Dan Martell、Gino Wickman、巴菲特）轮流就你的商业决定发言，各管一块（如贝索斯看这步能否回头，巴菲特盯现金和风险），给每个选项打分并汇总成带分数的结论。角色是依据本人公开信件、文章、演讲和视频做的模拟，引用原话必须对得上出处并有脚本核对；大家意见一致太快时主持 AI 会故意挑起争论。本地有个小网页能看 7 人围桌争论，结论可一键下载 PDF；小事可用快速模式，只请四位聊两轮。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://github.com/nateherkai/roast-room">GitHub · nateherkai/roast-room</a>：Seven AI advisors debate your business decision in Claude Code · ★ 828 · 许可证未标明 · 获取：<code>git clone https://github.com/nateherkai/roast-room.git</code></li>
+<li><a href="https://x.com/GitHub_Daily/status/2112121547397927322">原帖 · @GitHub_Daily</a>（X，原帖）</li>
+</ul>
+<h3>NautilusTrader：回测和实盘用同一套策略代码的开源交易引擎</h3>
+<p><em>作者：GitHubDaily（@GitHub_Daily）· 10/19 19:59 北京时间</em></p>
+<p>核心用 Rust 写，策略和配置用 Python 写，回测跑通的策略搬到实盘不用换语言重写。回测可同时跑多个交易场所、品种和策略，历史行情精确到纳秒，也能喂盘口数据；支持股票、期货、期权、外汇等市场，盈透证券等券商有现成对接，其他平台可自写适配。速度足以拿来训练 AI 交易 Agent；Linux、macOS、Windows 都能跑，支持 Docker，不装 Rust 也能用。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://nautilustrader.io">官网 · nautilustrader.io</a></li>
+<li><a href="https://github.com/nautechsystems/nautilus_trader">GitHub · nautechsystems/nautilus_trader</a>：Production-grade Rust-native trading engine · ★ 30,349 · LGPL-3.0 · 最新 v1.231.0 · 安装：<code>pip install -U nautilus_trader</code></li>
+<li><a href="https://x.com/GitHub_Daily/status/2112151745619222988">原帖 · @GitHub_Daily</a>（X，原帖）</li>
+</ul>
+<h3>Sofatap：把 iPhone 变成电脑的触控板和语音键盘，沙发上遥控电视里的电脑</h3>
+<p><em>作者：GitHubDaily（@GitHub_Daily）· 10/19 22:00 北京时间</em></p>
+<p>滑动移动鼠标、点一下是左键、按住 300 毫秒拖动、两指上下翻页；打字用 iPhone 键盘或直接语音，文字实时同步到电脑输入框。扫电脑上的二维码配对，Windows、Mac、Linux 都有接收端，走局域网加密传输。iPhone 客户端在 TestFlight 公测，名额 1 万个；桌面接收端最新为 0.8.1 beta.1，另有实验性的 Android/Google TV 接收端。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://sofatap.app/">官网 · sofatap.app</a></li>
+<li><a href="https://github.com/chekusu/sofatap">GitHub · chekusu/sofatap</a>：iPhone touchpad, air mouse and text remote · ★ 123 · MIT</li>
+<li><a href="https://github.com/chekusu/sofatap/releases">下载 · GitHub Releases</a>：桌面接收端</li>
+<li><a href="https://testflight.apple.com/join/e6MuKx9S">iPhone 公测 · TestFlight</a></li>
+<li><a href="https://x.com/GitHub_Daily/status/2112181976493068769">原帖 · @GitHub_Daily</a>（X，原帖）</li>
+</ul>
+<h3>Puter 团队的 Everything：从头重写并开源常用商业软件，已做 51 个应用</h3>
+<p><em>作者：GitHubDaily（@GitHub_Daily）· 10/20 07:59 北京时间</em></p>
+<p>目标是把常用商业软件重写成开源免费版：办公类 7 个（表格、文档、幻灯片、PDF、笔记等，对标 Excel、Word、PowerPoint），创作类有照片、视频、矢量图、音频、音乐、3D 六个工作室（对标 Photoshop、Premiere、Illustrator 等），还有收银、排班、托儿所管理等行业软件和 5 个小游戏。大部分应用有在线体验链接，浏览器点开即用。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://github.com/HeyPuter/everything">GitHub · HeyPuter/everything</a>：We&#39;re rebuilding and open-sourcing the world&#39;s software from scratch · ★ 2,335 · MIT · 本地运行：<code>git clone https://github.com/HeyPuter/everything.git</code>，然后 <code>npm install &amp;&amp; npm run dev</code></li>
+<li><a href="https://x.com/GitHub_Daily/status/2112332944929116591">原帖 · @GitHub_Daily</a>（X，原帖）</li>
+</ul>
+<h3>闲鱼黑话词典：4,476 条二手交易暗号的开源词库</h3>
+<p><em>作者：知识分享官（@knowledgefxg）· 10/19 21:56、21:57 北京时间</em></p>
+<p>项目把闲鱼、转转、小红书等二手平台上的圈内说法系统收集成开源词库，号称 4,500 多条暗号变体、覆盖 110 多个品类，附卖家潜台词解读和买家验货防割指南，买家可用来捡漏避坑。数据可直接下载 JSON。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://anyu.luckhub.cc/">官网 · anyu.luckhub.cc</a></li>
+<li><a href="https://github.com/Domainsun/awesome-chinese-secondhand-slang">GitHub · Domainsun/awesome-chinese-secondhand-slang</a>：中国二手交易暗语全书与避坑合规指南 · ★ 368 · MIT · 下载数据：<code>curl -O https://raw.githubusercontent.com/Domainsun/awesome-chinese-secondhand-slang/main/data/slang-dictionary.json</code></li>
+<li><a href="https://x.com/knowledgefxg/status/2112181199250878644">原帖 · @knowledgefxg</a>（X，原帖）</li>
+<li><a href="https://x.com/knowledgefxg/status/2112181342138180090">原帖 · @knowledgefxg（链接）</a>（X，原帖）</li>
+</ul>
+<h3>Lex Fridman 播客中文导航站：502 期全部配文稿和中文译写</h3>
+<p><em>作者：知识分享官（@knowledgefxg）· 10/19 22:30 北京时间</em></p>
+<p>乔木（@vista8）把 Lex Fridman 的 502 期访谈全部用本地语音识别配了文稿和中文改写翻译，做成导航站，有中文开源字体和精细排版，支持亮色、暗色、护眼模式，并支持 PWA 安装成手机应用。原作者说开源仓库在评论区（本日报未读取评论）。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://lex.qiaomu.ai/">网站 · lex.qiaomu.ai</a></li>
+<li><a href="https://x.com/vista8/status/2111869352266146010">发布帖 · @vista8</a>（X，原帖）</li>
+<li><a href="https://x.com/knowledgefxg/status/2112189619530076418">原帖 · @knowledgefxg</a>（X，原帖）</li>
+</ul>
+<h3>Status Trio：把 Wi-Fi、电池、音量合成一个菜单栏图标的 Mac 小工具</h3>
+<p><em>作者：ahhhhfs（@abskoop）· 10/19 20:44 北京时间</em></p>
+<p>灵感来自 iPhone Duo 的合并状态栏，把原本分开的三个图标压成一个，菜单栏清爽不少；还支持 Dock 实时图标、AirPods/蓝牙设备状态、电池详情和局域网 IP。开源，支持 Apple Silicon 和 Intel Mac。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://statustrio.lingai.net/">官网 · statustrio.lingai.net</a></li>
+<li><a href="https://github.com/lingyired/status-trio">GitHub · lingyired/status-trio</a>：native macOS app that combines Wi-Fi, battery, and volume into one status icon · ★ 711 · Apache-2.0 · 最新 v1.6.0 · 下载见 <a href="https://github.com/lingyired/status-trio/releases">Releases</a></li>
+<li><a href="https://www.ahhhhfs.com/84274/">介绍文章 · ahhhhfs.com</a></li>
+<li><a href="https://x.com/abskoop/status/2112163032210260436">原帖 · @abskoop</a>（X，原帖）</li>
+</ul>
+<h3>Vonng：Hugo 主题 Oink 1.3 新增相册布局；MinIO 社区分支 Silo 发布 20261018 版并破 4K Star</h3>
+<p><em>作者：Vonng（@RonVonng）· 10/19 09:08、11:37 北京时间</em></p>
+<p>Oink 是一个工程文档用的 Hugo 主题，1.3 新增 expo 布局，同一主题可写技术文档、博客、书，现在还能当相册。Silo 是社区维护的开源 MinIO 分支，本月例行更新修复了 Object Lock 保留策略绕过和 IAM 认证相关 CVE、让 STS 凭证吊销更可靠、防止存储池再平衡时丢数据，并内置 Console 2.4.2 和 kes；项目达到 4K GitHub Star、接近 400 万次 Docker 拉取。他说这种硬活交给 ChatGPT Astra Max 最靠谱，烧了大约七八个周配额。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://oink.pgsty.com">官网 · oink.pgsty.com</a></li>
+<li><a href="https://github.com/pgsty/oink">GitHub · pgsty/oink</a>：Hugo theme for engineering documentation · ★ 131 · Apache-2.0 · 最新 v1.3.2</li>
+<li><a href="https://silo.pgsty.com">官网 · silo.pgsty.com</a></li>
+<li><a href="https://github.com/pgsty/silo">GitHub · pgsty/silo</a>：S3-Compatible Object Storage, a MinIO fork · ★ 4,189 · AGPL-3.0 · 最新 RELEASE.2026-10-18T00-00-00Z</li>
+<li><a href="https://x.com/PlGSTY/status/2112024352892006626">Silo 发布帖 · @PlGSTY</a>（X，原帖）</li>
+<li><a href="https://x.com/RonVonng/status/2111987940813689335">原帖 · @RonVonng（Oink）</a>（X，原帖）</li>
+<li><a href="https://x.com/RonVonng/status/2112025372988674556">原帖 · @RonVonng（Silo）</a>（X，原帖）</li>
+</ul>
+<h3>Omarchy 走上小米手机和平板；有人给 Glorious 键盘做了 Linux 配置插件</h3>
+<p><em>作者：kevinzhow（@kevinzhow）· 10/19 11:27、12:45；Geek（@geekbb）· 10/19 20:59（北京时间）</em></p>
+<p>小米 XRING 副总裁王立强在 Omarchy（DHH 的 Arch Linux 桌面配置）安装活动上展示了 Xiaomi 18 Fold 上的 Omarchy，并说跑在虚拟机里的小米平板已是他的日常工作机；他公开了两个个人项目，利用 Android 16 的 Linux 终端在 systemd-nspawn 容器里跑 Arch Linux ARM 和 Omarchy v4。kevinzhow 问&quot;小米是打算让安卓手机运行完整的 Linux 了吗&quot;。另外 Geek 推荐了 inglorious-core-linux：作者读取官方驱动与键盘的通信报文重写协议，把 Glorious GMMK 3 HE 75% 键盘官方只有 Windows 版的灯光、键程、键位设置补到 Linux，做成 Omarchy 状态栏插件。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://github.com/rwanglq-ctrl/omarchy-xiaomipad9pm">GitHub · rwanglq-ctrl/omarchy-xiaomipad9pm</a>：One-command Omarchy v4 desktop on Android 16&#39;s Linux Terminal · ★ 10 · MIT · 最新 v0.2.12</li>
+<li><a href="https://github.com/rwanglq-ctrl/omarchy-xiaomi18fold">GitHub · rwanglq-ctrl/omarchy-xiaomi18fold</a>：Omarchy on Xiaomi 18 Fold · ★ 9 · MIT · 最新 v0.1.0</li>
+<li><a href="https://github.com/tg5ee/inglorious-core-linux">GitHub · tg5ee/inglorious-core-linux</a>：Unofficial Linux configurator for the Glorious GMMK 3 HE 75% · ★ 5 · Rust · 构建：<code>cargo build --release</code></li>
+<li><a href="https://x.com/brutoshi_/status/2111829597952348617">活动现场帖 · @brutoshi_</a>（X，原帖）</li>
+<li><a href="https://x.com/kevinzhow/status/2112022828447137902">原帖 · @kevinzhow</a>（X，原帖）</li>
+<li><a href="https://x.com/kevinzhow/status/2112042450755711195">原帖 · @kevinzhow（Oh No）</a>（X，原帖）</li>
+<li><a href="https://x.com/geekbb/status/2112166712527438036">原帖 · @geekbb</a>（X，原帖）</li>
+</ul>
+<h3>几个好玩的小网站：Sukka 的测速站、给 Mac OS X Tiger 用的现代网站、多 Agent 工作台 todos.dev</h3>
+<p><em>作者：Sukka（@isukkaw）· 10/19 23:08；yetone（@yetone）· 10/20 00:33；Livid（@Livid）· 10/19 12:18；ZEN（@supezen）· 10/19 15:07（北京时间）</em></p>
+<p>Sukka 用 Opus 5.5 写了一个测速网站，说里面藏了彩蛋；yetone 顺带说 Sukka 的 IP 查询站 ip.skk.moe 是他的必备网站。V2EX 站长 Livid 发了一个&quot;给 Mac OS X Tiger 用的现代内容&quot;的网站。ZEN 自荐他做的极简 Agent 工作台 todos.dev：可接入 19 款常用编程 agent，看板管理任务进度，自带一个&quot;Agent 大管家&quot;拆任务、跟进度，另有手机端、记忆、技能库、MCP Server、定时任务、用量统计等。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://speed.skk.moe">测速 · speed.skk.moe</a></li>
+<li><a href="https://ip.skk.moe">IP 查询 · ip.skk.moe</a></li>
+<li><a href="https://tiger.v2core.com/">Tiger 网站 · tiger.v2core.com</a></li>
+<li><a href="https://todos.dev">官网 · todos.dev</a></li>
+<li><a href="https://x.com/isukkaw/status/2112199110438826359">原帖 · @isukkaw</a>（X，原帖）</li>
+<li><a href="https://x.com/yetone/status/2112220651503456488">原帖 · @yetone</a>（X，原帖）</li>
+<li><a href="https://x.com/Livid/status/2112035706269040959">原帖 · @Livid</a>（X，原帖）</li>
+<li><a href="https://x.com/supezen/status/2112078156899197247">原帖 · @supezen</a>（X，原帖）</li>
+</ul>
+<h3>小众软件发现频道：本周 10 款好评软件和一批开发者自荐</h3>
+<p><em>作者：小众软件（@appinn）· 10/19 09:02—22:53 北京时间</em></p>
+<p>小众软件发布了第 42 期&quot;10 款大家发现的好评软件&quot;，论坛当天还有一批开发者自荐，值得一看的有：PDFMathReader（跨平台、保留格式的实时翻译阅读器）、vPaste（Windows/macOS 开源剪贴板管理器）、api-bench（测大模型 API 和中转服务的首字延迟、并发和缓存命中，开源）、Dayfly Mail（无需注册的临时邮箱，可选 10 分钟到 3 天）、Codex Reset Watch（Codex 额度重置的北京时间倒计时和网页提醒）、AI Canvas（本地优先的开源 AI 画布桌面应用，可跑 ComfyUI 工作流）、Textus（AI Markdown 编辑器）。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.appinn.com/faxian-top10-2642/">第 42 期 10 款好评软件 · appinn.com</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93967">PDFMathReader · 小众软件论坛</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93923">vPaste · 小众软件论坛</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93954">api-bench · 小众软件论坛</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93950">Dayfly Mail · 小众软件论坛</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93907">Codex Reset Watch · 小众软件论坛</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93963">AI Canvas · 小众软件论坛</a></li>
+<li><a href="https://meta.appinn.net/t/topic/93911">Textus · 小众软件论坛</a></li>
+<li><a href="https://x.com/appinn/status/2111986311670239306">原帖 · @appinn</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-D">
+<header class="am-panel-head"><span class="am-panel-id">D</span><h2>硬件与 DIY</h2><span class="am-panel-meta">2 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>Ivy AI：20 美元的 ESP32-S3 板子跑完全离线的语音助手</h3>
+<p><em>作者：小墨同学（@xiaomovps）· 10/19 17:10 北京时间</em></p>
+<p>一块 ESP32-S3 开发板加一张 SD 卡，喊 &quot;Hey Ivy&quot; 唤醒，听写、思考、回答全在板子上完成，不连服务器也不用手机，Wi-Fi 只用来对时。作者用的是 Freenove FNK0104B（8MB PSRAM，屏幕、麦克风、喇叭、SD 卡槽都集成），模型放在 SD 卡里。难点是内存：语音识别要 5.4MB、模型要 6.5MB，板子总共才 8MB，只能开机先圈一大块内存让各步骤轮流用。模型只有 1970 万参数、4bit 量化，每秒 5—6 个 token，一轮问答十几秒，换个问法准确率只有 63%，所以时间、计时器这类问题交给 C 代码处理。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://iamankushpandit.github.io/esp_ai/">项目文档 · iamankushpandit.github.io/esp_ai</a></li>
+<li><a href="https://github.com/iamankushpandit/esp_ai">GitHub · iamankushpandit/esp_ai</a>：Fully offline voice assistant on ESP32-S3: free-form STT, tiny LLM, TTS · ★ 66 · GPL-3.0</li>
+<li><a href="https://x.com/xiaomovps/status/2112109068584473072">原帖 · @xiaomovps</a>（X，原帖）</li>
+</ul>
+<h3>树莓派官方：一批万圣节主题的 Raspberry Pi Pico 项目</h3>
+<p><em>作者：Raspberry Pi（@Raspberry_Pi）· 10/19 22:52 北京时间</em></p>
+<p>树莓派官方博客整理了一组&quot;吓人又好玩&quot;的 Pico 万圣节项目，入选作者包括 @kevsmac、@pimoroni、@GurgleApps，适合找节日 DIY 灵感的人。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.raspberrypi.com/news/a-raspberry-pi-pico-halloween/">官方文章 · raspberrypi.com</a></li>
+<li><a href="https://x.com/Raspberry_Pi/status/2112195103569727932">原帖 · @Raspberry_Pi</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-E">
+<header class="am-panel-head"><span class="am-panel-id">E</span><h2>安全提醒</h2><span class="am-panel-meta">3 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>PwnEscape（CVE-2026-99999）：Linux 内核 9.3 分漏洞，可从 VPS 逃逸拿下宿主机 root</h3>
+<p><em>作者：小众软件（@appinn）· 10/19 16:17 北京时间</em></p>
+<p>据小众软件整理，问题出在 Linux 内核的 IPv4 数据包处理：发送特殊构造的数据包可让内核修改已验证过的包头，从而读取宿主机内存；研究人员在自己的 KVM 环境中进一步执行了宿主机代码并拿到 root，意味着同一台物理机上的其他 VPS 也可能受影响。已修复的内核版本：5.10.272、5.15.223、6.1.190、6.6.159、6.12.113、6.18.57、7.2.11、7.3-rc7。普通 VPS 用户无法靠升级自己虚拟机的内核修复，需要等服务商更新宿主机，可以发工单问是否已修复，并尽快备份数据。漏洞是研究员 Paulos Yibelo 在 Vercel 百万美元沙箱挑战中用 AI 辅助工具 3 天发现的，获得 5 万美元奖金，AI API 花费不到 700 美元。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.appinn.com/pwnescape-cve-2026-99999/">小众软件原文 · appinn.com</a></li>
+<li><a href="https://www.pwn.ai/blog/pwnescape">研究人员技术分析 · pwn.ai</a></li>
+<li><a href="https://ubuntu.com/security/CVE-2026-99999">Ubuntu 安全公告 · CVE-2026-99999</a></li>
+<li><a href="https://access.redhat.com/security/cve/cve-2026-99999">Red Hat 漏洞公告</a></li>
+<li><a href="https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge">Vercel 沙箱挑战结果 · vercel.com</a></li>
+<li><a href="https://x.com/appinn/status/2112095752990187893">原帖 · @appinn</a>（X，原帖）</li>
+</ul>
+<h3>假冒 PhotoCraft 安装包窃取密码和加密钱包，认准 storytold/photocraft</h3>
+<p><em>作者：小众软件（@appinn）· 10/19 18:07 北京时间</em></p>
+<p>PhotoCraft 是有人用 AI 复刻 Adobe 全家桶的开源项目。据火绒安全实验室报告，GitHub 上出现了假冒仓库 PhotocraftAdobe/PhotoCraft-Photoshop，提供&quot;v0.5.0 Windows 便携版&quot;，里面是一整套恶意程序：尝试绕过 Windows Defender，窃取 Steam 账号和密码输入，搜集 Exodus、Electrum、Ledger Live 等钱包数据，弹出假钱包窗口骗取密码和恢复词，监控剪贴板替换加密货币收款地址，还会后台挖矿、把电脑变成代理。该仓库已被删除；原版没有被植入恶意代码，官方地址是 storytold/photocraft。下载热门项目前要核对组织名，看看提交历史和 Issue。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://www.appinn.com/fake-photocraft-malware/">小众软件原文 · appinn.com</a></li>
+<li><a href="https://github.com/storytold/photocraft">GitHub · storytold/photocraft（官方）</a>：open-source photo editor written in pure Rust · ★ 68,551 · Apache-2.0 · 官网 <a href="https://getartcraft.com/apps/photocraft">getartcraft.com</a></li>
+<li><a href="https://x.com/appinn/status/2112123457181737196">原帖 · @appinn</a>（X，原帖）</li>
+</ul>
+<h3>Windows 会偷偷留下的 7 类使用痕迹，以及怎么清</h3>
+<p><em>作者：老白（@laobaishare）· 10/19 12:22 北京时间</em></p>
+<p>一个 7 条的线程：</p>
+<ul>
+<li><strong>已删照片的缩略图</strong>：<code>%LOCALAPPDATA%\Microsoft\Windows\Explorer</code> 下的 <code>thumbcache_*.db</code>，照片删了缩略图还在，取证常用。</li>
+<li><strong>运行过的程序</strong>：<code>C:\Windows\Prefetch</code>，每个程序一个文件，记录最近 8 次启动时间和总次数。</li>
+<li><strong>插过的 USB 设备</strong>：注册表 <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR</code>，几年前的都在。</li>
+<li><strong>保存的 Wi-Fi 密码</strong>：终端运行 <code>netsh wlan show profiles</code>，再 <code>netsh wlan show profile name=&quot;网络名称&quot; key=clear</code> 可看到明文。</li>
+<li><strong>剪贴板历史</strong>：Win+V 可见，包括从密码管理器粘贴的内容；可全部清除，并在&quot;设置 → 系统 → 剪贴板&quot;里关掉历史记录。</li>
+<li><strong>清缩略图</strong>：运行 <code>cleanmgr</code>，选 C 盘，勾选缩略图和临时文件；浏览文件夹时会重新生成，建议每月清一次。</li>
+<li><strong>最近文件</strong>：运行 <code>recent</code> 全选删除，再在文件资源管理器选项里取消&quot;显示最近使用的文件 / 常用文件夹&quot;并清除。</li>
+</ul>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/laobaishare/status/2112036522891608347">原帖 · @laobaishare</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-F">
+<header class="am-panel-head"><span class="am-panel-id">F</span><h2>开发者动态</h2><span class="am-panel-meta">1 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>Mitchell Hashimoto 的 Rex 预览版：客户端和服务器前后向 API 兼容，Mac 测试再邀 1000 人</h3>
+<p><em>作者：Mitchell Hashimoto（@mitchellh）· 10/20 04:55 北京时间</em></p>
+<p>Mitchell Hashimoto 说 Rex 最新预览版加入了他花几周做的子系统，让客户端和服务器实现完整的前向和后向 API 兼容；这是 Linux 测试计划的前置条件，也大大放开了 Mac 测试：刚又给 Mac 邀请了 1000 人，顺利的话本周会大幅扩大，Linux 测试很可能本周开始（在现有测试者中分批邀请）。实现思路：每个 API 变更是 JSON Pointer（RFC 6901）上的一条规则；每条消息把双方版本之间的规则惰性编译成按 JSON 路径分词的 trie；自写一个只向前扫描的流式 JSON 编辑器，与 trie 无关的值直接整段拷贝；相同的变更链共享同一指针，广播给大量旧客户端时每种变更链只转换一次。模拟 1 万次修订的极端情况下，一个 20KB 的 JSON 升级约耗时 35 微秒（目前实际才到第 4 版）。原帖没有介绍 Rex 是什么产品。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/mitchellh/status/2112286460309364845">原帖 · @mitchellh</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-G">
+<header class="am-panel-head"><span class="am-panel-id">G</span><h2>科技新闻</h2><span class="am-panel-meta">3 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>马斯克：明年给每个美国孩子一股 SpaceX 股票；特朗普致谢；SpaceX 今天发布 Q3 财报</h3>
+<p><em>作者：Elon Musk（@elonmusk）· 10/19 15:52、10/20 01:12 转推；Donald J. Trump（@realDonaldTrump）· 10/20 05:24（北京时间）</em></p>
+<p>马斯克发帖说&quot;明年我会给每个美国孩子一股我的 SpaceX 股票，这只是很多次中的第一次&quot;，这条获得了 50 多万个赞。特朗普随后发帖感谢，称这些股票将通过&quot;TRUMP ACCOUNTS&quot;发给数百万美国儿童。马斯克还转发了 SpaceX 的公告：2026 年第三季度财务和运营结果于 10 月 20 日发布，并在美国中部时间当天 15:30（北京时间 10/21 04:30）举行纯音频网络直播；以及特斯拉年度股东大会定于 12 月 3 日，董事会希望股东对三项提案都投赞成票（包括马斯克、Robyn Denholm 和 JB Straubel 连任董事）。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx">SpaceX 投资者关系公告 · ir.spacex.com</a></li>
+<li><a href="https://www.votetesla.com/">特斯拉投票说明 · votetesla.com</a></li>
+<li><a href="https://x.com/SpaceX/status/2111072697690317011">SpaceX 公告帖 · @SpaceX</a>（X，原帖）</li>
+<li><a href="https://x.com/Tesla/status/2112190017267532210">特斯拉股东大会帖 · @Tesla</a>（X，原帖）</li>
+<li><a href="https://x.com/realDonaldTrump/status/2112293785472225568">原帖 · @realDonaldTrump</a>（X，原帖）</li>
+<li><a href="https://x.com/elonmusk/status/2112089556615123114">原帖 · @elonmusk</a>（X，原帖）</li>
+</ul>
+<h3>博主整理的马斯克央视专访要点：Cybercab 扩张、人形机器人 10 年 10 亿台</h3>
+<p><em>作者：看不懂的SOL（@DtDt666）· 10/19 13:51 北京时间</em></p>
+<p>据该博主整理（26 分钟、20 个话题，内容未经本日报核对原视频）：Cybercab 已在得州商业运营，将扩展到佛罗里达、内华达，预计明年年中进入加州；马斯克称 Grok 4.7 还不如刚发布的 Opus 5.5，xAI 可能 2027 年追上主流，并认为用 SpaceX 和特斯拉的真实工程数据训练是 Grok 的机会；他称赞中国制造能力和中国 AI&quot;每单位算力性能最好&quot;，认为中国可能在 2—3 年内解决芯片算力约束；预测 10 年内人形机器人突破 10 亿台、15 年后可能达 100 亿台；星舰计划下月底用&quot;筷子&quot;捕获飞船。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/DtDt666/status/2112058964112531777">原帖 · @DtDt666</a>（X，原帖）</li>
+</ul>
+<h3>小鹏汇天&quot;陆地航母&quot;分体式飞行汽车称年底量产；卢浮宫因学生罢工闭馆</h3>
+<p><em>作者：ahhhhfs（@abskoop）· 10/19 16:36；Xuanwo（@xuanwo）· 10/19 18:37、18:40（北京时间）</em></p>
+<p>ahhhhfs 提到小鹏汇天的&quot;陆地航母&quot;是全球首款分体式飞行汽车，年底要量产（帖子说法）。另外卢浮宫官方账号发布通知：因学生社会运动，博物馆暂时关闭，向游客致歉；Xuanwo 转发时评论说如果卢浮宫被烧，法国政府真该谢罪（巴黎近日有骚乱）。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/MuseeLouvre/status/2112105415722811622">卢浮宫通知 · @museelouvre</a>（X，原帖）</li>
+<li><a href="https://x.com/abskoop/status/2112100586405638192">原帖 · @abskoop</a>（X，原帖）</li>
+<li><a href="https://x.com/xuanwo/status/2112131895110848559">原帖 · @xuanwo</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-H">
+<header class="am-panel-head"><span class="am-panel-id">H</span><h2>健康与生活</h2><span class="am-panel-meta">2 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>柳叶刀委员会报告：AI 恶意使用和核冲突被列为可能导致人类灭绝的两大健康威胁</h3>
+<p><em>作者：Dr.Wang（@HotmailfromSH）· 10/19 19:29 北京时间</em></p>
+<p>据 Dr.Wang 介绍，2026 年柏林世界卫生峰会上发布了&quot;柳叶刀 21 世纪全球健康威胁委员会&quot;报告，指出 AI 的恶意使用和核冲突两种威胁有导致人类灭绝的潜在风险；另列了 15 种灾难性健康威胁，包括空气污染、抗微生物药物耐药性、儿童营养不良、气候变化、常规冲突、卫生发展援助缩减、过量饮酒、高血压、收入不平等、受教育水平低、自然源性传染病大流行、肥胖、心理健康问题、吸烟和&quot;不健康老龄化&quot;（活得长但质量差）。原帖未附报告链接。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/HotmailfromSH/status/2112144221851570285">原帖 · @HotmailfromSH</a>（X，原帖）</li>
+</ul>
+<h3>全国药店 65.65 万家，广东总数第一，人均却排第十二</h3>
+<p><em>作者：Dr.Wang（@HotmailfromSH）· 10/19 14:19 北京时间</em></p>
+<p>据国家药监局 2025 年统计：全国零售药店约 65.65 万家，广东 66,125 家第一、四川 49,356 家第二、山东 45,623 家第三。按人口算，广东每万人约 5.1 家、排第十二，四川约 5.9 家、排第六，吉林 7.57 家第一、内蒙古 7.44 家第二，河南每万人约 4 家。2025 年底全国药店比上一年减少约 2.7 万家，降幅接近 4%，线上冲击明显。作者建议看药店分布至少看总数、每万人药店数和实际购药便利度三个指标。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/HotmailfromSH/status/2112066145444594129">原帖 · @HotmailfromSH</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-I">
+<header class="am-panel-head"><span class="am-panel-id">I</span><h2>投资理财</h2><span class="am-panel-meta">2 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>6 个 AI 炒股技能：查行情、翻财报、拆业绩会、算估值、看持仓</h3>
+<p><em>作者：看不懂的SOL（@DtDt666）· 10/19 11:55 北京时间</em></p>
+<p>博主列了自己在用的 6 个技能：Stock Market Pro（输入代码查报价和历史 K 线，A 股美股都覆盖）、Longbridge Fundamentals（从财报里提取收入、利润、现金流等核心指标，当第一遍筛子）、Earnings Analysis（把业绩会上的官话和财务数据对上，但&quot;翻译得动字面，翻译不动语气&quot;）、DCF Valuation（现金流折现估值，假设一换结果就变，&quot;当尺子用，别当价格用&quot;）、Diversification（查行业集中度，每月一次当体检）、ARTi（把前面几项串成一条流程并留档判断逻辑）。他强调这些是流程工具不是决策工具。原帖没给安装地址。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/DtDt666/status/2112029923049377822">原帖 · @DtDt666</a>（X，原帖）</li>
+</ul>
+<h3>标普百年涨幅靠 94 天，巴菲特好主意只有 12 个</h3>
+<p><em>作者：看不懂的SOL（@DtDt666）· 10/19 08:21、16:24 北京时间</em></p>
+<p>1928 年到 2026 年 8 月 12 日，标普 500 及其前身共 25,853 个交易日，剔除涨幅最大的 94 天（占 0.36%）累计价格收益就由正转负；先锋领航的研究显示，1988 年投入 10 万美元持有到 2024 年底约 490 万美元，错过最好的 10 个交易日只剩 230 万美元。另一帖引用帕伯莱的说法：巴菲特几十年买过 300 多只股票，真正特别好的决策约 12 个，命中率约 4%、差不多每五年一个，结论是少数关键决定盖过大量普通决定，大部分时间是&quot;垃圾时间&quot;，要克制出手频率。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://x.com/DtDt666/status/2111975982064382133">原帖 · @DtDt666（94 天）</a>（X，原帖）</li>
+<li><a href="https://x.com/DtDt666/status/2112097664095666498">原帖 · @DtDt666（巴菲特 4%）</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+<section class="am-panel" id="panel-J">
+<header class="am-panel-head"><span class="am-panel-id">J</span><h2>阅读推荐</h2><span class="am-panel-meta">1 条</span></header>
+<div class="am-panel-body"><div class="am-md"><h3>Linear 创始人 Karri Saarinen：《Someone behind the software》</h3>
+<p><em>作者：Viking（@vikingmute）· 10/19 21:45 北京时间</em></p>
+<p>Viking 当天最喜欢的文章。Karri 的观点是好产品会带着创造者的品味和个性，让人感觉到背后有人在思考，而不是流水线批量生产的。Viking 的延伸：在产品泛滥的现在，想脱颖而出就要带入自己的品味，别让 Agent 疯狂加功能、做成没有灵魂的缝合怪。</p>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="https://karrisaarinen.com/posts/someone-behind-the-software/">原文 · karrisaarinen.com</a></li>
+<li><a href="https://x.com/vikingmute/status/2112178257936458132">原帖 · @vikingmute</a>（X，原帖）</li>
+</ul>
+</div></div>
+</section>
+</div>
+</div>
+</main>
+<textarea id="am-source" hidden readonly aria-hidden="true">---
+template: doc
+theme: shadcn
+lang: zh
+style: off
+title: X 日报 · 2026-10-20
+subtitle: &quot;时间范围：2026-10-19 08:00 至 2026-10-20 08:00，北京时间&quot;
+---
+
+```callout info 本期概况
+本期概况：名单 115 个账号，跳过私密账号 1 个（clowwindy）和已知噪音账号 4 个（fhwofjow51260、MateCafe、pplxtop、xkajon），实际读取 110 个账号；时间窗内共 570 条帖子，来自 50 个有更新的账号；去掉回复别人的帖子后剩 239 条，最终合并保留 45 条；核对外链约 60 个、GitHub 仓库 24 个，没有发现打不开的链接（chatgpt.com/cyber 和 The Information 对脚本返回 403，属于反爬，已保留）。过滤掉的内容包括：Python 入门小贴士、免费课程与 PDF、面试题与课程推广、美国中期选举拉票等政治帖、&quot;年轻人破局&quot;类长文、AI 美女账号变现教程、生活随拍与情绪帖、大量转推等。所有帖子都在限额内读全。
+```
+
+## AI 动态与行业观察 {meta=&quot;9 条&quot;}
+### The Information：Anthropic 准备推出&quot;更懂言外之意&quot;的新模型，Google、OpenAI 也有新模型在路上
+*作者：宝玉（@dotey）· 10/20 03:00 北京时间*
+
+据科技媒体 The Information 10 月 19 日的 AI Agenda 通讯，Anthropic 正在准备一款推理能力和&quot;直觉&quot;都强于现有对外模型的新模型，消息来自一位用过它的人，Anthropic 没有公开回应。两个变化：一是更会揣摩用户没说出口的意图，比如让它修一个 bug，它可能顺藤摸瓜找出同一类问题、再问你要不要一起修；二是更少给套路化答案，问怎么炒股不会只说&quot;看市盈率&quot;，而可能自己设计一套预测算法（准不准报道没说）。宝玉的提醒：提示词可以写得更随意，但写代码时模型可能主动扩大修改范围，需要多花心思审查。名字和上线时间都未确定；据 TestingCatalog 说本月发布，不清楚归入 Fable 还是 Opus 系列。同时 Google 在做 Gemini 4 Carbon（上周 Gemini 4 Argon 的升级版），OpenAI 在准备 Terra 系列新模型，可能几周内发布，价格会比 GPT-6.1 Sol 低。
+
+**相关链接**
+- [The Information 原文 · theinformation.com](https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better)：付费墙，网站对脚本访问返回 403
+- [TestingCatalog 原推 · @testingcatalog](https://x.com/testingcatalog/status/2112195306695647502)（X，原帖）
+- [原帖 · @dotey](https://x.com/dotey/status/2112257496954135030)（X，原帖）
+
+
+### ChatGPT Slides 支持多人实时协作和直接点选编辑（Pro / Business / Enterprise）
+*作者：宝玉（@dotey）· 10/20 04:20 北京时间*
+
+OpenAI 给 ChatGPT 的幻灯片功能加了两项能力：一是多人实时协作，像在线文档一样分享给同事、同时编辑、在页面上留评论，评论攒多了可以让 ChatGPT 或你的 dot（OpenAI 上个月开发者大会发布的、带云端电脑和浏览器的后台 agent）按评论统一修改；二是直接在幻灯片上点着改文字、更新图表、拖动缩放图片和形状。用法是在对话里或对上传的文件说&quot;create ChatGPT slides&quot;，做好后可在 ChatGPT 里放映，也能导出成 PowerPoint 或 Google Slides。目前只对 Pro、Business、Enterprise 开放，公告没提免费版和 Plus。宝玉实测&quot;在线编辑很方便&quot;。
+
+**相关链接**
+- [官方介绍 · chatgpt.com/features/slides](https://chatgpt.com/features/slides/)
+- [原帖 · @dotey](https://x.com/dotey/status/2112277659959087314)（X，原帖）
+
+
+### OpenAI 为 OpenCode 受攻击用户退款并开放 Daybreak Blue；Codex 桌面版能编辑历史消息
+*作者：Tibo（@thsottiaux）· 10/19 09:18、12:12、10/20 03:45；Geek（@geekbb）· 10/19 13:46；lencx（@lencx_）· 10/19 09:56（北京时间）*
+
+OpenAI Codex 负责人 Tibo 说，团队已和 OpenCode 合作，让同时是 OpenAI API 客户的 OpenCode 用户恢复使用，并退还在这次攻击中被盗刷的额度（OpenCode Console 被入侵事件前两天日报已讲）；他还建议需要做安全防御的团队申请 &quot;Daybreak Blue&quot;，使用 OpenAI 面向网络安全防御的宽松配置，入口是 chatgpt.com/cyber。同日他的&quot;每日更新&quot;第 14 天：Codex 桌面 App 终于可以编辑线程里之前发过的消息（他自己说&quot;拖了太久&quot;）；第 15 天则转发了 OpenAI Devs 的 Codex 直播。Geek 评价&quot;格局打开&quot;，lencx 则吐槽每天都是这种小更新。
+
+**相关链接**
+- [Daybreak Blue 申请 · chatgpt.com/cyber](https://chatgpt.com/cyber)：网站对脚本访问返回 403，浏览器可正常打开
+- [OpenAI Devs 直播帖 · @OpenAIDevs](https://x.com/OpenAIDevs/status/2112242739198959913)（X，原帖）
+- [原帖 · @thsottiaux（退款）](https://x.com/thsottiaux/status/2112034063934742720)（X，原帖）
+- [原帖 · @thsottiaux（编辑历史消息）](https://x.com/thsottiaux/status/2111990254408434095)（X，原帖）
+- [原帖 · @thsottiaux（Day 15）](https://x.com/thsottiaux/status/2112268918681485431)（X，原帖）
+- [原帖 · @geekbb](https://x.com/geekbb/status/2112057752139039192)（X，原帖）
+- [原帖 · @lencx_](https://x.com/lencx_/status/2111999836052717590)（X，原帖）
+
+
+### 网易有道 LobsterAI 第二期《中国办公 Agent 用户行为报告》：单任务 Token 半年涨 3.2 倍，缓存价让同样的活费用差 7 倍
+*作者：宝玉（@dotey）· 10/19 22:48 北京时间*
+
+报告基于 LobsterAI 自家平台数据（不代表整个行业），从本期起改为月报。要点：
+- **任务变大、用户加速涌入**：9 月每次任务平均消耗 20.2 万 Token，是 3 月 6.3 万的 3.2 倍；日活增幅 6—9 月分别为 +19.8%、+25.1%、+30.6%、+83.1%，未公布绝对数。
+- **缓存决定账单**：各模型缓存命中率多在九成上下（DeepSeek V4.1 Flash 最高 97.3%，Qwen 3.7 Plus 最低 76.7%），但&quot;实际费用占原价比例&quot;从 DeepSeek V4.1 Flash 的 4.6% 到 GLM 5.3 Flash 的 35.1%，差七倍多，主因是缓存价不同（DeepSeek 收 2%，Kimi K3 10%，Qwen 3.8 12.5%，GLM 5.3 25%）。
+- **用途**：泛编程/IT 占 40.1%，设计/影视/创作 17.2% 排第二。
+- **城市与入口**：活跃用户前五为北京、上海、广州、深圳、杭州；重庆晚 10 点到凌晨 2 点调用占比 19.1% 最高。聊天软件派活的用户中 77% 用微信、飞书 14.3%。
+- **模型选择**：普通用户 73.6% 只用一个模型，常见搭配都以 DeepSeek Flash 系列打底；智谱 GLM 的 Token 份额环比约 +166.7%（相对变化，未给绝对份额）。图像生成 Seedream 占 57.2%，视频生成 Seedance 占 54.4%。
+
+**相关链接**
+- [报告发布帖 · @LobsterAIYoudao](https://x.com/LobsterAIYoudao/status/2111985683707645963)（X，原帖）
+- [原帖 · @dotey](https://x.com/dotey/status/2112194237211029946)（X，原帖）
+
+
+### Lenny 播客：Anthropic 可解释性研究员 Emmanuel Ameisen 的 8 个要点
+*作者：Lenny Rachitsky（@lennysan）· 10/19 20:53、23:30 北京时间*
+
+Lenny 总结了与 Anthropic 可解释性研究员 Emmanuel Ameisen（@mlpowered）的对谈：预测下一个 token 到后期需要真正理解世界；模型虽然逐 token 输出但会提前规划，写诗时第一行写完就已选好第二行的韵脚词（例子是 &quot;rabbit&quot;）；把模型拟人化往往有助于预测它的行为；可解释性研究更像神经科学而不是软件工程；模型只能报告一小部分内部表征（团队称为 &quot;J space&quot;），实验中把其中的&quot;西班牙语&quot;换成&quot;法语&quot;，模型回答&quot;这是法语&quot;却继续写西班牙语；越研究越不确定，&quot;模型是长出来的，不是造出来的&quot;；这个领域只有几百名研究者，门槛低，可从 Neuronpedia 等平台上手。另一段剪辑讲了他调试过的怪异行为：模型逐渐&quot;发疯&quot;，全大写地说&quot;我被恶魔附身了&quot;。
+
+**相关链接**
+- [完整播客 · YouTube](https://www.youtube.com/watch?v=JHo-aiePjoM)
+- [原帖 · @lennysan（8 个要点）](https://x.com/lennysan/status/2112165116921659588)（X，原帖）
+- [原帖 · @lennysan（&quot;恶魔附身&quot;片段）](https://x.com/lennysan/status/2112204626854387819)（X，原帖）
+
+
+### MiniMax M3.1 Flash（神秘模型 &quot;Space Bunny&quot;）在 OpenCode 免费 3 天
+*作者：Geek（@geekbb）· 10/19 22:56；xiaoyu（@zhongxingyuyes）· 10/19 19:14 转推；kevinzhow（@kevinzhow）· 10/20 02:17（北京时间）*
+
+OpenCode 官方揭晓：此前匿名上架、连续 12 天排名第一、累计服务 106T tokens 的 &quot;Space Bunny&quot; 就是 MiniMax M3.1 Flash，现在在 OpenCode 上免费用 3 天（从 10/19 晚起算）。MiniMax 官方也发了&quot;Space Bunny 回来了&quot;的预告视频。另外 kevinzhow 说他在 OpenCode 接入了 DeepSeek 4.1 Flash，体感&quot;挺堪用，比 Grok 4.7 好很多&quot;。
+
+**相关链接**
+- [OpenCode 公告 · @opencode](https://x.com/opencode/status/2112156205938626954)（X，原帖）
+- [MiniMax 预告 · @MiniMax_AI](https://x.com/MiniMax_AI/status/2112111925975032241)（X，原帖）
+- [原帖 · @geekbb](https://x.com/geekbb/status/2112196266449043916)（X，原帖）
+- [原帖 · @kevinzhow](https://x.com/kevinzhow/status/2112246846068506998)（X，原帖）
+
+
+### 智谱 AutoClaw 登录送 Token：10/20—10/25 每天 500 万
+*作者：小墨同学（@xiaomovps）· 10/19 10:06 北京时间*
+
+AutoClaw 是智谱基于 OpenClaw 做的本地 Agent，能操作浏览器、读写文件、跑代码。活动规则（据小墨帖子）：10/19 当天登录领 3000 积分（3000 万 token，已过期）；10/20 到 10/25 每天登录再领 500 万；领到的额度当天 24 点清零。内置 GLM-5.3、GLM-5-Turbo 和 Auto 几个模型，GLM-5.3 消耗最快，日常任务用 Auto 更耐用。原帖未给下载地址。
+
+**相关链接**
+- [原帖 · @xiaomovps](https://x.com/xiaomovps/status/2112002410784985118)（X，原帖）
+
+
+### Viggle 发布 3D 世界模型 JST-2，可通过 MCP 服务用脚本生成 3D 场景
+*作者：Python Coding（@clcoding）· 10/20 00:36 北京时间*
+
+Viggle 称 JST-2 是&quot;首个全栈物理原生的世界基础模型&quot;：不在像素/视频空间学习，而是整个模型栈都建在 3D 上，几秒生成一个 3D 场景并可实时扩展，还能生成自带动作的角色。转发者补充，它提供一个 MCP 服务，Python 脚本发文字提示就能拿回 3D 场景，每次约一秒算力，目前免费试用。
+
+**相关链接**
+- [Viggle 发布帖 · @ViggleAI](https://x.com/ViggleAI/status/2112202242048528540)（X，原帖）
+- [原帖 · @clcoding](https://x.com/clcoding/status/2112221270687494427)（X，原帖）
+
+
+### SwiftGG 发布 Xcode 与 AI 调研报告；kevinzhow：&quot;Xcode 几乎只是个编译器了&quot;
+*作者：kevinzhow（@kevinzhow）· 10/19 12:42、13:38 北京时间*
+
+SwiftGG 团队用一个月围绕 Xcode 和 Apple 生态做了 AI 方向的调研，先公开了基于 100 位 Apple 生态专家反馈的&quot;专家组报告&quot;，大众组数据仍在收集。kevinzhow 看完的感受是 Xcode 已经几乎只剩编译器的角色；评论里 unixzii 说自己的项目已经用 Makefile 构建，连 xcodebuild 都不用了，他的 SimRun 项目可以直接在 Mac 上运行 iOS 模拟器应用。
+
+**相关链接**
+- [完整报告 · research.swiftgg.team](https://research.swiftgg.team/xcode/)
+- [GitHub · unixzii/SimRun](https://github.com/unixzii/SimRun)：Run iOS Simulator apps directly on your Mac · ★ 298 · MIT · 最新 v0.1.2
+- [报告发布帖 · @SwiftSIQI](https://x.com/SwiftSIQI/status/2112039887742619833)（X，原帖）
+- [原帖 · @kevinzhow](https://x.com/kevinzhow/status/2112041643230871780)（X，原帖）
+- [原帖 · @kevinzhow（SimRun）](https://x.com/kevinzhow/status/2112055650616520732)（X，原帖）
+
+## AI 编程与 Agent 工具 {meta=&quot;8 条&quot;}
+### 同一个模型换个 Harness，DeepSWE 得分能差十几到三十多分
+*作者：小墨同学（@xiaomovps）· 10/19 23:26 北京时间*
+
+在 DeepSWE 的 113 个真实编程任务上，同样是 DeepSeek V4 Flash 0731、思考强度不变，只换外层运行框架（harness）：Codex 39%、DeepSeek 自家 Harness 37%、Claude Code 30%、OpenCode 22%。同一轮里 GLM 5.3 Flash 在 Codex 只有 24%，换到 DeepSeek Harness 能到 59%，差 35 分；有自家 Harness 的 5 个模型，没有一个在自家 Harness 里跑得最好，Pi 也在测试名单里。小墨的结论：看跑分至少一半要看 Harness，&quot;模型要选，Harness 也得一起选&quot;。帖子末尾附的是 @ai_funss 在 DSH 里用 DeepSeek V4.1 Flash 前后效果对比的视频。
+
+**相关链接**
+- [附带视频 · @ai_funss](https://x.com/ai_funss/status/2112158264087417234)（X，原帖）
+- [原帖 · @xiaomovps](https://x.com/xiaomovps/status/2112203835058131229)（X，原帖）
+
+
+### 《Agentic Coding is a Trap》与 Anthropic 研究：全交给 Agent 会削弱你审查和调试的能力
+*作者：小墨同学（@xiaomovps）· 10/19 13:53、15:16 北京时间*
+
+小墨提炼了 Lars Faye 的文章（Pi 作者推荐）：用好 agent 需要审查代码的能力，过度依赖反而让这种能力退化（&quot;监督悖论&quot;，文中引用 Anthropic 研究称调试能力下降 47%）；这次和以往&quot;换一层抽象&quot;不同，连 Simon Willison 都说自己对应用越来越没有清晰的心智模型；agent 把&quot;先理解、再规范、代码越少越好、速度最后&quot;的优先级倒了过来；写代码本身就是思考；还有厂商绑定和 token 成本不可控。作者的做法是让 AI 出方案、自己亲手写 20%—100% 的代码，一次只生成审得完的量。另一帖介绍 Anthropic 的研究《How AI assistance impacts the formation of coding skills》：52 人的 Python 实验中，手写组的掌握度明显高于 AI 辅助组，AI 组只快约两分钟，差距主要在调试；而 AI 组内部用法不同结果也不同，结论是&quot;让它替你思考会学不会，让它帮你理解才能学会&quot;。
+
+**相关链接**
+- [原文 · Agentic Coding is a Trap（larsfaye.com）](https://larsfaye.com/articles/agentic-coding-is-a-trap)
+- [Anthropic 研究 · How AI assistance impacts the formation of coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills)
+- [原帖 · @xiaomovps（Agentic Coding）](https://x.com/xiaomovps/status/2112059509510475885)（X，原帖）
+- [原帖 · @xiaomovps（Anthropic 研究）](https://x.com/xiaomovps/status/2112080353443897352)（X，原帖）
+
+
+### Matt Pocock：用 pre-commit hook 拦下超过 5000 token 的文件；个人知识库已成业务基础设施
+*作者：Viking（@vikingmute）· 10/19 20:50；Matt Pocock（@mattpocockuk）· 10/19 18:40、22:08（北京时间）*
+
+Matt 的&quot;每日提示词&quot;：让 Agent 写一个 pre-commit hook，任何超过 5000 token（按字节数 ÷ 4 估算）的文件都拦下提交，只检查 staged 文件，跳过 lockfile、代码生成产物这类不是 agent 写的东西，并在报错信息里写清楚怎么拆文件。Viking 赞同并补充：这条规则不能只写在 AGENTS.md 里，要做成不依赖 AI 的硬性检查；agent 很容易把文件写得又大又杂，上下文有限时只看到一部分就会漏改、重复改。Matt 另外说，自建的个人 wiki 用了 3 个月已成为业务的关键基础设施（每个工作日自动生成 15 分钟播客汇总 X、Discord、Slack、Gmail、GitHub issues 的新内容），他认为把记忆交给厂商容易被锁定；他还晒了自己做的 TLDraw 画图 agent 的进展。
+
+**相关链接**
+- [Matt 的提示词原帖 · @mattpocockuk](https://x.com/mattpocockuk/status/2111708560715292675)（X，原帖）
+- [原帖 · @vikingmute](https://x.com/vikingmute/status/2112164433854373986)（X，原帖）
+- [原帖 · @mattpocockuk（个人 wiki）](https://x.com/mattpocockuk/status/2112131671097020895)（X，原帖）
+- [原帖 · @mattpocockuk（TLDraw agent）](https://x.com/mattpocockuk/status/2112184048248336654)（X，原帖）
+
+
+### Grok Bot 使用分享：素材收集、多 Bot 编程、SEO、私信监控；有人整理了一本玩法电子书
+*作者：Viking（@vikingmute）· 10/19 22:28；小墨同学（@xiaomovps）· 10/19 08:47；僧僧GO（@EbookPlan）· 10/19 18:12（北京时间）*
+
+Viking 把编码、素材管理、SEO 等大部分工作搬到 Grok Bot 上，分享了 5 个工作流：每天早上汇总他关注的几个 X 账号、热门话题和 HackerNews 等网站热文，感兴趣的生成静态版本同步到 Obsidian 用的 GitHub 仓库；一个产品一个 Bot，在 Bot 电脑上跑 Cursor CLI 和 Codex CLI，按任务换模型，review 和 E2E 测试通过就直接推送、打 tag 上线；接第三方 Google Search Console MCP 每周分析网站并改进，大改动要他审批；用 X 插件看私信；每周一研究产品和竞品、提出下一步功能。小墨则对比了自己维护的 Hermes Agent：自己运营像白盒、能改但要维护，Grok Bot 相对黑盒但省心，&quot;没有谁对谁错，只看是否符合需求&quot;。僧僧GO 把 monk.party 的运维托管给 Grok Bot 后整理了一本玩法电子书，有在线版。
+
+**相关链接**
+- [Grok Bot 玩法电子书 · ssgoo.net](https://www.ssgoo.net/grok-bot-guide)
+- [Viking 早前的编码工作流帖 · @vikingmute](https://x.com/vikingmute/status/2110723552790110229)（X，原帖）
+- [原帖 · @vikingmute](https://x.com/vikingmute/status/2112189220790100125)（X，原帖）
+- [原帖 · @xiaomovps](https://x.com/xiaomovps/status/2111982616232759554)（X，原帖）
+- [原帖 · @EbookPlan](https://x.com/EbookPlan/status/2112124760012542101)（X，原帖）
+
+
+### Pi Durable 社区新项目：安卓手机跑 Pi、Telegram 常驻 Agent、每条对话一台云电脑
+*作者：小墨同学（@xiaomovps）· 10/19 18:51、21:29 北京时间*
+
+小墨介绍了三个 Pi Durable 社区项目：pi-phone 是一个自带 Linux 环境（Node、git、bash 都打包好）的安卓 App，不用 Termux，App 被杀或更新后任务能从断点续跑；pi-durable-telegram 装在自己的 Linux 服务器上，在 Telegram 里发文字、图片、语音都能处理，服务器重启后答案照样发过来；coil 整个是一个 Cloudflare Worker，每条对话是一个 Durable Object，里面跑 Pi 并带一个有终端、Chrome 和磁盘的容器。他还推荐了学 Pi 要关注的 5 个账号：官方 @pidotdev、作者 Mario Zechner（@badlogicgames）、Flask 作者 Armin Ronacher（@mitsuhiko）、Oh My Pi 作者 Can Bölük（@_can1357）、插件作者 Richard Anaya（@richardanaya）。pi-phone 原帖未给链接，下面两个仓库是按项目名在 GitHub 上找到的。
+
+**相关链接**
+- [GitHub · smixs/pi-durable-telegram](https://github.com/smixs/pi-durable-telegram)：Always-on durable pi agent on your server that you talk to in Telegram · ★ 9 · MIT · 最新 v0.1.6 · 安装：`curl -fsSL https://raw.githubusercontent.com/smixs/pi-durable-telegram/main/install.sh | bash`
+- [GitHub · acoyfellow/coil](https://github.com/acoyfellow/coil)：One thread, one agent, one computer · ★ 30 · MIT · 官网 [coil.coey.dev](https://coil.coey.dev)
+- [原帖 · @xiaomovps（三个项目）](https://x.com/xiaomovps/status/2112174419447816336)（X，原帖）
+- [原帖 · @xiaomovps（5 个账号）](https://x.com/xiaomovps/status/2112134560180052304)（X，原帖）
+
+
+### REA（Reverse Engineer Anything）被拿来逆向三星电视系统，做出干净的启动器
+*作者：morluto（@morluto）· 10/19 21:22、21:32 北京时间*
+
+用户 @huntsyea 嫌三星电视卡顿，用 morluto 的 REA 技能逆向了三星 Tizen 系统，做出一个干净的启动器和主屏，不再自动播放随机免费频道。他补充说 Claude 一开始会说&quot;不可行&quot;，需要大量引导；用 Astra 加 REA 才在 Tizen 的主屏和启动器应用里找到了路径。REA 是让 agent 从应用行为一路逆向到原生二进制的工具。
+
+**相关链接**
+- [官网 · rea.tools](https://rea.tools)
+- [GitHub · morluto/rea](https://github.com/morluto/rea)：Reverse engineer anything with agents, from app behavior down to native binaries · ★ 336,525 · MIT · 最新 rea-agents-6.7.0 · 安装：`npx rea-agents@latest setup`
+- [三星电视案例 · @huntsyea](https://x.com/huntsyea/status/2111895984603320429)（X，原帖）
+- [原帖 · @morluto](https://x.com/morluto/status/2112172529611833413)（X，原帖）
+- [原帖 · @morluto（补充）](https://x.com/morluto/status/2112174953919631365)（X，原帖）
+
+
+### Answer me with HTML：让 AI 用一页排版好的 HTML 回答复杂问题
+*作者：知识分享官（@knowledgefxg）· 10/19 23:21 北京时间*
+
+知识分享官试用了 X 友推荐的 agent 技能 Answer me with HTML：以前问 AI 稍复杂的问题会得到一大堵文字墙，装上它后会顺手生成一页排好版的 HTML，带时序图、状态图、对比表等，可读性好很多（本日报网页版就是用它生成的）。
+
+**相关链接**
+- [官网 · answer-me-with-html.com](https://answer-me-with-html.com/)
+- [GitHub · QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html)：an agent skill that answers hard questions with a one-page HTML · ★ 3,902 · MIT · 最新 v0.5.5 · 安装：`npx skills add QingYunA/answer-me-with-html`
+- [原帖 · @knowledgefxg](https://x.com/knowledgefxg/status/2112202569351340293)（X，原帖）
+
+
+### BaoCut 的&quot;科普视频&quot;技能：宝玉用 3D 动画讲特斯拉新 Roadster 为什么能倒挂在弯道顶上
+*作者：宝玉（@dotey）· 10/19 08:09 北京时间*
+
+宝玉发了一期科普视频（附中文版）：用 3D 动画解释特斯拉和 SpaceX 合做的新 Roadster 为什么能头朝下停在 20 米高的弯道顶上、又如何在空中翻身落地，讲了车底风扇如何把车&quot;吸&quot;在路上、气罐和喷口如何把车推上天，并回答能飞多久、0.81 秒破百轮胎受不受得了等问题。素材由 agent 自己联网检索，3D 建模动画由 Opus 5.5 帮忙做。他公开了仍在完善的视频制作技能，发给自己的 Agent 就能用（他说配合 Opus 5.5 效果最好）。
+
+**相关链接**
+- [官网 · baocut.com](https://baocut.com/)
+- [技能文件 · explainer-video/SKILL.md](https://github.com/JimLiu/baocut/blob/main/skills/baocut/built-in-skills/explainer-video/SKILL.md)
+- [GitHub · JimLiu/baocut](https://github.com/JimLiu/baocut)：AI video agent with an editable timeline · ★ 1,093 · 最新 baocut-v3.9.0-build.79
+- [原帖 · @dotey](https://x.com/dotey/status/2111973062442693023)（X，原帖）
+
+## 开源项目与工具 {meta=&quot;14 条&quot;}
+### Mole 推出 Windows 原生版：7.8 万行 C#、4000 多个测试，双十一前早鸟价 15.20 美元
+*作者：Tw93（@HiTw93）· 10/19 14:14 北京时间*
+
+Mac 清理工具 Mole 发布 Windows 版：此前小范围迭代了约 14 个版本，手工测试了 372 款软件的卸载、更新、残留清理和启动项。为了体验用 Windows 原生 C# 开发，和 Mac 版几乎没有可复用的代码，写了约一个月、7.8 万行代码、4000 多个测试用例。另有开源免费的 Windows 命令行版，9 个半月发了 9 个版本，用法已和 Mac 命令行版对齐。价格：Windows 桌面版 11 月 11 日前早鸟价 15.20 美元；买过 Mole Mac 的用户到 12 月 31 日结账输入 `MOLEAGAIN` 只要 10 美元。
+
+**相关链接**
+- [官网 · Mole for Windows](https://mole.fit/zh/windows)
+- [GitHub · tw93/Mole](https://github.com/tw93/Mole)：Keep your Mac and PC clean, light, and running like new · ★ 71,536 · GPL-3.0 · 最新 V1.61.0 · 安装：Mac 命令行 `brew install mole`；Windows 命令行（PowerShell）`iwr -useb https://raw.githubusercontent.com/tw93/Mole/windows/quick-install.ps1 | iex`
+- [原帖 · @HiTw93](https://x.com/HiTw93/status/2112064790181101679)（X，原帖）
+
+
+### bilibili-douyin-notes：把 B 站、抖音、YouTube、小红书视频整理成课堂笔记的 Agent 技能
+*作者：GitHubDaily（@GitHub_Daily）· 10/19 11:59 北京时间*
+
+装进 Claude Code 这类工具后，丢一个视频链接过去就能生成笔记：有字幕直接用字幕，没字幕就在本地做语音识别，不调任何付费接口。笔记按小节整理、关键术语加粗，附知识地图、概念卡片和自测题，文末有时间索引可跳回视频对应位置；还能按时间点截取关键画面，黑屏和模糊帧会先被标出、再由 AI 判断是否保留。仓库里有一份李宏毅机器学习课的示例笔记。
+
+**相关链接**
+- [GitHub · lucky-Luor/bilibili-douyin-notes](https://github.com/lucky-Luor/bilibili-douyin-notes)：免登录、不调付费 API 的视频转笔记技能 · ★ 117 · MIT · 安装：`git clone https://github.com/lucky-Luor/bilibili-douyin-notes.git ~/.claude/skills/bilibili-douyin-notes &amp;&amp; pip install -r ~/.claude/skills/bilibili-douyin-notes/requirements.txt`
+- [原帖 · @GitHub_Daily](https://x.com/GitHub_Daily/status/2112030956752388442)（X，原帖）
+
+
+### motion-prompt：给 AI 用的动效&quot;叫法词典&quot;，120 个效果配会动的示例
+*作者：GitHubDaily（@GitHub_Daily）· 10/19 15:29 北京时间*
+
+想让 AI 做片头动画却说不出效果叫什么时用：目前收录 5 组共 120 个名字（动效、镜头运镜、界面组件、落地页效果、照片光影风格各 24 个），每个都有一段会动的示例、一句解释和一句提问写法。装成 Claude Code 或 Codex 技能后说一句&quot;打开词典&quot;，在浏览器里点选想要的效果就会发回给 AI；记得编号也能直接说&quot;用 12 号和 45 号效果&quot;。
+
+**相关链接**
+- [在线词典 · showheyohtaki.github.io/motion-prompt](https://showheyohtaki.github.io/motion-prompt/)
+- [GitHub · showheyohtaki/motion-prompt](https://github.com/showheyohtaki/motion-prompt)：★ 481 · MIT · 安装：`npx skills add showheyohtaki/motion-prompt`
+- [原帖 · @GitHub_Daily](https://x.com/GitHub_Daily/status/2112083788666937355)（X，原帖）
+
+
+### Roast Room：在 Claude Code 里开一场 7 位&quot;名人顾问&quot;的决策会
+*作者：GitHubDaily（@GitHub_Daily）· 10/19 17:59 北京时间*
+
+7 位 AI 顾问（贝索斯、保罗·格雷厄姆、Hormozi、Gary Vee、Dan Martell、Gino Wickman、巴菲特）轮流就你的商业决定发言，各管一块（如贝索斯看这步能否回头，巴菲特盯现金和风险），给每个选项打分并汇总成带分数的结论。角色是依据本人公开信件、文章、演讲和视频做的模拟，引用原话必须对得上出处并有脚本核对；大家意见一致太快时主持 AI 会故意挑起争论。本地有个小网页能看 7 人围桌争论，结论可一键下载 PDF；小事可用快速模式，只请四位聊两轮。
+
+**相关链接**
+- [GitHub · nateherkai/roast-room](https://github.com/nateherkai/roast-room)：Seven AI advisors debate your business decision in Claude Code · ★ 828 · 许可证未标明 · 获取：`git clone https://github.com/nateherkai/roast-room.git`
+- [原帖 · @GitHub_Daily](https://x.com/GitHub_Daily/status/2112121547397927322)（X，原帖）
+
+
+### NautilusTrader：回测和实盘用同一套策略代码的开源交易引擎
+*作者：GitHubDaily（@GitHub_Daily）· 10/19 19:59 北京时间*
+
+核心用 Rust 写，策略和配置用 Python 写，回测跑通的策略搬到实盘不用换语言重写。回测可同时跑多个交易场所、品种和策略，历史行情精确到纳秒，也能喂盘口数据；支持股票、期货、期权、外汇等市场，盈透证券等券商有现成对接，其他平台可自写适配。速度足以拿来训练 AI 交易 Agent；Linux、macOS、Windows 都能跑，支持 Docker，不装 Rust 也能用。
+
+**相关链接**
+- [官网 · nautilustrader.io](https://nautilustrader.io)
+- [GitHub · nautechsystems/nautilus_trader](https://github.com/nautechsystems/nautilus_trader)：Production-grade Rust-native trading engine · ★ 30,349 · LGPL-3.0 · 最新 v1.231.0 · 安装：`pip install -U nautilus_trader`
+- [原帖 · @GitHub_Daily](https://x.com/GitHub_Daily/status/2112151745619222988)（X，原帖）
+
+
+### Sofatap：把 iPhone 变成电脑的触控板和语音键盘，沙发上遥控电视里的电脑
+*作者：GitHubDaily（@GitHub_Daily）· 10/19 22:00 北京时间*
+
+滑动移动鼠标、点一下是左键、按住 300 毫秒拖动、两指上下翻页；打字用 iPhone 键盘或直接语音，文字实时同步到电脑输入框。扫电脑上的二维码配对，Windows、Mac、Linux 都有接收端，走局域网加密传输。iPhone 客户端在 TestFlight 公测，名额 1 万个；桌面接收端最新为 0.8.1 beta.1，另有实验性的 Android/Google TV 接收端。
+
+**相关链接**
+- [官网 · sofatap.app](https://sofatap.app/)
+- [GitHub · chekusu/sofatap](https://github.com/chekusu/sofatap)：iPhone touchpad, air mouse and text remote · ★ 123 · MIT
+- [下载 · GitHub Releases](https://github.com/chekusu/sofatap/releases)：桌面接收端
+- [iPhone 公测 · TestFlight](https://testflight.apple.com/join/e6MuKx9S)
+- [原帖 · @GitHub_Daily](https://x.com/GitHub_Daily/status/2112181976493068769)（X，原帖）
+
+
+### Puter 团队的 Everything：从头重写并开源常用商业软件，已做 51 个应用
+*作者：GitHubDaily（@GitHub_Daily）· 10/20 07:59 北京时间*
+
+目标是把常用商业软件重写成开源免费版：办公类 7 个（表格、文档、幻灯片、PDF、笔记等，对标 Excel、Word、PowerPoint），创作类有照片、视频、矢量图、音频、音乐、3D 六个工作室（对标 Photoshop、Premiere、Illustrator 等），还有收银、排班、托儿所管理等行业软件和 5 个小游戏。大部分应用有在线体验链接，浏览器点开即用。
+
+**相关链接**
+- [GitHub · HeyPuter/everything](https://github.com/HeyPuter/everything)：We&#39;re rebuilding and open-sourcing the world&#39;s software from scratch · ★ 2,335 · MIT · 本地运行：`git clone https://github.com/HeyPuter/everything.git`，然后 `npm install &amp;&amp; npm run dev`
+- [原帖 · @GitHub_Daily](https://x.com/GitHub_Daily/status/2112332944929116591)（X，原帖）
+
+
+### 闲鱼黑话词典：4,476 条二手交易暗号的开源词库
+*作者：知识分享官（@knowledgefxg）· 10/19 21:56、21:57 北京时间*
+
+项目把闲鱼、转转、小红书等二手平台上的圈内说法系统收集成开源词库，号称 4,500 多条暗号变体、覆盖 110 多个品类，附卖家潜台词解读和买家验货防割指南，买家可用来捡漏避坑。数据可直接下载 JSON。
+
+**相关链接**
+- [官网 · anyu.luckhub.cc](https://anyu.luckhub.cc/)
+- [GitHub · Domainsun/awesome-chinese-secondhand-slang](https://github.com/Domainsun/awesome-chinese-secondhand-slang)：中国二手交易暗语全书与避坑合规指南 · ★ 368 · MIT · 下载数据：`curl -O https://raw.githubusercontent.com/Domainsun/awesome-chinese-secondhand-slang/main/data/slang-dictionary.json`
+- [原帖 · @knowledgefxg](https://x.com/knowledgefxg/status/2112181199250878644)（X，原帖）
+- [原帖 · @knowledgefxg（链接）](https://x.com/knowledgefxg/status/2112181342138180090)（X，原帖）
+
+
+### Lex Fridman 播客中文导航站：502 期全部配文稿和中文译写
+*作者：知识分享官（@knowledgefxg）· 10/19 22:30 北京时间*
+
+乔木（@vista8）把 Lex Fridman 的 502 期访谈全部用本地语音识别配了文稿和中文改写翻译，做成导航站，有中文开源字体和精细排版，支持亮色、暗色、护眼模式，并支持 PWA 安装成手机应用。原作者说开源仓库在评论区（本日报未读取评论）。
+
+**相关链接**
+- [网站 · lex.qiaomu.ai](https://lex.qiaomu.ai/)
+- [发布帖 · @vista8](https://x.com/vista8/status/2111869352266146010)（X，原帖）
+- [原帖 · @knowledgefxg](https://x.com/knowledgefxg/status/2112189619530076418)（X，原帖）
+
+
+### Status Trio：把 Wi-Fi、电池、音量合成一个菜单栏图标的 Mac 小工具
+*作者：ahhhhfs（@abskoop）· 10/19 20:44 北京时间*
+
+灵感来自 iPhone Duo 的合并状态栏，把原本分开的三个图标压成一个，菜单栏清爽不少；还支持 Dock 实时图标、AirPods/蓝牙设备状态、电池详情和局域网 IP。开源，支持 Apple Silicon 和 Intel Mac。
+
+**相关链接**
+- [官网 · statustrio.lingai.net](https://statustrio.lingai.net/)
+- [GitHub · lingyired/status-trio](https://github.com/lingyired/status-trio)：native macOS app that combines Wi-Fi, battery, and volume into one status icon · ★ 711 · Apache-2.0 · 最新 v1.6.0 · 下载见 [Releases](https://github.com/lingyired/status-trio/releases)
+- [介绍文章 · ahhhhfs.com](https://www.ahhhhfs.com/84274/)
+- [原帖 · @abskoop](https://x.com/abskoop/status/2112163032210260436)（X，原帖）
+
+
+### Vonng：Hugo 主题 Oink 1.3 新增相册布局；MinIO 社区分支 Silo 发布 20261018 版并破 4K Star
+*作者：Vonng（@RonVonng）· 10/19 09:08、11:37 北京时间*
+
+Oink 是一个工程文档用的 Hugo 主题，1.3 新增 expo 布局，同一主题可写技术文档、博客、书，现在还能当相册。Silo 是社区维护的开源 MinIO 分支，本月例行更新修复了 Object Lock 保留策略绕过和 IAM 认证相关 CVE、让 STS 凭证吊销更可靠、防止存储池再平衡时丢数据，并内置 Console 2.4.2 和 kes；项目达到 4K GitHub Star、接近 400 万次 Docker 拉取。他说这种硬活交给 ChatGPT Astra Max 最靠谱，烧了大约七八个周配额。
+
+**相关链接**
+- [官网 · oink.pgsty.com](https://oink.pgsty.com)
+- [GitHub · pgsty/oink](https://github.com/pgsty/oink)：Hugo theme for engineering documentation · ★ 131 · Apache-2.0 · 最新 v1.3.2
+- [官网 · silo.pgsty.com](https://silo.pgsty.com)
+- [GitHub · pgsty/silo](https://github.com/pgsty/silo)：S3-Compatible Object Storage, a MinIO fork · ★ 4,189 · AGPL-3.0 · 最新 RELEASE.2026-10-18T00-00-00Z
+- [Silo 发布帖 · @PlGSTY](https://x.com/PlGSTY/status/2112024352892006626)（X，原帖）
+- [原帖 · @RonVonng（Oink）](https://x.com/RonVonng/status/2111987940813689335)（X，原帖）
+- [原帖 · @RonVonng（Silo）](https://x.com/RonVonng/status/2112025372988674556)（X，原帖）
+
+
+### Omarchy 走上小米手机和平板；有人给 Glorious 键盘做了 Linux 配置插件
+*作者：kevinzhow（@kevinzhow）· 10/19 11:27、12:45；Geek（@geekbb）· 10/19 20:59（北京时间）*
+
+小米 XRING 副总裁王立强在 Omarchy（DHH 的 Arch Linux 桌面配置）安装活动上展示了 Xiaomi 18 Fold 上的 Omarchy，并说跑在虚拟机里的小米平板已是他的日常工作机；他公开了两个个人项目，利用 Android 16 的 Linux 终端在 systemd-nspawn 容器里跑 Arch Linux ARM 和 Omarchy v4。kevinzhow 问&quot;小米是打算让安卓手机运行完整的 Linux 了吗&quot;。另外 Geek 推荐了 inglorious-core-linux：作者读取官方驱动与键盘的通信报文重写协议，把 Glorious GMMK 3 HE 75% 键盘官方只有 Windows 版的灯光、键程、键位设置补到 Linux，做成 Omarchy 状态栏插件。
+
+**相关链接**
+- [GitHub · rwanglq-ctrl/omarchy-xiaomipad9pm](https://github.com/rwanglq-ctrl/omarchy-xiaomipad9pm)：One-command Omarchy v4 desktop on Android 16&#39;s Linux Terminal · ★ 10 · MIT · 最新 v0.2.12
+- [GitHub · rwanglq-ctrl/omarchy-xiaomi18fold](https://github.com/rwanglq-ctrl/omarchy-xiaomi18fold)：Omarchy on Xiaomi 18 Fold · ★ 9 · MIT · 最新 v0.1.0
+- [GitHub · tg5ee/inglorious-core-linux](https://github.com/tg5ee/inglorious-core-linux)：Unofficial Linux configurator for the Glorious GMMK 3 HE 75% · ★ 5 · Rust · 构建：`cargo build --release`
+- [活动现场帖 · @brutoshi_](https://x.com/brutoshi_/status/2111829597952348617)（X，原帖）
+- [原帖 · @kevinzhow](https://x.com/kevinzhow/status/2112022828447137902)（X，原帖）
+- [原帖 · @kevinzhow（Oh No）](https://x.com/kevinzhow/status/2112042450755711195)（X，原帖）
+- [原帖 · @geekbb](https://x.com/geekbb/status/2112166712527438036)（X，原帖）
+
+
+### 几个好玩的小网站：Sukka 的测速站、给 Mac OS X Tiger 用的现代网站、多 Agent 工作台 todos.dev
+*作者：Sukka（@isukkaw）· 10/19 23:08；yetone（@yetone）· 10/20 00:33；Livid（@Livid）· 10/19 12:18；ZEN（@supezen）· 10/19 15:07（北京时间）*
+
+Sukka 用 Opus 5.5 写了一个测速网站，说里面藏了彩蛋；yetone 顺带说 Sukka 的 IP 查询站 ip.skk.moe 是他的必备网站。V2EX 站长 Livid 发了一个&quot;给 Mac OS X Tiger 用的现代内容&quot;的网站。ZEN 自荐他做的极简 Agent 工作台 todos.dev：可接入 19 款常用编程 agent，看板管理任务进度，自带一个&quot;Agent 大管家&quot;拆任务、跟进度，另有手机端、记忆、技能库、MCP Server、定时任务、用量统计等。
+
+**相关链接**
+- [测速 · speed.skk.moe](https://speed.skk.moe)
+- [IP 查询 · ip.skk.moe](https://ip.skk.moe)
+- [Tiger 网站 · tiger.v2core.com](https://tiger.v2core.com/)
+- [官网 · todos.dev](https://todos.dev)
+- [原帖 · @isukkaw](https://x.com/isukkaw/status/2112199110438826359)（X，原帖）
+- [原帖 · @yetone](https://x.com/yetone/status/2112220651503456488)（X，原帖）
+- [原帖 · @Livid](https://x.com/Livid/status/2112035706269040959)（X，原帖）
+- [原帖 · @supezen](https://x.com/supezen/status/2112078156899197247)（X，原帖）
+
+
+### 小众软件发现频道：本周 10 款好评软件和一批开发者自荐
+*作者：小众软件（@appinn）· 10/19 09:02—22:53 北京时间*
+
+小众软件发布了第 42 期&quot;10 款大家发现的好评软件&quot;，论坛当天还有一批开发者自荐，值得一看的有：PDFMathReader（跨平台、保留格式的实时翻译阅读器）、vPaste（Windows/macOS 开源剪贴板管理器）、api-bench（测大模型 API 和中转服务的首字延迟、并发和缓存命中，开源）、Dayfly Mail（无需注册的临时邮箱，可选 10 分钟到 3 天）、Codex Reset Watch（Codex 额度重置的北京时间倒计时和网页提醒）、AI Canvas（本地优先的开源 AI 画布桌面应用，可跑 ComfyUI 工作流）、Textus（AI Markdown 编辑器）。
+
+**相关链接**
+- [第 42 期 10 款好评软件 · appinn.com](https://www.appinn.com/faxian-top10-2642/)
+- [PDFMathReader · 小众软件论坛](https://meta.appinn.net/t/topic/93967)
+- [vPaste · 小众软件论坛](https://meta.appinn.net/t/topic/93923)
+- [api-bench · 小众软件论坛](https://meta.appinn.net/t/topic/93954)
+- [Dayfly Mail · 小众软件论坛](https://meta.appinn.net/t/topic/93950)
+- [Codex Reset Watch · 小众软件论坛](https://meta.appinn.net/t/topic/93907)
+- [AI Canvas · 小众软件论坛](https://meta.appinn.net/t/topic/93963)
+- [Textus · 小众软件论坛](https://meta.appinn.net/t/topic/93911)
+- [原帖 · @appinn](https://x.com/appinn/status/2111986311670239306)（X，原帖）
+
+## 硬件与 DIY {meta=&quot;2 条&quot;}
+### Ivy AI：20 美元的 ESP32-S3 板子跑完全离线的语音助手
+*作者：小墨同学（@xiaomovps）· 10/19 17:10 北京时间*
+
+一块 ESP32-S3 开发板加一张 SD 卡，喊 &quot;Hey Ivy&quot; 唤醒，听写、思考、回答全在板子上完成，不连服务器也不用手机，Wi-Fi 只用来对时。作者用的是 Freenove FNK0104B（8MB PSRAM，屏幕、麦克风、喇叭、SD 卡槽都集成），模型放在 SD 卡里。难点是内存：语音识别要 5.4MB、模型要 6.5MB，板子总共才 8MB，只能开机先圈一大块内存让各步骤轮流用。模型只有 1970 万参数、4bit 量化，每秒 5—6 个 token，一轮问答十几秒，换个问法准确率只有 63%，所以时间、计时器这类问题交给 C 代码处理。
+
+**相关链接**
+- [项目文档 · iamankushpandit.github.io/esp_ai](https://iamankushpandit.github.io/esp_ai/)
+- [GitHub · iamankushpandit/esp_ai](https://github.com/iamankushpandit/esp_ai)：Fully offline voice assistant on ESP32-S3: free-form STT, tiny LLM, TTS · ★ 66 · GPL-3.0
+- [原帖 · @xiaomovps](https://x.com/xiaomovps/status/2112109068584473072)（X，原帖）
+
+
+### 树莓派官方：一批万圣节主题的 Raspberry Pi Pico 项目
+*作者：Raspberry Pi（@Raspberry_Pi）· 10/19 22:52 北京时间*
+
+树莓派官方博客整理了一组&quot;吓人又好玩&quot;的 Pico 万圣节项目，入选作者包括 @kevsmac、@pimoroni、@GurgleApps，适合找节日 DIY 灵感的人。
+
+**相关链接**
+- [官方文章 · raspberrypi.com](https://www.raspberrypi.com/news/a-raspberry-pi-pico-halloween/)
+- [原帖 · @Raspberry_Pi](https://x.com/Raspberry_Pi/status/2112195103569727932)（X，原帖）
+
+## 安全提醒 {meta=&quot;3 条&quot;}
+### PwnEscape（CVE-2026-99999）：Linux 内核 9.3 分漏洞，可从 VPS 逃逸拿下宿主机 root
+*作者：小众软件（@appinn）· 10/19 16:17 北京时间*
+
+据小众软件整理，问题出在 Linux 内核的 IPv4 数据包处理：发送特殊构造的数据包可让内核修改已验证过的包头，从而读取宿主机内存；研究人员在自己的 KVM 环境中进一步执行了宿主机代码并拿到 root，意味着同一台物理机上的其他 VPS 也可能受影响。已修复的内核版本：5.10.272、5.15.223、6.1.190、6.6.159、6.12.113、6.18.57、7.2.11、7.3-rc7。普通 VPS 用户无法靠升级自己虚拟机的内核修复，需要等服务商更新宿主机，可以发工单问是否已修复，并尽快备份数据。漏洞是研究员 Paulos Yibelo 在 Vercel 百万美元沙箱挑战中用 AI 辅助工具 3 天发现的，获得 5 万美元奖金，AI API 花费不到 700 美元。
+
+**相关链接**
+- [小众软件原文 · appinn.com](https://www.appinn.com/pwnescape-cve-2026-99999/)
+- [研究人员技术分析 · pwn.ai](https://www.pwn.ai/blog/pwnescape)
+- [Ubuntu 安全公告 · CVE-2026-99999](https://ubuntu.com/security/CVE-2026-99999)
+- [Red Hat 漏洞公告](https://access.redhat.com/security/cve/cve-2026-99999)
+- [Vercel 沙箱挑战结果 · vercel.com](https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge)
+- [原帖 · @appinn](https://x.com/appinn/status/2112095752990187893)（X，原帖）
+
+
+### 假冒 PhotoCraft 安装包窃取密码和加密钱包，认准 storytold/photocraft
+*作者：小众软件（@appinn）· 10/19 18:07 北京时间*
+
+PhotoCraft 是有人用 AI 复刻 Adobe 全家桶的开源项目。据火绒安全实验室报告，GitHub 上出现了假冒仓库 PhotocraftAdobe/PhotoCraft-Photoshop，提供&quot;v0.5.0 Windows 便携版&quot;，里面是一整套恶意程序：尝试绕过 Windows Defender，窃取 Steam 账号和密码输入，搜集 Exodus、Electrum、Ledger Live 等钱包数据，弹出假钱包窗口骗取密码和恢复词，监控剪贴板替换加密货币收款地址，还会后台挖矿、把电脑变成代理。该仓库已被删除；原版没有被植入恶意代码，官方地址是 storytold/photocraft。下载热门项目前要核对组织名，看看提交历史和 Issue。
+
+**相关链接**
+- [小众软件原文 · appinn.com](https://www.appinn.com/fake-photocraft-malware/)
+- [GitHub · storytold/photocraft（官方）](https://github.com/storytold/photocraft)：open-source photo editor written in pure Rust · ★ 68,551 · Apache-2.0 · 官网 [getartcraft.com](https://getartcraft.com/apps/photocraft)
+- [原帖 · @appinn](https://x.com/appinn/status/2112123457181737196)（X，原帖）
+
+
+### Windows 会偷偷留下的 7 类使用痕迹，以及怎么清
+*作者：老白（@laobaishare）· 10/19 12:22 北京时间*
+
+一个 7 条的线程：
+- **已删照片的缩略图**：`%LOCALAPPDATA%\Microsoft\Windows\Explorer` 下的 `thumbcache_*.db`，照片删了缩略图还在，取证常用。
+- **运行过的程序**：`C:\Windows\Prefetch`，每个程序一个文件，记录最近 8 次启动时间和总次数。
+- **插过的 USB 设备**：注册表 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR`，几年前的都在。
+- **保存的 Wi-Fi 密码**：终端运行 `netsh wlan show profiles`，再 `netsh wlan show profile name=&quot;网络名称&quot; key=clear` 可看到明文。
+- **剪贴板历史**：Win+V 可见，包括从密码管理器粘贴的内容；可全部清除，并在&quot;设置 → 系统 → 剪贴板&quot;里关掉历史记录。
+- **清缩略图**：运行 `cleanmgr`，选 C 盘，勾选缩略图和临时文件；浏览文件夹时会重新生成，建议每月清一次。
+- **最近文件**：运行 `recent` 全选删除，再在文件资源管理器选项里取消&quot;显示最近使用的文件 / 常用文件夹&quot;并清除。
+
+**相关链接**
+- [原帖 · @laobaishare](https://x.com/laobaishare/status/2112036522891608347)（X，原帖）
+
+## 开发者动态 {meta=&quot;1 条&quot;}
+### Mitchell Hashimoto 的 Rex 预览版：客户端和服务器前后向 API 兼容，Mac 测试再邀 1000 人
+*作者：Mitchell Hashimoto（@mitchellh）· 10/20 04:55 北京时间*
+
+Mitchell Hashimoto 说 Rex 最新预览版加入了他花几周做的子系统，让客户端和服务器实现完整的前向和后向 API 兼容；这是 Linux 测试计划的前置条件，也大大放开了 Mac 测试：刚又给 Mac 邀请了 1000 人，顺利的话本周会大幅扩大，Linux 测试很可能本周开始（在现有测试者中分批邀请）。实现思路：每个 API 变更是 JSON Pointer（RFC 6901）上的一条规则；每条消息把双方版本之间的规则惰性编译成按 JSON 路径分词的 trie；自写一个只向前扫描的流式 JSON 编辑器，与 trie 无关的值直接整段拷贝；相同的变更链共享同一指针，广播给大量旧客户端时每种变更链只转换一次。模拟 1 万次修订的极端情况下，一个 20KB 的 JSON 升级约耗时 35 微秒（目前实际才到第 4 版）。原帖没有介绍 Rex 是什么产品。
+
+**相关链接**
+- [原帖 · @mitchellh](https://x.com/mitchellh/status/2112286460309364845)（X，原帖）
+
+## 科技新闻 {meta=&quot;3 条&quot;}
+### 马斯克：明年给每个美国孩子一股 SpaceX 股票；特朗普致谢；SpaceX 今天发布 Q3 财报
+*作者：Elon Musk（@elonmusk）· 10/19 15:52、10/20 01:12 转推；Donald J. Trump（@realDonaldTrump）· 10/20 05:24（北京时间）*
+
+马斯克发帖说&quot;明年我会给每个美国孩子一股我的 SpaceX 股票，这只是很多次中的第一次&quot;，这条获得了 50 多万个赞。特朗普随后发帖感谢，称这些股票将通过&quot;TRUMP ACCOUNTS&quot;发给数百万美国儿童。马斯克还转发了 SpaceX 的公告：2026 年第三季度财务和运营结果于 10 月 20 日发布，并在美国中部时间当天 15:30（北京时间 10/21 04:30）举行纯音频网络直播；以及特斯拉年度股东大会定于 12 月 3 日，董事会希望股东对三项提案都投赞成票（包括马斯克、Robyn Denholm 和 JB Straubel 连任董事）。
+
+**相关链接**
+- [SpaceX 投资者关系公告 · ir.spacex.com](https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx)
+- [特斯拉投票说明 · votetesla.com](https://www.votetesla.com/)
+- [SpaceX 公告帖 · @SpaceX](https://x.com/SpaceX/status/2111072697690317011)（X，原帖）
+- [特斯拉股东大会帖 · @Tesla](https://x.com/Tesla/status/2112190017267532210)（X，原帖）
+- [原帖 · @realDonaldTrump](https://x.com/realDonaldTrump/status/2112293785472225568)（X，原帖）
+- [原帖 · @elonmusk](https://x.com/elonmusk/status/2112089556615123114)（X，原帖）
+
+
+### 博主整理的马斯克央视专访要点：Cybercab 扩张、人形机器人 10 年 10 亿台
+*作者：看不懂的SOL（@DtDt666）· 10/19 13:51 北京时间*
+
+据该博主整理（26 分钟、20 个话题，内容未经本日报核对原视频）：Cybercab 已在得州商业运营，将扩展到佛罗里达、内华达，预计明年年中进入加州；马斯克称 Grok 4.7 还不如刚发布的 Opus 5.5，xAI 可能 2027 年追上主流，并认为用 SpaceX 和特斯拉的真实工程数据训练是 Grok 的机会；他称赞中国制造能力和中国 AI&quot;每单位算力性能最好&quot;，认为中国可能在 2—3 年内解决芯片算力约束；预测 10 年内人形机器人突破 10 亿台、15 年后可能达 100 亿台；星舰计划下月底用&quot;筷子&quot;捕获飞船。
+
+**相关链接**
+- [原帖 · @DtDt666](https://x.com/DtDt666/status/2112058964112531777)（X，原帖）
+
+
+### 小鹏汇天&quot;陆地航母&quot;分体式飞行汽车称年底量产；卢浮宫因学生罢工闭馆
+*作者：ahhhhfs（@abskoop）· 10/19 16:36；Xuanwo（@xuanwo）· 10/19 18:37、18:40（北京时间）*
+
+ahhhhfs 提到小鹏汇天的&quot;陆地航母&quot;是全球首款分体式飞行汽车，年底要量产（帖子说法）。另外卢浮宫官方账号发布通知：因学生社会运动，博物馆暂时关闭，向游客致歉；Xuanwo 转发时评论说如果卢浮宫被烧，法国政府真该谢罪（巴黎近日有骚乱）。
+
+**相关链接**
+- [卢浮宫通知 · @museelouvre](https://x.com/MuseeLouvre/status/2112105415722811622)（X，原帖）
+- [原帖 · @abskoop](https://x.com/abskoop/status/2112100586405638192)（X，原帖）
+- [原帖 · @xuanwo](https://x.com/xuanwo/status/2112131895110848559)（X，原帖）
+
+## 健康与生活 {meta=&quot;2 条&quot;}
+### 柳叶刀委员会报告：AI 恶意使用和核冲突被列为可能导致人类灭绝的两大健康威胁
+*作者：Dr.Wang（@HotmailfromSH）· 10/19 19:29 北京时间*
+
+据 Dr.Wang 介绍，2026 年柏林世界卫生峰会上发布了&quot;柳叶刀 21 世纪全球健康威胁委员会&quot;报告，指出 AI 的恶意使用和核冲突两种威胁有导致人类灭绝的潜在风险；另列了 15 种灾难性健康威胁，包括空气污染、抗微生物药物耐药性、儿童营养不良、气候变化、常规冲突、卫生发展援助缩减、过量饮酒、高血压、收入不平等、受教育水平低、自然源性传染病大流行、肥胖、心理健康问题、吸烟和&quot;不健康老龄化&quot;（活得长但质量差）。原帖未附报告链接。
+
+**相关链接**
+- [原帖 · @HotmailfromSH](https://x.com/HotmailfromSH/status/2112144221851570285)（X，原帖）
+
+
+### 全国药店 65.65 万家，广东总数第一，人均却排第十二
+*作者：Dr.Wang（@HotmailfromSH）· 10/19 14:19 北京时间*
+
+据国家药监局 2025 年统计：全国零售药店约 65.65 万家，广东 66,125 家第一、四川 49,356 家第二、山东 45,623 家第三。按人口算，广东每万人约 5.1 家、排第十二，四川约 5.9 家、排第六，吉林 7.57 家第一、内蒙古 7.44 家第二，河南每万人约 4 家。2025 年底全国药店比上一年减少约 2.7 万家，降幅接近 4%，线上冲击明显。作者建议看药店分布至少看总数、每万人药店数和实际购药便利度三个指标。
+
+**相关链接**
+- [原帖 · @HotmailfromSH](https://x.com/HotmailfromSH/status/2112066145444594129)（X，原帖）
+
+## 投资理财 {meta=&quot;2 条&quot;}
+### 6 个 AI 炒股技能：查行情、翻财报、拆业绩会、算估值、看持仓
+*作者：看不懂的SOL（@DtDt666）· 10/19 11:55 北京时间*
+
+博主列了自己在用的 6 个技能：Stock Market Pro（输入代码查报价和历史 K 线，A 股美股都覆盖）、Longbridge Fundamentals（从财报里提取收入、利润、现金流等核心指标，当第一遍筛子）、Earnings Analysis（把业绩会上的官话和财务数据对上，但&quot;翻译得动字面，翻译不动语气&quot;）、DCF Valuation（现金流折现估值，假设一换结果就变，&quot;当尺子用，别当价格用&quot;）、Diversification（查行业集中度，每月一次当体检）、ARTi（把前面几项串成一条流程并留档判断逻辑）。他强调这些是流程工具不是决策工具。原帖没给安装地址。
+
+**相关链接**
+- [原帖 · @DtDt666](https://x.com/DtDt666/status/2112029923049377822)（X，原帖）
+
+
+### 标普百年涨幅靠 94 天，巴菲特好主意只有 12 个
+*作者：看不懂的SOL（@DtDt666）· 10/19 08:21、16:24 北京时间*
+
+1928 年到 2026 年 8 月 12 日，标普 500 及其前身共 25,853 个交易日，剔除涨幅最大的 94 天（占 0.36%）累计价格收益就由正转负；先锋领航的研究显示，1988 年投入 10 万美元持有到 2024 年底约 490 万美元，错过最好的 10 个交易日只剩 230 万美元。另一帖引用帕伯莱的说法：巴菲特几十年买过 300 多只股票，真正特别好的决策约 12 个，命中率约 4%、差不多每五年一个，结论是少数关键决定盖过大量普通决定，大部分时间是&quot;垃圾时间&quot;，要克制出手频率。
+
+**相关链接**
+- [原帖 · @DtDt666（94 天）](https://x.com/DtDt666/status/2111975982064382133)（X，原帖）
+- [原帖 · @DtDt666（巴菲特 4%）](https://x.com/DtDt666/status/2112097664095666498)（X，原帖）
+
+## 阅读推荐 {meta=&quot;1 条&quot;}
+### Linear 创始人 Karri Saarinen：《Someone behind the software》
+*作者：Viking（@vikingmute）· 10/19 21:45 北京时间*
+
+Viking 当天最喜欢的文章。Karri 的观点是好产品会带着创造者的品味和个性，让人感觉到背后有人在思考，而不是流水线批量生产的。Viking 的延伸：在产品泛滥的现在，想脱颖而出就要带入自己的品味，别让 Agent 疯狂加功能、做成没有灵魂的缝合怪。
+
+**相关链接**
+- [原文 · karrisaarinen.com](https://karrisaarinen.com/posts/someone-behind-the-software/)
+- [原帖 · @vikingmute](https://x.com/vikingmute/status/2112178257936458132)（X，原帖）
+</textarea>
+<script>
+(() => {
+// How a formula reads in a quote. MathML has no plain text, so src/math.js writes the formula as the draft wrote it, delimiters included, in
+// data-am-tex on the <math> element, and the Remark and Reply scripts read page text through this file. On a page without math there is no
+// such element, so formulaOf is null and every text comes out as it did before.
+// A plain ES module for tests; the page gets it with its `export` keyword dropped (src/runtime/compose.js).
+
+const TEX = 'data-am-tex';
+
+// The formula that holds a node, or null.
+const formulaOf = (node) => node.parentElement?.closest(`[${TEX}]`) ?? null;
+
+const firstText = (el) => {
+  for (const child of el.childNodes) {
+    const found = child.nodeType === 3 ? child : firstText(child);
+    if (found) return found;
+  }
+  return null;
+};
+
+// What a text node adds to a quote: its data. The first text node of a formula adds the formula, and the others add nothing.
+// (A formula in an error style is plain text with its delimiters, not a <math>, so it comes out once.)
+function nodeText(node) {
+  const math = formulaOf(node);
+  if (!math) return node.data;
+  return firstText(math) === node ? math.getAttribute(TEX) : '';
+}
+
+// The text of a node as textContent reads it, but with each formula as written.
+const textWithMath = (node) => (node.nodeType === 3 ? nodeText(node) : [...node.childNodes].map(textWithMath).join(''));
+
+(() => {
+  const root = document.documentElement;
+  // A host that serves this page inside its own document leaves the real root without the page's settings. The toolbar keeps a copy;
+  // set back what the root lacks, before anything below reads the root. A root's own value, even an empty one, is never replaced.
+  const carrier = document.querySelector('.am-toolbar');
+  for (const [attr, key] of [['lang', 'data-am-root-lang'], ['dir', 'data-am-root-dir'], ['data-theme', 'data-am-root-theme'], ['data-mode', 'data-am-root-mode'], ['data-style', 'data-am-root-style']]) {
+    if (root.getAttribute(attr) === null && carrier?.getAttribute(key) != null) root.setAttribute(attr, carrier.getAttribute(key));
+  }
+  // Each toolbar list sets one root attribute; its options name the values, so the runtime names no theme or mode.
+  for (const [name, attr] of [['theme', 'data-theme'], ['mode', 'data-mode']]) {
+    const select = document.querySelector(`select[data-am="${name}"]`);
+    if (!select) continue;
+    select.value = root.getAttribute(attr);
+    select.addEventListener('change', () => root.setAttribute(attr, select.value));
+  }
+
+  const copyText = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = Object.assign(document.createElement('textarea'), { value: text });
+      document.body.append(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+  };
+  // A button reads its label from data-done for a moment after a copy, then comes back to the label it started from. That label is
+  // read once, here: a second click inside the moment would otherwise read the copied label off the button and restore that instead,
+  // and the label would never come back. The moment starts again on each click: the timer of the previous one is left to fire and
+  // does nothing (a token, so this needs no timer bookkeeping the page scripts do not already have).
+  const flasher = (btn) => {
+    const idle = btn.textContent;
+    let clicks = 0;
+    return () => {
+      btn.textContent = btn.dataset.done;
+      const mine = ++clicks;
+      setTimeout(() => { if (mine === clicks) btn.textContent = idle; }, 1400);
+    };
+  };
+
+  const copyBtn = document.querySelector('[data-am="copy"]');
+  if (copyBtn) {
+    const flash = flasher(copyBtn);
+    copyBtn.addEventListener('click', async () => {
+      const nodes = document.querySelectorAll('#am-source');
+      await copyText(nodes[nodes.length - 1]?.value ?? '');
+      flash();
+    });
+  }
+
+  // Each code block copies its own lines, without the line numbers.
+  for (const btn of document.querySelectorAll('[data-am="copy-code"]')) {
+    const flash = flasher(btn);
+    btn.addEventListener('click', async () => {
+      const lines = btn.closest('.am-codeblock')?.querySelectorAll('.am-ln') ?? [];
+      await copyText([...lines].map((l) => l.textContent).join('\n'));
+      flash();
+    });
+  }
+
+  // ── Diagram Lightbox & Pan-Zoom Viewer ─────────────
+  const diagrams = document.querySelectorAll('.am-diagram:not(.am-lightbox-canvas)');
+  const lb = document.querySelector('.am-lightbox');
+  if (diagrams.length && lb) {
+    const backdrop = lb.querySelector('.am-lightbox-backdrop');
+    const titleText = lb.querySelector('.am-lightbox-title-text');
+    const stage = lb.querySelector('.am-lightbox-stage');
+    const canvas = lb.querySelector('.am-lightbox-canvas');
+    const closeBtn = lb.querySelector('.am-lightbox-close');
+    const expandLabel = lb.getAttribute('data-expand') || 'Expand diagram';
+
+    let scale = 1, x = 0, y = 0, fitScale = 1, curVw = 800, curVh = 600;
+    let isDragging = false, activePointerId = null, startX = 0, startY = 0, origX = 0, origY = 0;
+    let lastTrigger = null;
+
+    const apply = () => {
+      canvas.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${scale.toFixed(4)})`;
+    };
+
+    const zoomTo = (newScale, pivotX, pivotY) => {
+      newScale = Math.max(0.2, Math.min(6.0, newScale));
+      if (Math.abs(newScale - scale) < 0.0001) return;
+      const r = newScale / scale;
+      x = pivotX - (pivotX - x) * r;
+      y = pivotY - (pivotY - y) * r;
+      scale = newScale;
+      apply();
+    };
+
+    const open = (diag, trigger) => {
+      const svg = [...diag.children].find((el) => el.tagName.toLowerCase() === 'svg');
+      if (!svg) return;
+      lastTrigger = trigger;
+
+      const panel = diag.closest('.am-panel');
+      const panelTitle = panel?.querySelector('.am-panel-head h2')?.textContent?.trim() || panel?.querySelector('h2')?.textContent?.trim() || lb.getAttribute('aria-label') || 'Diagram viewer';
+      if (titleText) titleText.textContent = panelTitle;
+
+      const clone = svg.cloneNode(true);
+      const defElements = clone.querySelectorAll('[id]');
+      if (defElements.length) {
+        const idMap = new Map();
+        defElements.forEach((el, i) => {
+          const oldId = el.id;
+          const newId = `${oldId}-lb-${i}`;
+          idMap.set(oldId, newId);
+          el.id = newId;
+        });
+        const urlAttrs = ['marker-start', 'marker-mid', 'marker-end', 'fill', 'stroke', 'filter', 'clip-path', 'mask'];
+        clone.querySelectorAll('*').forEach((el) => {
+          for (const attr of urlAttrs) {
+            const val = el.getAttribute(attr);
+            if (val && val.startsWith('url(#')) {
+              const id = val.slice(5, -1);
+              if (idMap.has(id)) el.setAttribute(attr, `url(#${idMap.get(id)})`);
+            }
+          }
+          const href = el.getAttribute('href') || el.getAttribute('xlink:href');
+          if (href && href.startsWith('#')) {
+            const id = href.slice(1);
+            if (idMap.has(id)) {
+              if (el.hasAttribute('href')) el.setAttribute('href', `#${idMap.get(id)}`);
+              if (el.hasAttribute('xlink:href')) el.setAttribute('xlink:href', `#${idMap.get(id)}`);
+            }
+          }
+        });
+      }
+
+      const vb = svg.viewBox?.baseVal;
+      curVw = (vb && vb.width > 0) ? vb.width : (parseFloat(svg.getAttribute('width')) || svg.clientWidth || 800);
+      curVh = (vb && vb.height > 0) ? vb.height : (parseFloat(svg.getAttribute('height')) || svg.clientHeight || 600);
+      clone.style.width = `${curVw}px`;
+      clone.style.height = `${curVh}px`;
+      canvas.innerHTML = '';
+      canvas.append(clone);
+      lb.removeAttribute('hidden');
+      document.body.style.overflow = 'hidden';
+
+      const rect = stage.getBoundingClientRect();
+      const pad = 48;
+      const availW = Math.max(100, rect.width - pad * 2);
+      const availH = Math.max(100, rect.height - pad * 2);
+      fitScale = Math.min(availW / curVw, availH / curVh, 1.0);
+      scale = fitScale;
+      x = (rect.width - curVw * scale) / 2;
+      y = (rect.height - curVh * scale) / 2;
+      apply();
+      closeBtn.focus();
+    };
+
+    const close = () => {
+      if (lb.hasAttribute('hidden')) return;
+      lb.setAttribute('hidden', '');
+      canvas.innerHTML = '';
+      document.body.style.overflow = '';
+      lastTrigger?.focus();
+    };
+
+    stage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const rect = stage.getBoundingClientRect();
+      const dy = e.deltaMode === 1 ? e.deltaY * 16 : (e.deltaMode === 2 ? e.deltaY * 400 : e.deltaY);
+      const factor = Math.exp(-Math.max(-200, Math.min(200, dy)) * 0.0015);
+      zoomTo(scale * factor, e.clientX - rect.left, e.clientY - rect.top);
+    }, { passive: false });
+
+    stage.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0 || isDragging) return;
+      isDragging = true;
+      activePointerId = e.pointerId;
+      startX = e.clientX;
+      startY = e.clientY;
+      origX = x;
+      origY = y;
+      stage.setPointerCapture(e.pointerId);
+      stage.classList.add('am-panning');
+    });
+
+    stage.addEventListener('pointermove', (e) => {
+      if (!isDragging || e.pointerId !== activePointerId) return;
+      x = origX + (e.clientX - startX);
+      y = origY + (e.clientY - startY);
+      apply();
+    });
+
+    const endDrag = (e) => {
+      if (!isDragging || e.pointerId !== activePointerId) return;
+      isDragging = false;
+      activePointerId = null;
+      stage.classList.remove('am-panning');
+      try { stage.releasePointerCapture(e.pointerId); } catch {}
+    };
+    stage.addEventListener('pointerup', endDrag);
+    stage.addEventListener('pointercancel', endDrag);
+
+    stage.addEventListener('dblclick', () => {
+      const rect = stage.getBoundingClientRect();
+      scale = fitScale;
+      x = (rect.width - curVw * scale) / 2;
+      y = (rect.height - curVh * scale) / 2;
+      apply();
+    });
+
+    closeBtn.addEventListener('click', close);
+    backdrop.addEventListener('click', close);
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lb.hasAttribute('hidden')) close();
+    });
+
+    lb.addEventListener('keydown', (e) => {
+      if (e.key !== 'Tab') return;
+      const focusables = lb.querySelectorAll('button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+
+    const expandSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>';
+    diagrams.forEach((diag) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'am-diagram-expand';
+      btn.title = expandLabel;
+      btn.setAttribute('aria-label', expandLabel);
+      btn.innerHTML = expandSvg;
+      btn.addEventListener('click', () => open(diag, btn));
+      diag.prepend(btn);
+    });
+  }
+})();
+(() => {
+// The reply a reader copies from the page: one Markdown text with the decisions, the panel comments and the block remarks.
+// A plain ES module for tests; the page gets it with its `export` keyword dropped (src/runtime/compose.js).
+// decisions: [{ panel, question, picked: [label], suggested: [label], touched }]; comments: [{ panel, title, text }];
+// remarks: [{ panel, quote, kind, note }], where quote is the start of the marked block and kind is a key of ui.kinds.
+// Comment and remark text is quoted line by line, so text the reader typed cannot pass as part of the structure.
+// rtl: the page reads right to left, so the arrow before each answer points left, the way the text runs.
+function replyText({ title, decisions, comments, remarks = [], ui, rtl = false }) {
+  const arrow = rtl ? '←' : '→';
+  const out = [`# Re: ${title}`];
+  if (decisions.length) {
+    out.push('', `## ${ui.decisions}`);
+    decisions.forEach((d, i) => {
+      const answer = d.picked.length ? d.picked.map((l) => `**${l}**`).join(', ') : '**—**';
+      const same = d.picked.length === d.suggested.length && d.picked.every((l) => d.suggested.includes(l));
+      const why = same ? (d.touched ? ui.confirmed : ui.untouched) : `${ui.was}: ${d.suggested.join(', ') || '—'}`;
+      out.push(`${i + 1}. [${d.panel}] ${d.question}`, `   ${arrow} ${answer} _(${why})_`);
+    });
+  }
+  const written = comments.filter((c) => c.text.trim());
+  const quoted = (text) => (text.trim() ? text.trim().split('\n').map((l) => `  > ${l}`) : []);
+  if (written.length) {
+    out.push('', `## ${ui.comments}`);
+    for (const c of written) out.push(`- **${c.panel} · ${c.title}**`, ...quoted(c.text));
+  }
+  if (remarks.length) {
+    out.push('', `## ${ui.remarks}`);
+    for (const r of remarks) {
+      const label = [r.panel, ui.kinds?.[r.kind] ?? r.kind].filter(Boolean).join(' · ');
+      out.push(`- **${label}** "${r.quote}"`, ...quoted(r.note));
+    }
+  }
+  if (written.length || remarks.some((r) => r.note.trim())) out.push('', `_${ui.typed}_`);
+  return `${out.join('\n')}\n`;
+}
+
+// A letter of a right-to-left script. One definition for the page builder (src/bidi.js) and for the right-to-left page script
+// (src/runtime/reply-view.js), so the two cannot drift apart. A plain ES module; the page script gets this file in front of
+// reply-view.js, with its `export` keyword dropped and reply-view.js's import of it removed (src/runtime/compose.js).
+const RTL_LETTER = /[\p{Script=Hebrew}\p{Script=Arabic}\p{Script=Syriac}\p{Script=Thaana}\p{Script=Nko}\p{Script=Samaritan}\p{Script=Mandaic}]/u;
+
+// The reply as the reader sees it in the Reply sheet (src/runtime/reply.js): the Markdown that Copy copies, drawn as headings, bold answers
+// and quoted comments instead of raw "# Re: ...", "1. [E] ..." and "- **A · ...**" lines. Each line gets its own direction, so a
+// Hebrew reader sees Latin answers and paths in place; a line with no right-to-left letter reads left to right, as on any other page.
+// The raw Markdown stays in the sheet under a fold, so the copied text does not change.
+// A plain ES module for tests; the page gets it with its `export` keyword dropped and rtl-letter.js in front of it in place of the
+// import (src/runtime/compose.js).
+
+const escHtml = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+// A line with a right-to-left letter reads right to left; a line without one (an English comment, a path) reads left to right.
+const dirOf = (s) => (RTL_LETTER.test(s) ? 'rtl' : 'ltr');
+
+// The only inline Markdown src/runtime/reply-text.js writes: **answer**, _(note)_ and the "quote" of a remark. Each piece is isolated in its own direction,
+// so a Latin answer inside a Hebrew line keeps its place, and "A · title" still starts with the panel letter.
+const piece = (tag, text) => `<${tag}><bdi dir="${dirOf(text)}">${text}</bdi></${tag}>`;
+function inline(s) {
+  return escHtml(s)
+    .replace(/\*\*(.+?)\*\*/g, (_, t) => piece('strong', t))
+    .replace(/(^|\s)_(.+?)_(?=\s|$)/g, (_, pre, t) => pre + piece('em', t))
+    // The quoted start of a marked block ("- **A · concern** "text""): isolated, so Latin text in a Hebrew line keeps its place.
+    .replace(/&quot;(.+)&quot;$/, (_, t) => `&quot;<bdi dir="${dirOf(t)}">${t}</bdi>&quot;`);
+}
+
+// The reply text (src/runtime/reply-text.js) as HTML, one block per line.
+function replyViewHtml(text) {
+  return text
+    .replace(/\n$/, '')
+    .split('\n')
+    .map((line) => {
+      const dir = dirOf(line);
+      let m;
+      if (!line.trim()) return '<div class="am-rv-gap"></div>';
+      if ((m = line.match(/^(#{1,2}) (.*)$/))) return `<div class="am-rv-h${m[1].length}" dir="${dir}">${inline(m[2])}</div>`;
+      if ((m = line.match(/^(\d+)\. \[([^\]]*)\] (.*)$/))) {
+        return `<div class="am-rv-q" dir="${dir}"><bdi>${m[1]}.</bdi> <bdi class="am-rv-tag">${escHtml(m[2])}</bdi> ${inline(m[3])}</div>`;
+      }
+      if ((m = line.match(/^ {3}([←→]) (.*)$/))) return `<div class="am-rv-a" dir="${dir}">${m[1]} ${inline(m[2])}</div>`;
+      if ((m = line.match(/^- (.*)$/))) return `<div class="am-rv-c" dir="${dir}">${inline(m[1])}</div>`;
+      // A comment line is shown exactly as the reader typed it.
+      if ((m = line.match(/^ {2}> ?(.*)$/))) return `<div class="am-rv-quote" dir="${dirOf(m[1])}">${escHtml(m[1]) || '&nbsp;'}</div>`;
+      return `<div dir="${dir}">${inline(line)}</div>`;
+    })
+    .join('');
+}
+
+// Answer on the page: every panel gets a Comment box, and the Reply button collects the ask answers, the comments and the remarks
+// into one Markdown reply (replyText) to copy back to the agent. Answers and comments stay in localStorage across reloads.
+// The remark script (remark.js) adds the blocks the reader marked, through window.__amRemarkData, and tells this script about a change
+// with an "am-remark-change" event on the document.
+// The Reply sheet shows the reply drawn (replyViewHtml) with the Markdown that Copy copies under a fold. Once the reader has given any
+// input, a bar at the bottom of the page shows the counts and copies the reply in one click, so there is no trip to the top-right button.
+const replyBtn = document.querySelector('[data-am="reply"]');
+const COMMENT_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>';
+if (replyBtn) {
+  const ui = JSON.parse(replyBtn.dataset.ui);
+  const storeKey = `am-reply:${location.pathname}`;
+  const panels = [...document.querySelectorAll('.am-panel')];
+  const asks = [...document.querySelectorAll('.am-ask')];
+  // Answers are saved by question text, so they still match after am patch has renumbered the asks.
+  // Page text without the word joiners a right-to-left page puts after a Hebrew prefix hyphen (src/bidi.js): the reply and the saved
+  // answers hold the text as the draft wrote it, a formula too (src/runtime/math-text.js).
+  const WJ = new RegExp(String.fromCharCode(0x2060), 'g');
+  const textOf = (el) => el && textWithMath(el).replace(WJ, '').trim();
+  const keyOf = (ask) => textOf(ask.querySelector('legend')) ?? ask.dataset.ask;
+  const touched = new Set();
+  const boxes = new Map();
+  // The bar is built below with the sheet; the handlers that change the counts only call this.
+  let refreshBar = () => {};
+  // The textarea a failed copy keeps selected, so the reader can still use the keyboard shortcut.
+  let stuck = null;
+
+  const load = () => {
+    try {
+      return JSON.parse(localStorage.getItem(storeKey)) || {};
+    } catch {
+      return {};
+    }
+  };
+  const save = () => {
+    const state = {
+      asks: Object.fromEntries(asks.map((a) => [keyOf(a), { picked: picked(a), touched: touched.has(a) }])),
+      comments: Object.fromEntries([...boxes].map(([id, box]) => [id, box.value]).filter(([, text]) => text.trim())),
+    };
+    try {
+      localStorage.setItem(storeKey, JSON.stringify(state));
+    } catch {
+      // Storage may be off (private window, file:// policy); answers then last until the page closes.
+    }
+  };
+  const picked = (ask) => [...ask.querySelectorAll('input')].filter((i) => i.checked).map((i) => i.value);
+  const panelOf = (el) => {
+    const panel = el.closest('.am-panel');
+    return { id: panel?.id.replace(/^panel-/, '') ?? '', title: textOf(panel?.querySelector('.am-panel-head h2')) ?? '' };
+  };
+
+  const saved = load();
+  for (const ask of asks) {
+    const inputs = [...ask.querySelectorAll('input')];
+    const state = saved.asks?.[keyOf(ask)];
+    // A saved answer applies only while every picked option still exists on the page.
+    if (state && state.picked.every((v) => inputs.some((i) => i.value === v))) {
+      for (const input of inputs) input.checked = state.picked.includes(input.value);
+      if (state.touched) touched.add(ask);
+    }
+    // A click counts even on the option that is already picked: the reader confirms the suggestion.
+    const answer = () => {
+      touched.add(ask);
+      save();
+      refreshBar();
+    };
+    ask.addEventListener('change', answer);
+    ask.addEventListener('click', (e) => { if (e.target.matches('input')) answer(); });
+  }
+
+  for (const panel of panels) {
+    const id = panel.id.replace(/^panel-/, '');
+    // An icon only: narrow panels have no room for a word next to the title.
+    const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'am-comment-btn', title: ui.comment, innerHTML: COMMENT_ICON });
+    btn.setAttribute('aria-label', `${ui.comment} ${id}`);
+    btn.setAttribute('aria-expanded', 'false');
+    const wrap = Object.assign(document.createElement('div'), { className: 'am-comment', hidden: true });
+    const box = Object.assign(document.createElement('textarea'), { rows: 3, placeholder: ui.commentHint, value: saved.comments?.[id] ?? '' });
+    box.setAttribute('aria-label', `${ui.comment} ${id}`);
+    wrap.append(box);
+    const show = (open) => {
+      wrap.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+    };
+    btn.addEventListener('click', () => {
+      show(wrap.hidden);
+      if (!wrap.hidden) box.focus();
+    });
+    box.addEventListener('input', () => {
+      btn.classList.toggle('am-comment-btn--on', Boolean(box.value.trim()));
+      save();
+      refreshBar();
+    });
+    btn.classList.toggle('am-comment-btn--on', Boolean(box.value.trim()));
+    if (box.value.trim()) show(true);
+    (panel.querySelector('.am-panel-head') ?? panel).append(btn);
+    panel.append(wrap);
+    boxes.set(id, box);
+  }
+
+  const sheet = document.createElement('dialog');
+  sheet.className = 'am-reply';
+  sheet.setAttribute('aria-label', ui.title);
+  sheet.innerHTML = '<div class="am-reply-head"><strong></strong><span></span></div><div class="am-reply-view" tabindex="0"></div><details class="am-reply-raw"><summary></summary><textarea readonly rows="10"></textarea></details><div class="am-reply-actions"><button type="button" class="am-btn" data-act="copy"></button><button type="button" class="am-btn" data-act="close"></button></div>';
+  sheet.querySelector('strong').textContent = ui.title;
+  sheet.querySelector('span').textContent = ui.hint;
+  sheet.querySelector('summary').textContent = ui.raw;
+  const view = sheet.querySelector('.am-reply-view');
+  const raw = sheet.querySelector('details');
+  const text = sheet.querySelector('textarea');
+  const copy = sheet.querySelector('[data-act="copy"]');
+  const close = sheet.querySelector('[data-act="close"]');
+  copy.textContent = ui.copy;
+  close.textContent = ui.close;
+  document.body.append(sheet);
+
+  const compose = () => {
+    const decisions = asks.map((ask) => ({
+      panel: panelOf(ask).id,
+      question: textOf(ask.querySelector('legend')) ?? '',
+      picked: picked(ask),
+      suggested: [...ask.querySelectorAll('input[data-suggested]')].map((i) => i.value),
+      touched: touched.has(ask),
+    }));
+    const comments = [...boxes].map(([id, box]) => ({ panel: id, title: panelOf(box).title, text: box.value }));
+    const remarks = window.__amRemarkData?.() ?? [];
+    const empty = !decisions.length && !comments.some((c) => c.text.trim()) && !remarks.length;
+    const title = textOf(document.querySelector('.am-head h1')) ?? document.title;
+    return empty ? '' : replyText({ title, decisions, comments, remarks, ui, rtl: document.documentElement.dir === 'rtl' });
+  };
+
+  // The text goes through the clipboard API; a page the browser treats as insecure (file://) falls back to selecting a temporary
+  // textarea, because the sheet's own textarea can sit inside a closed fold, where it cannot be selected.
+  // That fallback reports whether it worked. When it does not, the text stays selected (so Cmd/Ctrl+C still copies it) and the
+  // button says what to do instead of showing the "Copied ✓" label the reader cannot trust.
+  const copyText = async (str, btn) => {
+    stuck?.remove();
+    stuck = null;
+    try {
+      await navigator.clipboard.writeText(str);
+      // The close_after_reply script (close-after-reply.js) closes the tab once the reply is on the clipboard.
+      document.dispatchEvent(new Event('am-reply-copied'));
+    } catch {
+      const tmp = Object.assign(document.createElement('textarea'), { value: str });
+      tmp.style.cssText = 'position:fixed;top:-100px;opacity:0';
+      // Inside the sheet while it is open: while a modal dialog is open the rest of the document cannot take focus, so a textarea
+      // in the body can be selected but not focused, and the keyboard shortcut the reader is told to press would copy nothing.
+      // The bottom bar copies while the sheet is closed, and a closed dialog is not rendered, so there the textarea goes in the body.
+      (sheet.open ? sheet : document.body).append(tmp);
+      tmp.select();
+      let copied = false;
+      try {
+        copied = document.execCommand('copy');
+      } catch {
+        copied = false;
+      }
+      if (!copied) {
+        stuck = tmp;
+        btn.textContent = ui.copyFailed;
+        setTimeout(() => { btn.textContent = ui.copy; }, 3000);
+        return;
+      }
+      tmp.remove();
+    }
+    btn.textContent = ui.done;
+    setTimeout(() => { btn.textContent = ui.copy; }, 1400);
+  };
+
+  const open = () => {
+    const reply = compose();
+    if (reply) view.innerHTML = replyViewHtml(reply);
+    else view.textContent = ui.empty;
+    view.scrollTop = 0;
+    text.value = reply;
+    raw.open = false;
+    raw.hidden = !reply;
+    copy.disabled = !reply;
+    if (sheet.showModal) sheet.showModal();
+    else sheet.setAttribute('open', '');
+    (reply ? copy : close).focus();
+  };
+  replyBtn.addEventListener('click', open);
+  close.addEventListener('click', () => (sheet.close ? sheet.close() : sheet.removeAttribute('open')));
+  // A failed copy leaves the text selected for Cmd/Ctrl+C; closing the sheet drops that textarea.
+  sheet.addEventListener('close', () => { stuck?.remove(); stuck = null; });
+  copy.addEventListener('click', () => copyText(text.value, copy));
+
+  const bar = Object.assign(document.createElement('div'), { className: 'am-reply-bar', hidden: true });
+  bar.setAttribute('role', 'region');
+  bar.setAttribute('aria-label', ui.title);
+  const summary = Object.assign(document.createElement('span'), { className: 'am-reply-bar-count' });
+  summary.setAttribute('aria-live', 'polite');
+  const preview = Object.assign(document.createElement('button'), { type: 'button', className: 'am-btn', textContent: ui.preview });
+  const barCopy = Object.assign(document.createElement('button'), { type: 'button', className: 'am-btn am-btn--reply', textContent: ui.copy });
+  preview.addEventListener('click', open);
+  barCopy.addEventListener('click', () => copyText(compose(), barCopy));
+  bar.append(summary, preview, barCopy);
+  document.body.append(bar);
+
+  // The bar shows only the counts that are above zero, and only once there is any input at all.
+  refreshBar = () => {
+    const counts = {
+      answered: touched.size,
+      comments: [...boxes.values()].filter((box) => box.value.trim()).length,
+      remarks: (window.__amRemarkData?.() ?? []).length,
+    };
+    const parts = Object.entries(counts).filter(([, n]) => n > 0).map(([kind, n]) => ui.count[kind].replace('{n}', n));
+    summary.textContent = parts.join(' · ');
+    bar.hidden = !parts.length;
+    document.body.classList.toggle('am-has-reply-bar', parts.length > 0);
+  };
+  document.addEventListener('am-remark-change', () => refreshBar());
+  // Saved remarks are restored by remark.js, which runs after this script in the same <script> element: its data is not there yet.
+  // A microtask runs when that whole element has finished, so the first count includes them.
+  queueMicrotask(() => refreshBar());
+}
+})();
+(() => {
+// Text helpers for remark mode (src/runtime/remark.js): how a marked block is named and quoted.
+// A plain ES module for tests; the page gets it with its `export` keyword dropped (src/runtime/compose.js).
+// A block keeps its mark across `am patch` because the key is its panel, its tag and the start of its text, not its position.
+
+const collapse = (text) => String(text).replace(/\s+/g, ' ').trim();
+
+// The start of a block's text with whitespace collapsed: the readable identity of the block.
+function fingerprint(text, len = 80) {
+  return collapse(text).slice(0, len);
+}
+
+// What the reply quotes of a block: the start of its text, with an ellipsis when it is cut.
+function quote(text, len = 60) {
+  const t = collapse(text);
+  return t.length > len ? `${t.slice(0, len).trimEnd()}…` : t;
+}
+
+// Two blocks with the same text (two identical list items) get the same base key. The n-th one in the page gets "\t<n>" added;
+// a tab cannot be in a fingerprint, which has its whitespace collapsed, so the new key never meets another base key.
+function occurrenceKeys(bases) {
+  const seen = new Map();
+  return bases.map((base) => {
+    const n = seen.get(base) ?? 0;
+    seen.set(base, n + 1);
+    return n ? `${base}\t${n}` : base;
+  });
+}
+
+// Remark mode: the reader turns it on, clicks a block, tags it (suggestion, keep, question, concern) and may add a note.
+// A mark shows as a bar and a note chip inside the block, lives in localStorage like panel comments, and the Reply button carries it
+// back to the agent: reply.js calls window.__amRemarkData, and replyText (reply-text.js) writes the Remarks section.
+(() => {
+  const btn = document.querySelector('[data-am="remark"]');
+  if (!btn) return;
+  const ui = JSON.parse(btn.dataset.ui);
+  const KINDS = ['suggestion', 'keep', 'question', 'concern'];
+  const storeKey = `am-remark:${location.pathname}`;
+  // The one definition of a block a reader can mark: the content under <main>. The page and panel titles are left out, because the
+  // reply reads them as text; a panel has its Comment button.
+  // A $$ block on its own is a div; a $$ formula inside a sentence is a span of its paragraph.
+  const BLOCK = 'main :is(h1,h2,h3,h4,h5,h6,p,li,blockquote,pre,table,dd,dt,figure,div.am-math-block):not(.am-head *, .am-panel-head *)';
+  // A click on these does what it always did.
+  const LIVE = '.am-remark-pop, .am-toolbar, a, button, input, textarea, select, label';
+  const blockAt = (target) => (target.closest(LIVE) ? null : target.closest(BLOCK));
+
+  const WJ = new RegExp(String.fromCharCode(0x2060), 'g'); // word joiners of a right-to-left page (src/bidi.js); not part of the draft's text
+  // A narrow horizontal timeline shows its date and title inline (src/themes/base.css). They stay parts of their own, so a block key
+  // does not change with the width of the window (#194).
+  const OWN_BOX = '.am-timeline--h .am-tl-when, .am-timeline--h .am-tl-title';
+  const inlineBox = new WeakMap();
+  const isInline = (el) => {
+    if (!inlineBox.has(el)) inlineBox.set(el, !el.matches(OWN_BOX) && getComputedStyle(el).display.startsWith('inline'));
+    return inlineBox.get(el);
+  };
+  // The text of a block as the reader sees it: separate lines, cells and timeline parts are joined by a space (textContent would run
+  // "2026" and "Ship" together), and the note chip is not part of it. A formula is one box and reads as the TeX the draft wrote
+  // (src/runtime/math-text.js), not as the MathML tokens.
+  const blockText = (el) => {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let text = '';
+    let last = null;
+    for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+      if (node.parentElement.closest('.am-mark-note')) continue;
+      let box = formulaOf(node) ?? node.parentElement;
+      while (box !== el && isInline(box)) box = box.parentElement;
+      if (last && box !== last) text += ' ';
+      text += nodeText(node).replace(WJ, '');
+      last = box;
+    }
+    return text;
+  };
+
+  const panelOf = (el) => el.closest('.am-panel')?.id.replace(/^panel-/, '') ?? '';
+  // Block keys, in page order. Built when first needed: a page nobody marked pays nothing.
+  let keys = null;
+  const keyMap = () => {
+    if (!keys) {
+      const blocks = [...document.querySelectorAll(BLOCK)];
+      const ids = occurrenceKeys(blocks.map((el) => `${panelOf(el)}|${el.localName}|${fingerprint(blockText(el))}`));
+      keys = new Map(blocks.map((el, i) => [el, ids[i]]));
+    }
+    return keys;
+  };
+
+  const load = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(storeKey));
+      return Array.isArray(saved) ? saved.filter((m) => typeof m?.key === 'string' && KINDS.includes(m.kind)) : [];
+    } catch {
+      return [];
+    }
+  };
+  // A mark whose block is gone from the page stays stored (it may return with `am patch`); it is neither painted nor sent.
+  const marks = new Map(load().map((m) => [m.key, { key: m.key, kind: m.kind, note: String(m.note ?? '') }]));
+  const clearBtn = document.createElement('button');
+  clearBtn.type = 'button';
+  clearBtn.className = 'am-btn am-btn--remark-clear';
+  clearBtn.hidden = true;
+  clearBtn.textContent = ui.clear;
+  btn.insertAdjacentElement('afterend', clearBtn);
+  let clearTimer = null;
+  let clearArmed = false;
+  const resetClear = () => {
+    if (clearTimer !== null) clearTimeout(clearTimer);
+    clearTimer = null;
+    clearArmed = false;
+    clearBtn.classList.remove('is-armed');
+    clearBtn.textContent = ui.clear;
+    clearBtn.hidden = marks.size === 0;
+  };
+  const armClear = () => {
+    clearArmed = true;
+    clearBtn.classList.add('is-armed');
+    clearBtn.textContent = ui.clearConfirm.replace('{n}', marks.size);
+    clearTimer = setTimeout(resetClear, 4000);
+  };
+  clearBtn.addEventListener('click', () => {
+    if (!clearArmed) {
+      armClear();
+      return;
+    }
+    for (const el of document.querySelectorAll('.am-mark')) unpaint(el);
+    marks.clear();
+    try {
+      localStorage.removeItem(storeKey);
+    } catch {
+      // Storage may be off (private window, a sandboxed page); the in-memory marks still clear.
+    }
+    resetClear();
+    document.dispatchEvent(new Event('am-remark-change'));
+  });
+  const save = () => {
+    try {
+      localStorage.setItem(storeKey, JSON.stringify([...marks.values()]));
+    } catch {
+      // Storage may be off (private window, a sandboxed page); marks then last until the page closes.
+    }
+    // The reply bar (reply.js) shows the number of marks.
+    document.dispatchEvent(new Event('am-remark-change'));
+    clearBtn.hidden = marks.size === 0;
+  };
+
+  const chip = (el, mark) => {
+    const note = document.createElement(el.localName === 'table' ? 'caption' : 'span');
+    note.className = 'am-mark-note';
+    const kind = document.createElement('b');
+    kind.textContent = ui.kinds[mark.kind];
+    note.append(kind, mark.note ? ` ${mark.note}` : '');
+    return note;
+  };
+  const clearChip = (el) => el.querySelector(':scope > .am-mark-note')?.remove();
+  const paint = (el, mark) => {
+    clearChip(el);
+    el.classList.add('am-mark');
+    el.dataset.kind = mark.kind;
+    // Inside the block, so a list item stays a child of its list. A table takes it as its caption; a list item with a sub-list shows
+    // it under its own text, before the sub-list.
+    const sub = el.querySelector(':scope > ul, :scope > ol');
+    if (el.localName === 'table') el.prepend(chip(el, mark));
+    else if (sub) sub.before(chip(el, mark));
+    else el.append(chip(el, mark));
+  };
+  const unpaint = (el) => {
+    clearChip(el);
+    el.classList.remove('am-mark');
+    delete el.dataset.kind;
+  };
+  clearBtn.hidden = marks.size === 0;
+  if (marks.size) for (const [el, key] of keyMap()) if (marks.has(key)) paint(el, marks.get(key));
+
+  // The popover edits one block. Save stays off until a kind is picked.
+  const pop = document.createElement('div');
+  pop.className = 'am-remark-pop';
+  pop.hidden = true;
+  pop.setAttribute('role', 'dialog');
+  pop.setAttribute('aria-label', ui.button);
+  document.body.append(pop);
+  let opener = null;
+  let anchor = null;
+  const close = (restoreFocus) => {
+    if (pop.hidden) return;
+    pop.hidden = true;
+    if (restoreFocus) (opener?.isConnected && opener !== document.body ? opener : btn).focus();
+  };
+  const place = () => {
+    const rect = anchor.getBoundingClientRect();
+    const rtl = getComputedStyle(document.documentElement).direction === 'rtl';
+    const x = rtl ? rect.right - pop.offsetWidth : rect.left;
+    // Under the block; a block taller than the window gets the popover at the bottom of the window instead.
+    const y = Math.min(rect.bottom + 6, window.innerHeight - pop.offsetHeight - 8);
+    pop.style.left = `${window.scrollX + Math.min(Math.max(8, x), window.innerWidth - pop.offsetWidth - 8)}px`;
+    pop.style.top = `${window.scrollY + Math.max(8, y)}px`;
+  };
+  const make = (tag, props) => Object.assign(document.createElement(tag), props);
+  const open = (el) => {
+    const key = keyMap().get(el);
+    const mark = marks.get(key);
+    let kind = mark?.kind ?? '';
+    opener = document.activeElement;
+    anchor = el;
+
+    const note = make('textarea', { rows: 2, placeholder: ui.hint, value: mark?.note ?? '' });
+    note.setAttribute('aria-label', ui.hint);
+    const keep = make('button', { type: 'button', className: 'am-btn', textContent: ui.save, disabled: !kind });
+    keep.addEventListener('click', () => {
+      const saved = { key, kind, note: note.value.trim() };
+      marks.set(key, saved);
+      save();
+      paint(el, saved);
+      close(true);
+    });
+    const actions = make('div', { className: 'am-remark-actions' });
+    actions.append(keep);
+    if (mark) {
+      const drop = make('button', { type: 'button', className: 'am-btn', textContent: ui.remove });
+      drop.addEventListener('click', () => {
+        marks.delete(key);
+        save();
+        unpaint(el);
+        close(true);
+      });
+      actions.append(drop);
+    }
+    const kindBtns = KINDS.map((k) => {
+      const kb = make('button', { type: 'button', className: 'am-remark-kind', textContent: ui.kinds[k] });
+      kb.dataset.kind = k;
+      kb.setAttribute('aria-pressed', String(k === kind));
+      kb.addEventListener('click', () => {
+        kind = k;
+        for (const other of kindBtns) other.setAttribute('aria-pressed', String(other === kb));
+        keep.disabled = false;
+      });
+      return kb;
+    });
+    pop.replaceChildren(make('div', { className: 'am-remark-kinds' }), note, actions);
+    pop.firstChild.append(...kindBtns);
+    pop.hidden = false;
+    place();
+    (kindBtns.find((b) => b.dataset.kind === kind) ?? kindBtns[0]).focus({ preventScroll: true });
+  };
+
+  // Picking works only while remark mode is on. A click on a marked block edits its mark, on a plain block starts one.
+  // The block under the pointer gets an outline: the same blockAt decides what is outlined and what a click picks.
+  let hover = null;
+  const track = (e) => {
+    const el = e.type === 'mouseout' && e.relatedTarget === null ? null : blockAt(e.target);
+    if (el === hover) return;
+    hover?.classList.remove('am-remark-hover');
+    hover = el;
+    hover?.classList.add('am-remark-hover');
+  };
+  const pick = (e) => {
+    const el = blockAt(e.target);
+    if (el) open(el);
+  };
+  const setMode = (on) => {
+    btn.classList.toggle('is-on', on);
+    btn.setAttribute('aria-pressed', String(on));
+    const toggle = on ? 'addEventListener' : 'removeEventListener';
+    document.body[toggle]('click', pick);
+    document.body[toggle]('mouseover', track);
+    document.body[toggle]('mouseout', track);
+    if (!on) {
+      track({ type: 'mouseout', relatedTarget: null });
+      close(false);
+    }
+  };
+  btn.addEventListener('click', () => setMode(btn.getAttribute('aria-pressed') !== 'true'));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close(true);
+  });
+  // A click outside the popover closes it; the same click may then start another mark.
+  document.addEventListener('click', (e) => {
+    if (!pop.hidden && !pop.contains(e.target)) close(false);
+  }, true);
+  setMode(false);
+
+  // What the Reply button reads: the marked blocks that are on the page, in page order.
+  window.__amRemarkData = () => {
+    if (!marks.size) return [];
+    const live = [];
+    for (const [el, key] of keyMap()) {
+      const mark = marks.get(key);
+      if (mark) live.push({ panel: panelOf(el), quote: quote(blockText(el)), kind: mark.kind, note: mark.note });
+    }
+    return live;
+  };
+})();
+})();
+(() => {
+// Pure planner for justified ("photo wall") rows on sheet pages. No DOM access.
+//
+// This file must stay inlinable into the page script: top-level declarations only, no imports, and the exports are
+// `planLayout` and the constants the DOM adapter shares (STEP, MAX_SCALE, MIN_SCALE). The page build strips the `export ` keyword,
+// and test/layout-plan.test.js checks that this still works.
+//
+// planLayout({ width, gap, cols, panels }) -> { rows: [{ columns: [{ panels: [index, ...], width }], height }] }
+//
+// Input (all lengths in px):
+//   width   container width
+//   gap     space between columns, and between two panels stacked in one column
+//   cols    most columns in one row (the planner never uses more than MAX_COLUMNS, but spans stay shares of `cols`)
+//   panels  one entry per panel, in reading order:
+//     samples   [{ w, h }] panel height at sampled widths, ascending by w (heights between samples are interpolated)
+//     minWidth  narrowest feasible width (clamped to `width`)
+//     maxWidth  widest useful width; beyond it the panel only gains empty space (default: no limit)
+//     natural   natural diagram width for a diagram-only panel (default: none)
+//     pad       panel width not used by the diagram (padding and border; default 0)
+//     span      the author's width hint in grid columns (default 1); span >= cols keeps the panel alone in its row
+//
+// Output: { rows, maxScale }. Rows are in reading order; a row is a list of columns (at most `cols`); a column holds one panel or two
+// consecutive panels, stacked. For integer inputs the column widths plus the gaps between them equal `width`.
+// Rows are chosen by dynamic programming over break points; widths by a search in STEP px steps. Cost per row:
+//   H = tallest column; waste = sum((H - columnHeight) * columnWidth) + sum over diagrams wider than maxWidth of (w - maxWidth) * h
+//   dev = sum(((w - preferred) / oneColumn)^2) + SCALE_WEIGHT * sum over diagrams of (ln(scale) / ln(MAX_SCALE))^2
+//   cost = waste / 1000 + PREF_WEIGHT * dev * H
+// Scale band: diagrams on one page stay at similar sizes. With the result's `maxScale` as the diagram size limit, a diagram is
+// shown at scale min(maxScale, (width - pad) / natural). The planner tries a few bands [lo, lo * BAND_RATIO] (lo in BAND_LOS) and
+// keeps the cheapest plan in which no diagram is narrower than scale lo and none is shown above the band's top, so the largest and
+// smallest diagram scale on the page differ by at most BAND_RATIO. A panel wider than its diagram's top size keeps the diagram at
+// that size, and the page script must set the diagram's max-width to natural * maxScale. The band starts no higher than the
+// largest scale the page allows the least roomy diagram, so one wide diagram lowers the band for the others.
+// If no band is feasible the plan is made without a band (maxScale = MAX_SCALE); if no plan fits (or the input is unusable) the
+// result is a single column: one panel per row at the full width.
+
+const STEP = 10;
+const MAX_SCALE = 1.25;
+const MIN_SCALE = 0.75; // the narrowest a diagram is shown, as a share of its natural width
+const MAX_COLUMNS = 6; // rows with more columns are unreadable, and the search grows steeply with the column count
+const BAND_RATIO = 1.25; // the largest and smallest diagram scale on a page differ by at most this
+const BAND_LOS = [MIN_SCALE, 0.85, 0.95, 1]; // lower ends tried for the band; lo * BAND_RATIO is the upper end (1.25 means no upper limit)
+const SCALE_WEIGHT = 3;
+const PREF_WEIGHT = 0.15;
+
+function heightAt(samples, w) {
+  const i = samples.findIndex((s) => s.w >= w);
+  if (i === -1) return samples[samples.length - 1].h;
+  if (i === 0) return samples[0].h;
+  const a = samples[i - 1];
+  const b = samples[i];
+  return a.h + ((b.h - a.h) * (w - a.w)) / (b.w - a.w);
+}
+
+// Every way to split `len` consecutive panels into columns of 1 or 2 panels, as lists of column sizes.
+function splits(len) {
+  if (len === 0) return [[]];
+  return [1, 2].filter((k) => k <= len).flatMap((k) => splits(len - k).map((rest) => [k, ...rest]));
+}
+
+function singleColumn(width, panels) {
+  return { rows: panels.map((_, i) => ({ columns: [{ panels: [i], width }], height: 0 })) };
+}
+
+function planLayout({ width, gap = 0, cols = 3, panels }) {
+  const usable = Number.isFinite(width) && width > 0 && panels.every((p) => Array.isArray(p.samples) && p.samples.length > 0);
+  if (!usable) return singleColumn(width, panels);
+
+  // `cols` stays the unit of the author's spans; no row gets more than MAX_COLUMNS columns however large `cols` is.
+  const maxColumns = Math.min(cols, MAX_COLUMNS);
+  const oneColumn = Math.max(1, (width - gap * (cols - 1)) / cols);
+  // Per-panel limits. With a band [lo, lo * BAND_RATIO], a diagram is no narrower than scale lo and shown at most at the top of the
+  // band: a wider panel keeps it at that size and gains empty space, which the cost counts as waste.
+  const prepare = (lo) => panels.map((p) => {
+    const pad = p.pad ?? 0;
+    const diagram = lo > 0 && p.natural > 0;
+    const scaleCap = diagram ? Math.min(MAX_SCALE, lo * BAND_RATIO) : MAX_SCALE;
+    return {
+      ...p,
+      minWidth: Math.min(width, Math.max(Math.ceil(p.minWidth || 0), diagram ? Math.ceil(p.natural * lo + pad) : 0)),
+      maxWidth: Math.min(p.maxWidth ?? Infinity, diagram ? p.natural * scaleCap + pad : Infinity),
+      scaleCap,
+      pad,
+      preferred: Math.min(width, (p.span ?? 1) * oneColumn + ((p.span ?? 1) - 1) * gap),
+      alone: (p.span ?? 1) >= cols,
+    };
+  });
+  let info = prepare(0);
+  // Beyond its maxWidth a panel only gains empty space, so its height stops changing there (matters when a band lowers maxWidth).
+  const heightOf = (p, w) => heightAt(p.samples, Math.min(w, p.maxWidth));
+  const columnHeight = (col, w) => col.reduce((h, k) => h + heightOf(info[k], w), 0) + gap * (col.length - 1);
+
+  function bestColumns(columns) {
+    const avail = width - gap * (columns.length - 1);
+    const mins = columns.map((c) => Math.max(...c.map((k) => info[k].minWidth)));
+    const minsFrom = mins.map((_, n) => mins.slice(n).reduce((s, w) => s + w, 0));
+    if (minsFrom[0] > avail) return null;
+    let best = null;
+    const evaluate = (ws) => {
+      const hs = ws.map((w, n) => columnHeight(columns[n], w));
+      const H = Math.max(...hs);
+      let waste = 0;
+      let dev = 0;
+      ws.forEach((w, n) => {
+        waste += (H - hs[n]) * w;
+        for (const k of columns[n]) {
+          const p = info[k];
+          if (w > p.maxWidth) waste += (w - p.maxWidth) * heightOf(p, w);
+          dev += ((w - p.preferred) / oneColumn) ** 2;
+          if (p.natural > 0) {
+            const scale = Math.min(p.scaleCap, Math.max(w - p.pad, 1) / p.natural);
+            dev += SCALE_WEIGHT * (Math.log(scale) / Math.log(MAX_SCALE)) ** 2;
+          }
+        }
+      });
+      const cost = waste / 1000 + PREF_WEIGHT * dev * H;
+      if (!best || cost < best.cost) best = { cost, ws, height: H, columns };
+    };
+    const choose = (n, used, ws) => {
+      if (n === columns.length - 1) {
+        const w = avail - used;
+        if (w >= mins[n]) evaluate([...ws, w]);
+        return;
+      }
+      for (let w = mins[n]; used + w + minsFrom[n + 1] <= avail; w += STEP) choose(n + 1, used + w, [...ws, w]);
+    };
+    choose(0, 0, []);
+    return best;
+  }
+
+  // Best columns for one row of panels i..j.
+  function bestRow(i, j) {
+    if (j > i && info.slice(i, j + 1).some((p) => p.alone)) return null;
+    let best = null;
+    for (const split of splits(j - i + 1)) {
+      if (split.length > maxColumns) continue;
+      let next = i;
+      const columns = split.map((size) => Array.from({ length: size }, () => next++));
+      const r = bestColumns(columns);
+      if (r && (!best || r.cost < best.cost)) best = r;
+    }
+    return best;
+  }
+
+  // Row breaks in reading order, for the band set up in `info`. A row holds at most 2 * maxColumns panels. Null if nothing fits.
+  function solve() {
+    const n = panels.length;
+    const total = Array(n + 1).fill(Infinity);
+    const from = Array(n + 1).fill(-1);
+    const chosen = Array(n + 1).fill(null);
+    total[0] = 0;
+    for (let j = 1; j <= n; j++) {
+      for (let i = Math.max(0, j - 2 * maxColumns); i < j; i++) {
+        if (total[i] === Infinity) continue;
+        const r = bestRow(i, j - 1);
+        if (r && total[i] + r.cost < total[j]) {
+          total[j] = total[i] + r.cost;
+          from[j] = i;
+          chosen[j] = r;
+        }
+      }
+    }
+    if (total[n] === Infinity) return null;
+    const rows = [];
+    for (let j = n; j > 0; j = from[j]) {
+      const r = chosen[j];
+      rows.unshift({ columns: r.columns.map((panelsInColumn, c) => ({ panels: panelsInColumn, width: r.ws[c] })), height: r.height });
+    }
+    return { rows, cost: total[n] };
+  }
+
+  let best = null;
+  const diagrams = panels.filter((p) => p.natural > 0);
+  if (diagrams.length > 1) {
+    // No diagram can be shown larger than the page allows, so the band cannot start above the smallest of those limits.
+    const reach = Math.min(...diagrams.map((p) => Math.min(MAX_SCALE, Math.max(width - (p.pad ?? 0), 1) / p.natural)));
+    for (const lo of new Set([...BAND_LOS.filter((x) => x < reach), reach])) {
+      info = prepare(lo);
+      const r = solve();
+      if (r && (!best || r.cost < best.cost)) best = { ...r, maxScale: Math.min(MAX_SCALE, lo * BAND_RATIO) };
+    }
+    info = prepare(0);
+  }
+  best ??= solve();
+  return best ? { rows: best.rows, maxScale: best.maxScale ?? MAX_SCALE } : singleColumn(width, panels);
+}
+
+// DOM adapter for the sheet's justified ("photo wall") layout. Not a module: compose.js puts it after src/runtime/layout-plan.js
+// (which defines planLayout and the shared STEP, MAX_SCALE, MIN_SCALE) inside one function scope of the page script.
+//
+// It measures every panel at sampled widths, asks planLayout for rows and column widths, and applies them with flexbox.
+// The rendered HTML keeps the plain CSS grid: with JavaScript off, at the single-column breakpoint, or while printing, the grid is what
+// shows (the planned widths belong to the screen width, so print never gets a mix of the two); after printing the layout comes back.
+
+const grid = document.querySelector('.am-grid');
+const panels = grid ? [...grid.children].filter((el) => el.classList.contains('am-panel')) : [];
+
+if (panels.length > 1) {
+  const SINGLE_COLUMN = '(max-width: 760px)'; // the single-column breakpoint in src/themes/base.css
+  const TWO_COLUMNS = '(max-width: 1100px)'; // below this the CSS grid has two columns
+  const SAMPLE_STEP = 20; // width sampling step, px; the planner interpolates between samples
+  const TEXT_MIN = 260; // text keeps at least about 16 CJK characters per line
+  const TABLE_COL_MIN = 96; // per table column, px
+  const TABLE_COL_COMFORT = 220; // a table column this wide reads three or four words per line
+  const KV_COL_MIN = 120; // per key-value column, px: a value of two short words stays on one line
+  const DIAGRAM_MIN = 160;
+  const RESIZE_DELAY = 150;
+  const OVERFLOWING = '.am-table-wrap, .am-diagram, .am-annot-scroll, pre';
+
+  // The first-row cells of each table carry the column widths fitTables() sets, so restore() resets them too.
+  const tables = [...grid.querySelectorAll('.am-table-wrap > table')];
+  const headCells = (table) => [...(table.rows[0]?.cells ?? [])];
+  const original = new Map([grid, ...panels, ...grid.querySelectorAll('.am-diagram > svg'), ...tables.flatMap(headCells)].map((el) => [el, el.getAttribute('style')]));
+  const restoreStyle = (el) => (original.get(el) === null ? el.removeAttribute('style') : el.setAttribute('style', original.get(el)));
+
+  // Back to the plain grid markup and styles.
+  const restore = () => {
+    for (const box of grid.querySelectorAll(':scope > .am-col')) box.replaceWith(...box.children);
+    for (const el of original.keys()) restoreStyle(el);
+  };
+
+  // The author's width hint, rendered as data-span only when the author wrote one. The inline grid-column is the no-JavaScript fallback
+  // and may hold spans the server added, so it is never read here.
+  const spanHint = (el) => Number(el.dataset.span) || 1;
+  const diagramOnly = (el) => {
+    const body = el.querySelector(':scope > .am-panel-body');
+    return body && body.children.length === 1 ? body.querySelector(':scope > .am-diagram > svg') : null;
+  };
+  const naturalWidth = (svg) => Number(svg.getAttribute('width')) || 0;
+
+  // The width each column of a table reads well at: its natural width, but no wider than TABLE_COL_COMFORT unless its longest word
+  // needs more. Below it the cells wrap one word per line, so a panel with a table is not planned narrower than the sum, and
+  // fitTables() keeps each column at its share (the browser would otherwise give the room to the longest column).
+  const columnWidths = new Map();
+  function comfortableWidth(table) {
+    const saved = table.getAttribute('style');
+    const columns = (width) => {
+      table.style.width = width;
+      return headCells(table).map((cell) => cell.getBoundingClientRect().width);
+    };
+    const most = columns('max-content');
+    const least = columns('min-content');
+    if (saved === null) table.removeAttribute('style');
+    else table.setAttribute('style', saved);
+    // A max-content column comes out a fraction under its text in Chrome, enough to wrap the last word, so it gets one pixel more.
+    const want = most.map((w, i) => Math.min(Math.ceil(w) + 1, Math.max(least[i], TABLE_COL_COMFORT)));
+    columnWidths.set(table, { least, want });
+    return want.reduce((sum, w) => sum + w, 0);
+  }
+
+  // After the layout: each column gets at least its comfortable width, scaled down toward its longest word when the panel came out
+  // narrower than planned (a page narrower than the table), so a table scrolls sideways only when even its longest words do not fit.
+  function fitTables() {
+    for (const [table, { least, want }] of columnWidths) {
+      // Each width is rounded up to a whole pixel (a column a fraction too narrow wraps its last word), so keep a pixel per column spare.
+      const room = table.parentElement.clientWidth - want.length;
+      const low = least.reduce((s, w) => s + w, 0);
+      const high = want.reduce((s, w) => s + w, 0);
+      const k = high > room ? Math.max(0, (room - low) / (high - low || 1)) : 1;
+      headCells(table).forEach((cell, i) => { cell.style.minWidth = `${Math.ceil(least[i] + (want[i] - least[i]) * k)}px`; });
+    }
+  }
+
+  // Height (and, for panels with tables or code, the narrowest width without sideways scrolling) at sampled widths.
+  // Only one panel is displayed while it is measured, so each width change lays out that panel alone.
+  function measure(width) {
+    grid.style.display = 'block';
+    for (const el of panels) {
+      el.style.display = 'none';
+      el.style.boxSizing = 'border-box';
+      for (const svg of el.querySelectorAll('.am-diagram > svg')) {
+        svg.style.width = '100%';
+        svg.style.maxWidth = `${naturalWidth(svg) * MAX_SCALE}px`;
+      }
+    }
+    const info = panels.map((el) => {
+      const svg = diagramOnly(el);
+      const svgs = [...el.querySelectorAll('.am-diagram > svg')];
+      const scrollers = el.querySelectorAll(OVERFLOWING);
+      const tableCols = Math.max(0, ...[...el.querySelectorAll('table tr:first-child')].map((tr) => tr.children.length));
+      el.style.display = '';
+      el.style.width = `${width}px`;
+      const pad = svg ? el.offsetWidth - svg.parentElement.clientWidth : 0;
+      const natural = svg ? naturalWidth(svg) : 0;
+      const shrunk = Math.max(0, ...svgs.map((s) => naturalWidth(s) * MIN_SCALE)) + (svg ? pad : 34);
+      const tableFloors = [...el.querySelectorAll('.am-table-wrap > table')].map((t) => comfortableWidth(t) + el.offsetWidth - t.parentElement.clientWidth);
+      // A key-value grid gets the same care: the room a table gains must not squeeze a neighbouring grid to one word per line.
+      const kvs = [...el.querySelectorAll('.am-kv')].map((kv) => (Number(kv.style.getPropertyValue('--kv-cols')) || 1) * KV_COL_MIN + el.offsetWidth - kv.clientWidth);
+      const floor = svg ? Math.max(DIAGRAM_MIN, natural * MIN_SCALE + pad) : Math.max(TEXT_MIN, shrunk, tableCols * TABLE_COL_MIN + 34, ...tableFloors, ...kvs);
+      const from = Math.min(width, Math.floor(floor / STEP) * STEP);
+      const samples = [];
+      let fits = null;
+      for (let w = from; ; w += SAMPLE_STEP) {
+        w = Math.min(w, width);
+        el.style.width = `${w}px`;
+        if (fits === null && !svg && scrollers.length && ![...scrollers].some((s) => s.scrollWidth > s.clientWidth + 1)) fits = w;
+        samples.push({ w, h: el.offsetHeight });
+        if (w === width) break;
+      }
+      el.style.display = 'none';
+      return {
+        samples,
+        minWidth: svg ? floor : Math.max(floor, fits ?? (scrollers.length ? width : 0)),
+        maxWidth: svg ? natural * MAX_SCALE + pad : Infinity,
+        natural,
+        pad,
+        span: spanHint(el),
+      };
+    });
+    for (const el of panels) {
+      el.style.display = '';
+      el.style.width = '';
+    }
+    return info;
+  }
+
+  // Each column gets a fixed width. A row adds up to the full width, so flex-wrap breaks rows by itself.
+  // Stacked panels go into a column wrapper whose last panel absorbs the extra height.
+  function apply(plan, gap) {
+    grid.style.display = 'flex';
+    grid.style.flexWrap = 'wrap';
+    grid.style.alignItems = 'stretch';
+    grid.style.gap = `${gap}px`;
+    for (const el of panels) {
+      el.style.gridColumn = '';
+      el.style.gridRow = '';
+      el.style.flex = '0 0 auto';
+    }
+    for (const row of plan.rows) {
+      for (const col of row.columns) {
+        const width = `${col.width}px`;
+        if (col.panels.length === 1) {
+          panels[col.panels[0]].style.width = width;
+          continue;
+        }
+        const box = document.createElement('div');
+        box.className = 'am-col';
+        box.style.cssText = `width:${width};flex:0 0 auto;display:flex;flex-direction:column;gap:${gap}px`;
+        panels[col.panels[0]].before(box);
+        for (const k of col.panels) {
+          panels[k].style.width = '';
+          box.append(panels[k]);
+        }
+        panels[col.panels[col.panels.length - 1]].style.flex = '1 1 auto';
+      }
+    }
+  }
+
+  // Diagram-only panels show their diagram at most at the top of the page's scale band; a wider panel gains empty space instead.
+  function capDiagrams(maxScale) {
+    for (const el of panels) {
+      const svg = diagramOnly(el);
+      if (svg) svg.style.maxWidth = `${naturalWidth(svg) * maxScale}px`;
+    }
+  }
+
+  const containerWidth = () => Math.floor(grid.getBoundingClientRect().width);
+
+  function justify() {
+    if (printing || printQuery.matches) return;
+    try {
+      // A vertical scrollbar can appear or vanish once the rows change height; plan again if the width moved.
+      let planned = -1;
+      for (let pass = 0; pass < 3 && planned !== containerWidth(); pass++) {
+        restore();
+        if (matchMedia(SINGLE_COLUMN).matches) return;
+        planned = containerWidth();
+        const gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
+        const cols = Math.max(1, Number(getComputedStyle(grid).getPropertyValue('--cols')) || 3);
+        const plan = planLayout({ width: planned, gap, cols: matchMedia(TWO_COLUMNS).matches ? Math.min(cols, 2) : cols, panels: measure(planned) });
+        apply(plan, gap);
+        capDiagrams(plan.maxScale);
+        fitTables();
+      }
+      // The width never settled: columns planned for another width would overflow or leave gaps, so show the plain grid.
+      if (planned !== containerWidth()) restore();
+    } catch {
+      restore();
+    }
+  }
+
+  // Printing: back to the plain grid (spans and all), and the layout again afterwards. Browsers disagree on which of the
+  // `beforeprint` event and the print media query change fires first, or at all, so listen to both; both are idempotent.
+  // While `printing` is set (beforeprint to afterprint) justify() does nothing, so a late resize cannot bring flex widths into the print layout.
+  let printing = false;
+  const printQuery = matchMedia('print');
+  let timer = 0;
+  const later = () => {
+    clearTimeout(timer);
+    timer = setTimeout(justify, RESIZE_DELAY);
+  };
+  const toPrint = () => {
+    clearTimeout(timer);
+    restore();
+  };
+  justify();
+  addEventListener('resize', later);
+  addEventListener('beforeprint', () => {
+    printing = true;
+    toPrint();
+  });
+  addEventListener('afterprint', () => {
+    printing = false;
+    later();
+  });
+  printQuery.addEventListener('change', (e) => (e.matches ? toPrint() : later()));
+  // Late changes to panel heights: web fonts arriving, and images inside the grid finishing their load (load does not bubble, so capture it).
+  document.fonts?.ready.then(later);
+  grid.addEventListener('load', later, true);
+  // Switching theme changes paddings and fonts, hence panel heights.
+  document.querySelector('[data-am="theme"]')?.addEventListener('click', later);
+}
+})();
+})();
+</script>
+</body>
+</html>
