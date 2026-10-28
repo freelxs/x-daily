@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="shadcn" data-mode="auto" data-style="off">
+<html lang="zh-CN" data-theme="x-daily" data-mode="auto" data-style="off">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qwC2biNEcgyecbiltRqW7IRXKbRzrNXGQNfjQpxbiXs=' 'sha256-vjQfZ+oX05M1l9ERqRkMpxLi1EZh23JhiYF5QAjG6aA='; style-src 'unsafe-inline'; img-src data:; font-src data:; media-src data:; connect-src 'self'; form-action 'none'; base-uri 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TPSDP1AXZvavo2RW073sRDiqqkfEpVu7j99+NJ6828g=' 'sha256-lPqFPx9oza8AmRj6iqQLqEVdDcwxhxzQ3yQnVhy8ZDM='; style-src 'unsafe-inline'; img-src data:; font-src data:; media-src data:; connect-src 'self'; form-action 'none'; base-uri 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Answer me with HTML 0.5.5">
+<meta name="generator" content="Answer me with HTML 0.5.10">
 <title>X 日报 · 2026-10-28</title>
 <style>
 html[data-theme="blueprint"], html[data-theme="blueprint"][data-mode="light"] {
@@ -215,6 +215,179 @@ html[data-theme="paper"][data-mode="auto"] {
 }
 }
 
+html[data-theme="x-daily"], html[data-theme="x-daily"][data-mode="light"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 10px;
+  --shadow: 0 2px 8px var(--ambient);
+  --bw: 1px;
+  --head-font: var(--font-reading);
+  --node-width: 1px;
+  --node-radius: 7px;
+  --node-shadow: none;
+  --edge-width: 1.2px;
+  --note-width: 1px;
+  --note-radius: 6px;
+  --font-reading: Georgia, "STSong", "Songti SC", SimSun, var(--font-sans);
+  --reading-measure: 44em;
+  --bg: #e2e7df;
+  --paper: #fffdf7;
+  --ink: #29332f;
+  --ink-2: #59675f;
+  --ink-3: #728074;
+  --line: #cfd9ce;
+  --line-2: #e1e7dd;
+  --fill: #f1f3ec;
+  --accent: #9a4e35;
+  --accent-bg: #f8eee6;
+  --ok: #486944;
+  --ok-bg: #eef5e7;
+  --err: #a0433c;
+  --err-bg: #f9ebe5;
+  --warn: #7b5c20;
+  --warn-bg: #fbf3dc;
+  --head-bg: #e7ede2;
+  --head-fg: #4e614d;
+  --signal-red: #bc6258;
+  --signal-yellow: #d0ae5e;
+  --signal-green: #8b9f72;
+  --title-1: #29332f;
+  --title-2: #3e4e43;
+  --title-3: #9a4e35;
+  --title-4: #29332f;
+  --title-5: #29332f;
+  --title-6: #59675f;
+  --node-fill: #fffdf7;
+  --node-stroke: #b5c3b2;
+  --node-text: #29332f;
+  --hi-fill: #f8eee6;
+  --hi-stroke: #b36549;
+  --hi-text: #9a4e35;
+  --edge-color: #7e8d7e;
+  --edge-label: #4e614d;
+  --actor-fill: #edf1e7;
+  --actor-stroke: #b5c3b2;
+  --actor-text: #3e4e43;
+  --note-fill: #fbf3dc;
+  --note-stroke: #c6a253;
+  --cluster-fill: #e9efe4;
+  --cluster-stroke: #cfd9ce;
+  --lifeline-color: #9ba992;
+  --ambient: rgba(43, 65, 48, 0.045);
+  --chip-top: #fffdf8;
+  --chip-bottom: #eaf0e3;
+  --chip-border: #becbb4;
+  --chip-depth: #b3bea9;
+  --chip-highlight: #ffffff;
+  --theme-color-scheme: only light;
+}
+html[data-theme="x-daily"][data-mode="dark"] {
+  --bg: #1e1e1b;
+  --paper: #262622;
+  --ink: #f0efec;
+  --ink-2: #c1bcb1;
+  --ink-3: #a29c90;
+  --line: #49473f;
+  --line-2: #393831;
+  --fill: #302f29;
+  --accent: #e7a080;
+  --accent-bg: #423028;
+  --ok: #b8cfa3;
+  --ok-bg: #34432d;
+  --err: #e8a39a;
+  --err-bg: #432d2b;
+  --warn: #e9ca82;
+  --warn-bg: #493e25;
+  --head-bg: #333129;
+  --head-fg: #ded5c3;
+  --signal-red: #ce8578;
+  --signal-yellow: #d2b66f;
+  --signal-green: #a2b78a;
+  --title-1: #ffffff;
+  --title-2: #e1dacd;
+  --title-3: #e7a080;
+  --title-4: #ffffff;
+  --title-5: #ffffff;
+  --title-6: #c1bcb1;
+  --node-fill: #2b2a25;
+  --node-stroke: #797162;
+  --node-text: #f0efec;
+  --hi-fill: #423028;
+  --hi-stroke: #c48465;
+  --hi-text: #e7a080;
+  --edge-color: #a99a83;
+  --edge-label: #ded5c3;
+  --actor-fill: #333129;
+  --actor-stroke: #797162;
+  --actor-text: #e1dacd;
+  --note-fill: #3e3523;
+  --note-stroke: #aa925b;
+  --cluster-fill: #2a2924;
+  --cluster-stroke: #49473f;
+  --lifeline-color: #817865;
+  --ambient: rgba(0, 0, 0, 0.09);
+  --chip-top: #4a4437;
+  --chip-bottom: #343027;
+  --chip-border: #75664e;
+  --chip-depth: #171612;
+  --chip-highlight: rgba(255, 244, 220, 0.14);
+  --theme-color-scheme: only dark;
+}
+@media (prefers-color-scheme: dark) {
+html[data-theme="x-daily"][data-mode="auto"] {
+  --bg: #1e1e1b;
+  --paper: #262622;
+  --ink: #f0efec;
+  --ink-2: #c1bcb1;
+  --ink-3: #a29c90;
+  --line: #49473f;
+  --line-2: #393831;
+  --fill: #302f29;
+  --accent: #e7a080;
+  --accent-bg: #423028;
+  --ok: #b8cfa3;
+  --ok-bg: #34432d;
+  --err: #e8a39a;
+  --err-bg: #432d2b;
+  --warn: #e9ca82;
+  --warn-bg: #493e25;
+  --head-bg: #333129;
+  --head-fg: #ded5c3;
+  --signal-red: #ce8578;
+  --signal-yellow: #d2b66f;
+  --signal-green: #a2b78a;
+  --title-1: #ffffff;
+  --title-2: #e1dacd;
+  --title-3: #e7a080;
+  --title-4: #ffffff;
+  --title-5: #ffffff;
+  --title-6: #c1bcb1;
+  --node-fill: #2b2a25;
+  --node-stroke: #797162;
+  --node-text: #f0efec;
+  --hi-fill: #423028;
+  --hi-stroke: #c48465;
+  --hi-text: #e7a080;
+  --edge-color: #a99a83;
+  --edge-label: #ded5c3;
+  --actor-fill: #333129;
+  --actor-stroke: #797162;
+  --actor-text: #e1dacd;
+  --note-fill: #3e3523;
+  --note-stroke: #aa925b;
+  --cluster-fill: #2a2924;
+  --cluster-stroke: #49473f;
+  --lifeline-color: #817865;
+  --ambient: rgba(0, 0, 0, 0.09);
+  --chip-top: #4a4437;
+  --chip-bottom: #343027;
+  --chip-border: #75664e;
+  --chip-depth: #171612;
+  --chip-highlight: rgba(255, 244, 220, 0.14);
+  --theme-color-scheme: only dark;
+}
+}
+
 html:lang(zh-Hant)[data-theme][data-mode], html:lang(zh-TW)[data-theme][data-mode], html:lang(zh-HK)[data-theme][data-mode], html:lang(zh-MO)[data-theme][data-mode] {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Heiti TC", "Microsoft JhengHei", "Noto Sans CJK TC", "Noto Sans TC", "PingFang SC", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -227,12 +400,59 @@ html:lang(he)[data-theme][data-mode] {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Hebrew", "Arial Hebrew", Arial, Roboto, "Helvetica Neue", sans-serif;
 }
 
+html {
+  --am-fs-title: calc(24px * var(--am-scale, 1));
+  --am-fs-stat: calc(17px * var(--am-scale, 1));
+  --am-fs-lead: calc(15.5px * var(--am-scale, 1));
+  --am-fs-heading: calc(15px * var(--am-scale, 1));
+  --am-fs-body: calc(14px * var(--am-scale, 1));
+  --am-fs-text: calc(13px * var(--am-scale, 1));
+  --am-fs-code: calc(12.5px * var(--am-scale, 1));
+  --am-fs-small: calc(12px * var(--am-scale, 1));
+  --am-fs-fine: calc(11.5px * var(--am-scale, 1));
+  --am-fs-label: calc(11px * var(--am-scale, 1));
+  --am-fs-tick: calc(10px * var(--am-scale, 1));
+  --am-fs-d-node: 13px;
+  --am-fs-d-field: 12px;
+  --am-fs-d-edge: 11.5px;
+  --am-fs-d-cluster: 11px;
+  --am-fs-d-step: 10px;
+  --am-fs-d-note: 12px;
+  --am-fs-d-badge: 11px;
+  --am-fs-d-chartCat: 12px;
+  --am-fs-d-chartTick: 11px;
+  --am-fs-d-chartVal: 11px;
+  --am-fs-d-chartLegend: 12px;
+  --am-fs-d-totalMin: 10px;
+  --am-fs-d-totalMax: 22px;
+  --am-fs-d-totalFit: 18px;
+  --am-fs-d-totalUnit: 12px;
+  --am-ln-annotPad: calc(14px * var(--am-scale, 1));
+  --am-ln-segLine: calc(16px * var(--am-scale, 1));
+  --am-ln-whenHeight: calc(24px * var(--am-scale, 1));
+  --am-ln-limitsTick: calc(16px * var(--am-scale, 1));
+  --am-ln-treeBadge: calc(15px * var(--am-scale, 1));
+}
+.am-toolbar, .am-lightbox-header {
+  --am-fs-title: 24px;
+  --am-fs-stat: 17px;
+  --am-fs-lead: 15.5px;
+  --am-fs-heading: 15px;
+  --am-fs-body: 14px;
+  --am-fs-text: 13px;
+  --am-fs-code: 12.5px;
+  --am-fs-small: 12px;
+  --am-fs-fine: 11.5px;
+  --am-fs-label: 11px;
+  --am-fs-tick: 10px;
+}
+
 /* Answer me with HTML base — uses theme variables only, never hard-coded colors (theme tokens and decorations: themes/<name>.js). Exception: the var() fallbacks of diagrams (flow / sequence) equal the blueprint light tokens, guarded by a test. */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
   background: var(--bg); color: var(--ink);
-  font-family: var(--font-sans); font-size: 14px; line-height: 1.55;
+  font-family: var(--font-sans); font-size: var(--am-fs-body); line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 code, pre, kbd { font-family: var(--font-mono); }
@@ -242,14 +462,16 @@ code, pre, kbd { font-family: var(--font-mono); }
   position: fixed; top: 12px; inset-inline-end: 12px; z-index: 10; display: flex; gap: 6px;
 }
 .am-btn {
-  font: 12px/1 var(--font-sans); color: var(--ink); background: var(--paper);
+  font: var(--am-fs-small)/1 var(--font-sans); color: var(--ink); background: var(--paper);
   border: 1px solid var(--line-2); border-radius: var(--radius); padding: 7px 10px; cursor: pointer;
 }
 .am-btn:hover { border-color: var(--ink-3); }
 .am-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.am-toolbar .am-btn[aria-disabled="true"] { opacity: .5; cursor: default; }
+.am-toolbar .am-btn[aria-disabled="true"]:hover { border-color: var(--line-2); }
 /* Theme and mode lists: a label and a native select inside one button-like box */
 .am-pick {
-  display: flex; align-items: center; gap: 6px; font: 12px/1 var(--font-sans); color: var(--ink-2); background: var(--paper);
+  display: flex; align-items: center; gap: 6px; font: var(--am-fs-small)/1 var(--font-sans); color: var(--ink-2); background: var(--paper);
   border: 1px solid var(--line-2); border-radius: var(--radius); padding-block: 0; padding-inline: 10px 4px;
 }
 .am-pick:hover { border-color: var(--ink-3); }
@@ -261,9 +483,9 @@ code, pre, kbd { font-family: var(--font-mono); }
 
 /* ── Header ───────────────────────────────── */
 .am-head { margin: 0 0 20px; padding-inline-end: 300px; }
-.am-head h1 { margin: 0; font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; }
+.am-head h1 { margin: 0; font-size: var(--am-fs-title); line-height: 1.25; letter-spacing: -0.01em; }
 .am-sub { margin: 4px 0 0; color: var(--ink-2); }
-.am-head-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: 12px; color: var(--ink-2); }
+.am-head-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: var(--am-fs-small); color: var(--ink-2); }
 .am-head-meta b { font-family: var(--font-mono); font-weight: 400; color: var(--ink-3); margin-inline-end: 6px; }
 .am-intro { margin-top: 12px; max-width: 80ch; }
 
@@ -295,10 +517,10 @@ code, pre, kbd { font-family: var(--font-mono); }
 }
 .am-panel-id {
   display: flex; align-items: center; justify-content: center; min-width: 34px; padding: 0 8px;
-  background: var(--head-bg); color: var(--head-fg); font-weight: 600; font-size: 14px;
+  background: var(--head-bg); color: var(--head-fg); font-weight: 600; font-size: var(--am-fs-body);
 }
-.am-panel-head h2 { margin: 0; padding: 7px 12px; font-size: 15px; font-weight: 600; flex: 1; display: flex; align-items: center; }
-.am-panel-meta { align-self: center; padding: 0 12px; font: 11px/1.3 var(--font-mono); color: var(--ink-2); text-align: end; }
+.am-panel-head h2 { margin: 0; padding: 7px 12px; font-size: var(--am-fs-heading); font-weight: 600; flex: 1; display: flex; align-items: center; }
+.am-panel-meta { align-self: center; padding: 0 12px; font: var(--am-fs-label)/1.3 var(--font-mono); color: var(--ink-2); text-align: end; }
 .am-panel-body { padding: 14px 16px 16px; }
 .am-panel-body > * + * { margin-top: 12px; }
 
@@ -308,14 +530,14 @@ code, pre, kbd { font-family: var(--font-mono); }
 .am-md p { margin: 0 0 8px; }
 .am-md ul, .am-md ol { margin: 0 0 8px; padding-inline-start: 20px; }
 .am-md li + li { margin-top: 3px; }
-.am-md h3, .am-md h4 { margin: 14px 0 6px; font-size: 13px; }
+.am-md h3, .am-md h4 { margin: 14px 0 6px; font-size: var(--am-fs-text); }
 .am-md a { color: var(--accent); }
 .am-md blockquote { margin: 0 0 8px; padding: 2px 12px; border-inline-start: 3px solid var(--line-2); color: var(--ink-2); }
 .am-md :not(pre) > code { font-size: 0.9em; background: var(--fill); padding: 1px 5px; border-radius: 4px; }
 .am-md hr { border: 0; border-top: 1px solid var(--line-2); margin: 12px 0; }
-.am-md table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.am-md table { width: 100%; border-collapse: collapse; font-size: var(--am-fs-text); }
 .am-md th {
-  text-align: start; font: 11px/1.3 var(--font-mono); color: var(--ink-2); font-weight: 400;
+  text-align: start; font: var(--am-fs-label)/1.3 var(--font-mono); color: var(--ink-2); font-weight: 400;
   padding: 6px 10px; border-bottom: 1px solid var(--line-2);
 }
 /* th { text-align: start } outranks the align attribute from Markdown alignment, so restore right and center columns explicitly. */
@@ -328,19 +550,19 @@ code, pre, kbd { font-family: var(--font-mono); }
 .am-md img { max-width: 100%; max-height: 70vh; height: auto; }
 .am-figure { margin: 0; text-align: center; }
 .am-figure img { display: block; margin: 0 auto; border: 1px solid var(--line-2); border-radius: var(--radius); }
-.am-figure figcaption { margin-top: 6px; font-size: 12px; line-height: 1.4; color: var(--ink-2); }
+.am-figure figcaption { margin-top: 6px; font-size: var(--am-fs-small); line-height: 1.4; color: var(--ink-2); }
 .am-code {
   margin: 0; padding: 12px 14px; background: var(--fill); border: 1px solid var(--line-2);
-  border-radius: var(--radius); overflow-x: auto; font-size: 12.5px; line-height: 1.5;
+  border-radius: var(--radius); overflow-x: auto; font-size: var(--am-fs-code); line-height: 1.5;
 }
-/* Ask: a decision the reader makes; the suggested option starts selected */
+/* Ask: a decision the reader makes; the suggested option has a tag and starts unselected like the others */
 .am-ask { margin: 10px 0; padding: 10px 12px 8px; border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--fill); min-width: 0; }
 /* The question floats inside the box, so a long question wraps like text instead of riding on the border */
 .am-ask-q { float: left; width: 100%; padding: 0; margin-bottom: 4px; font-weight: 600; }
 /* Two columns: the control, then the label, tag and note, which wrap under the label and never under the control */
 .am-ask-opt { clear: both; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; align-items: baseline; padding: 5px 2px; cursor: pointer; }
 .am-ask-opt input { margin: 0; accent-color: var(--accent); position: relative; top: 2px; }
-.am-ask-tag { display: inline-block; font-size: 11px; line-height: 1.5; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 6px; white-space: nowrap; }
+.am-ask-tag { display: inline-block; font-size: var(--am-fs-label); line-height: 1.5; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 6px; white-space: nowrap; }
 .am-ask-note { display: block; color: var(--ink-2); }
 /* Comment box under each panel, and the Reply sheet */
 .am-comment-btn {
@@ -354,7 +576,7 @@ code, pre, kbd { font-family: var(--font-mono); }
 .am-panel--bare > .am-comment-btn { position: absolute; top: 4px; inset-inline-end: 0; }
 .am-comment { padding: 0 14px 12px; }
 .am-comment textarea, .am-reply textarea {
-  width: 100%; font: 13px/1.5 var(--font-sans); color: var(--ink); background: var(--paper);
+  width: 100%; font: var(--am-fs-text)/1.5 var(--font-sans); color: var(--ink); background: var(--paper);
   border: 1px solid var(--line-2); border-radius: var(--radius); padding: 8px 10px; resize: vertical;
 }
 .am-comment textarea:focus-visible, .am-reply textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
@@ -366,32 +588,32 @@ code, pre, kbd { font-family: var(--font-mono); }
 }
 .am-reply::backdrop { background: rgba(0,0,0,.35); }
 .am-reply-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 10px; }
-.am-reply-head span { color: var(--ink-2); font-size: 13px; }
-.am-reply textarea { font-family: var(--font-mono); font-size: 12.5px; }
+.am-reply-head span { color: var(--ink-2); font-size: var(--am-fs-text); }
+.am-reply textarea { font-family: var(--font-mono); font-size: var(--am-fs-code); }
 .am-reply-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 10px; }
 .am-reply .am-btn:disabled { opacity: .5; cursor: default; }
 /* The sheet shows the reply drawn (src/runtime/reply-view.js), each line in its own direction; the Markdown that Copy copies sits under a fold. */
 .am-reply-view {
-  max-height: min(60vh, 26em); overflow: auto; padding: 10px 12px; font: 14px/1.6 var(--font-sans); color: var(--ink);
+  max-height: min(60vh, 26em); overflow: auto; padding: 10px 12px; font: var(--am-fs-body)/1.6 var(--font-sans); color: var(--ink);
   background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); overflow-wrap: anywhere;
 }
 .am-reply-view:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .am-reply-view > div { text-align: start; unicode-bidi: isolate; }
 .am-rv-gap { height: .5em; }
-.am-rv-h1 { font-weight: 700; font-size: 15px; }
+.am-rv-h1 { font-weight: 700; font-size: var(--am-fs-heading); }
 .am-rv-h2 { font-weight: 700; color: var(--ink-2); margin-top: 2px; }
 .am-rv-tag {
-  display: inline-block; min-width: 1.6em; padding: 0 4px; font-size: 12px; line-height: 1.5; text-align: center;
+  display: inline-block; min-width: 1.6em; padding: 0 4px; font-size: var(--am-fs-small); line-height: 1.5; text-align: center;
   color: var(--ink-2); border: 1px solid var(--line-2); border-radius: var(--radius);
 }
 .am-rv-a { padding-inline-start: 1.6em; }
 .am-rv-a em { color: var(--ink-2); }
 .am-rv-quote { margin-inline-start: 1em; padding-inline-start: 10px; border-inline-start: 3px solid var(--line-2); color: var(--ink-2); white-space: pre-wrap; }
-.am-reply-raw summary { margin-top: 10px; margin-bottom: 6px; font-size: 12px; color: var(--ink-2); cursor: pointer; }
+.am-reply-raw summary { margin-top: 10px; margin-bottom: 6px; font-size: var(--am-fs-small); color: var(--ink-2); cursor: pointer; }
 /* The bar at the bottom of the page: counts and one-click copy, so the reader need not go to the Reply button at the top. */
 .am-reply-bar {
   position: fixed; inset-block-end: 16px; inset-inline: 0; margin-inline: auto; width: max-content; max-width: calc(100vw - 24px);
-  z-index: 10; display: flex; align-items: center; gap: 10px; padding-block: 8px; padding-inline: 14px 8px; font-size: 13px;
+  z-index: 10; display: flex; align-items: center; gap: 10px; padding-block: 8px; padding-inline: 14px 8px; font-size: var(--am-fs-text);
   color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 6px 24px rgba(0,0,0,.18);
 }
 .am-reply-bar[hidden] { display: none; }
@@ -405,12 +627,12 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 .am-codeblock { margin: 10px 0; min-width: 0; }
 .am-codeblock .am-code { border-top-left-radius: 0; border-top-right-radius: 0; padding: 10px 0; }
 .am-code-head {
-  display: flex; align-items: center; gap: 8px; padding: 5px 6px 5px 12px; font: 12px/1.3 var(--font-sans); color: var(--ink-2);
+  display: flex; align-items: center; gap: 8px; padding: 5px 6px 5px 12px; font: var(--am-fs-small)/1.3 var(--font-sans); color: var(--ink-2);
   background: var(--paper); border: 1px solid var(--line-2); border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0;
 }
 .am-code-title { font-family: var(--font-mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .am-code-lang { margin-left: auto; color: var(--ink-3); text-transform: lowercase; }
-.am-code-copy { font: 12px/1 var(--font-sans); color: var(--ink-2); background: transparent; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 4px 8px; cursor: pointer; margin-left: auto; }
+.am-code-copy { font: var(--am-fs-small)/1 var(--font-sans); color: var(--ink-2); background: transparent; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 4px 8px; cursor: pointer; margin-left: auto; }
 .am-code-lang + .am-code-copy { margin-left: 0; }
 .am-code-copy:hover { border-color: var(--ink-3); color: var(--ink); }
 .am-code-copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -446,33 +668,33 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 }
 .am-kv-cell { border-inline-end: var(--bw) solid var(--line); border-bottom: var(--bw) solid var(--line); padding: 6px 10px 8px; min-width: 0; }
 .am-kv-cell--wide { grid-column: 1 / -1; }
-.am-kv dt { font: 11px/1.4 var(--font-mono); color: var(--ink-2); }
-.am-kv dd { margin: 2px 0 0; font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
-.am-kv-cell--wide dd { font-size: 17px; font-weight: 600; }
+.am-kv dt { font: var(--am-fs-label)/1.4 var(--font-mono); color: var(--ink-2); }
+.am-kv dd { margin: 2px 0 0; font-size: var(--am-fs-body); font-weight: 500; overflow-wrap: anywhere; }
+.am-kv-cell--wide dd { font-size: var(--am-fs-stat); font-weight: 600; }
 
 /* ── timeline ────────────────────────────── */
 .am-timeline { list-style: none; margin: 0; padding: 0; }
 .am-timeline--h { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); padding-top: 4px; }
 .am-timeline--h li { position: relative; text-align: center; padding: 0 6px; }
 .am-timeline--h li::before {
-  content: ""; position: absolute; top: 31px; left: 0; right: 0; border-top: var(--bw) solid var(--line);
+  content: ""; position: absolute; top: calc(var(--am-ln-whenHeight) + 7px); left: 0; right: 0; border-top: var(--bw) solid var(--line);
 }
 .am-timeline--h li:first-child::before { inset-inline-start: 50%; }
 .am-timeline--h li:last-child::before { inset-inline-end: 50%; }
-.am-tl-when { display: block; font-size: 15px; font-weight: 500; height: 24px; }
+.am-tl-when { display: block; font-size: var(--am-fs-heading); font-weight: 500; height: var(--am-ln-whenHeight); }
 .am-tl-dot {
   position: relative; display: block; width: 11px; height: 11px; margin: 2px auto 8px;
   border: var(--bw) solid var(--line); border-radius: 50%; background: var(--paper);
 }
 .am-tl-item--hi .am-tl-dot { background: var(--hi-stroke, var(--accent)); border-color: var(--hi-stroke, var(--accent)); }
-.am-tl-title { display: block; font-size: 12.5px; font-weight: 500; }
-.am-tl-text { display: block; font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.am-tl-title { display: block; font-size: var(--am-fs-code); font-weight: 500; }
+.am-tl-text { display: block; font-size: var(--am-fs-small); color: var(--ink-2); line-height: 1.45; }
 .am-timeline--v li { position: relative; padding: 0 0 14px; padding-inline-start: 22px; }
 .am-timeline--v li::before { content: ""; position: absolute; inset-inline-start: 5px; top: 6px; bottom: -6px; border-inline-start: var(--bw) solid var(--line-2); }
 .am-timeline--v li:last-child::before { display: none; }
 .am-timeline--v .am-tl-dot { position: absolute; inset-inline-start: 0; top: 4px; margin: 0; }
-.am-timeline--v .am-tl-when { display: inline; height: auto; font: 12px var(--font-mono); color: var(--ink-2); margin-inline-end: 8px; }
-.am-timeline--v .am-tl-title { display: inline; font-size: 14px; }
+.am-timeline--v .am-tl-when { display: inline; height: auto; font: var(--am-fs-small) var(--font-mono); color: var(--ink-2); margin-inline-end: 8px; }
+.am-timeline--v .am-tl-title { display: inline; font-size: var(--am-fs-body); }
 .am-timeline--v .am-tl-text { margin-top: 2px; }
 /* .am-tl-wrap is the container (src/components/timeline.js): a horizontal timeline answers to the width it has, not to the width of the window, since a
    sheet puts panels two or three to a row. Below 560 px (about 90 px for each of the six items a timeline has by default) its dates
@@ -486,19 +708,19 @@ body.am-has-reply-bar { padding-block-end: 72px; }
   }
   .am-timeline--h li:last-child::before { display: none; }
   .am-timeline--h .am-tl-dot { position: absolute; inset-inline-start: 0; top: 4px; margin: 0; }
-  .am-timeline--h .am-tl-when { display: inline; height: auto; font: 12px var(--font-mono); color: var(--ink-2); margin-inline-end: 8px; }
-  .am-timeline--h .am-tl-title { display: inline; font-size: 14px; }
+  .am-timeline--h .am-tl-when { display: inline; height: auto; font: var(--am-fs-small) var(--font-mono); color: var(--ink-2); margin-inline-end: 8px; }
+  .am-timeline--h .am-tl-title { display: inline; font-size: var(--am-fs-body); }
   .am-timeline--h .am-tl-text { margin-top: 2px; }
 }
 
 /* ── annot sentence notes ──────────────────────── */
 .am-annot + .am-annot { border-top: 1px solid var(--line-2); padding-top: 12px; }
-.am-annot-head { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
-.am-annot-meta { font: 11px var(--font-mono); font-weight: 400; color: var(--ink-2); }
+.am-annot-head { display: flex; justify-content: space-between; gap: 12px; font-size: var(--am-fs-text); font-weight: 600; margin-bottom: 8px; }
+.am-annot-meta { font: var(--am-fs-label) var(--font-mono); font-weight: 400; color: var(--ink-2); }
 .am-annot-scroll { overflow-x: auto; }
 .am-annot-line {
-  position: relative; display: inline-block; white-space: pre; font: 14px/1.6 var(--font-mono);
-  padding-bottom: calc(var(--rows, 0) * 17px + 14px);
+  position: relative; display: inline-block; white-space: pre; font: var(--am-fs-body)/1.6 var(--font-mono);
+  padding-bottom: calc(var(--rows, 0) * (var(--am-ln-segLine) + 1px) + var(--am-ln-annotPad));
 }
 .am-annot-line--wrap { display: block; white-space: normal; padding-bottom: 10px; }
 .am-annot-line--wrap .am-seg { white-space: nowrap; }
@@ -508,30 +730,30 @@ body.am-has-reply-bar { padding-block-end: 72px; }
   border: 1px solid var(--accent); border-top: 0;
 }
 .am-seg-n {
-  position: absolute; inset-inline-start: 0; top: calc(100% + 8px + var(--row, 0) * 17px);
-  font: 11px/16px var(--font-sans); color: var(--accent); white-space: nowrap;
+  position: absolute; inset-inline-start: 0; top: calc(100% + 8px + var(--row, 0) * (var(--am-ln-segLine) + 1px));
+  font: var(--am-fs-label)/var(--am-ln-segLine) var(--font-sans); color: var(--accent); white-space: nowrap;
 }
 .am-seg--err { color: var(--err); }
 .am-seg--err::after { border-color: var(--err); }
 .am-seg--err .am-seg-n { color: var(--err); }
-.am-annot-caption { font-size: 12px; color: var(--ink-2); }
+.am-annot-caption { font-size: var(--am-fs-small); color: var(--ink-2); }
 
 /* ── limits bars ───────────────────────── */
 .am-lim + .am-lim { margin-top: 14px; }
-.am-lim-head { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; margin-bottom: 4px; }
-.am-lim-val { font: 12px var(--font-mono); color: var(--accent); white-space: nowrap; }
+.am-lim-head { display: flex; justify-content: space-between; gap: 12px; font-size: var(--am-fs-text); margin-bottom: 4px; }
+.am-lim-val { font: var(--am-fs-small) var(--font-mono); color: var(--accent); white-space: nowrap; }
 .am-lim-track { position: relative; height: 12px; border: 1px solid var(--line-2); background: var(--fill); border-radius: calc(var(--radius) / 2); }
 .am-lim-fill { position: absolute; inset-inline-start: 0; top: 0; bottom: 0; background: var(--accent-bg); border-inline-end: 1px solid var(--accent); }
 .am-lim-mark { position: absolute; top: -4px; bottom: -4px; border-left: 2px solid var(--accent); }
 .am-lim.is-over .am-lim-fill { background: var(--err-bg); border-inline-end-color: var(--err); }
 .am-lim.is-over .am-lim-val { color: var(--err); }
-.am-lim-ticks { position: relative; height: 16px; font: 10px/16px var(--font-mono); color: var(--ink-3); }
+.am-lim-ticks { position: relative; height: var(--am-ln-limitsTick); font: var(--am-fs-tick)/var(--am-ln-limitsTick) var(--font-mono); color: var(--ink-3); }
 .am-lim-ticks span { position: absolute; transform: translateX(-50%); }
 .am-lim-ticks span:first-child { transform: none; }
-.am-lim-note { font-size: 11px; color: var(--ink-2); margin-inline-start: 6px; }
+.am-lim-note { font-size: var(--am-fs-label); color: var(--ink-2); margin-inline-start: 6px; }
 
 /* ── tree ─────────────────────────── */
-.am-tree { font-size: 13px; }
+.am-tree { font-size: var(--am-fs-text); }
 .am-tree-root { display: flex; justify-content: center; position: relative; padding-bottom: 18px; }
 .am-tree-root::after { content: ""; position: absolute; bottom: 0; left: 50%; height: 18px; border-left: var(--bw) solid var(--line); }
 .am-tree-root--solo { padding-bottom: 12px; }
@@ -540,13 +762,13 @@ body.am-has-reply-bar { padding-block-end: 72px; }
   border: var(--node-width, var(--bw)) solid var(--node-stroke, var(--line)); background: var(--node-fill, var(--paper)); padding: 6px 14px; text-align: center;
   border-radius: var(--node-radius, var(--radius)); font-weight: 600; color: var(--node-text, inherit); filter: var(--node-shadow, none);
 }
-.am-tree-box small { display: block; font-weight: 400; color: var(--ink-2); font-size: 12px; }
+.am-tree-box small { display: block; font-weight: 400; color: var(--ink-2); font-size: var(--am-fs-small); }
 /* The root box and a highlighted box are emphasis: they take the highlight tokens. With none set the root box keeps its accent tint and a highlighted box looks like any other. */
 .am-tree-box--root, .am-tree-box--hi { border-color: var(--hi-stroke, var(--node-stroke, var(--line))); color: var(--hi-text, var(--node-text, inherit)); }
 .am-tree-box--root { background: var(--hi-fill, var(--accent-bg)); }
 .am-tree-box--hi { background: var(--hi-fill, var(--node-fill, var(--paper))); }
 .am-tree-box--root small, .am-tree-box--hi small { color: var(--hi-text, var(--ink-2)); }
-.am-tree-box--root { font-size: 15px; padding: 8px 28px; }
+.am-tree-box--root { font-size: var(--am-fs-heading); padding: 8px 28px; }
 .am-tree-cols { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); }
 .am-tree-col { position: relative; padding: 18px 8px 0; min-width: 0; }
 .am-tree-col::before { content: ""; position: absolute; top: 0; left: 0; right: 0; border-top: var(--bw) solid var(--line); }
@@ -560,16 +782,16 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 .am-tree-list li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.95em; width: 12px; border-top: 1px solid var(--ink-3); }
 .am-tree-list li::after { content: ""; position: absolute; inset-inline-start: 0; top: 0; bottom: 0; border-inline-start: 1px solid var(--ink-3); }
 .am-tree-list li:last-child::after { bottom: auto; height: 0.95em; }
-.am-tree-tag { font: 11px var(--font-mono); color: var(--ink-3); margin-inline-end: 4px; }
-.am-tree code { font: 12px var(--font-mono); }
-.am-tree-sub { display: block; font-size: 11.5px; color: var(--ink-2); }
+.am-tree-tag { font: var(--am-fs-label) var(--font-mono); color: var(--ink-3); margin-inline-end: 4px; }
+.am-tree code { font: var(--am-fs-small) var(--font-mono); }
+.am-tree-sub { display: block; font-size: var(--am-fs-fine); color: var(--ink-2); }
 .am-tree-hi > .am-tree-label { color: var(--accent); font-weight: 600; }
 
 /* ── Diagrams (flow / sequence) ───────────────── */
 .am-diagram { margin: 0; overflow-x: auto; text-align: center; }
 /* Embedded previews can lose html[data-theme]; the fallbacks keep diagrams readable, and defined theme variables still win. */
 .am-diagram svg { max-width: 100%; height: auto; font-family: var(--font-sans, sans-serif); }
-.am-diagram text { fill: var(--ink, #16181d); font-size: 13px; }
+.am-diagram text { fill: var(--ink, #16181d); font-size: var(--am-fs-d-node); }
 /* Diagram tokens (docs/reference.md, "Diagram tokens"): each painted part reads an optional token and falls back to the look it always had,
    so a theme that sets none of them draws the same diagram. Font family, size and weight are not tokens: diagram text is measured for the sans font. */
 .am-node-shape { fill: var(--node-fill, var(--paper, #ffffff)); stroke: var(--node-stroke, var(--line, #1d2026)); stroke-width: var(--node-width, var(--bw, 1.5px)); filter: var(--node-shadow, none); }
@@ -585,9 +807,9 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 .am-edge--dashed { stroke-dasharray: 5 4; }
 .am-arrow { fill: var(--edge-color, var(--ink-2, #4b5260)); }
 .am-edge-label rect { fill: var(--paper, #ffffff); }
-.am-diagram .am-edge-label text { fill: var(--edge-label, var(--accent, #1d5fbf)); font-size: 11.5px; }
+.am-diagram .am-edge-label text { fill: var(--edge-label, var(--accent, #1d5fbf)); font-size: var(--am-fs-d-edge); }
 .am-cluster { fill: var(--cluster-fill, var(--fill, #f3f5f8)); stroke: var(--cluster-stroke, var(--line-2, #d6dae1)); stroke-width: 1; stroke-dasharray: 4 3; }
-.am-diagram .am-cluster-label { fill: var(--ink-2, #4b5260); font: 11px var(--font-mono, monospace); }
+.am-diagram .am-cluster-label { fill: var(--ink-2, #4b5260); font: var(--am-fs-d-cluster) var(--font-mono, monospace); }
 /* The PK / FK / UK marks of an entity follow the node text, and the highlighted text in a highlighted entity, so they stay readable on the theme's fills. */
 .am-diagram .am-er-key { fill: var(--node-text, var(--ink-2, #4b5260)); }
 .am-diagram .am-node--hi .am-er-key { fill: var(--hi-text, var(--ink-2, #4b5260)); }
@@ -596,7 +818,7 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 .am-actor { fill: var(--actor-fill, var(--node-fill, var(--paper, #ffffff))); stroke: var(--actor-stroke, var(--node-stroke, var(--line, #1d2026))); stroke-width: var(--node-width, var(--bw, 1.5px)); filter: var(--node-shadow, none); rx: var(--node-radius, 2px); }
 .am-diagram .am-actor-text { fill: var(--actor-text, var(--node-text, var(--ink, #16181d))); }
 .am-note { fill: var(--note-fill, var(--warn-bg, #fdf3e2)); stroke: var(--note-stroke, var(--warn, #a8620a)); stroke-width: var(--note-width, 1); rx: var(--note-radius, 2px); }
-.am-diagram .am-step { fill: var(--ink-3, #8b929e); font: 10px var(--font-mono, monospace); }
+.am-diagram .am-step { fill: var(--ink-3, #8b929e); font: var(--am-fs-d-step) var(--font-mono, monospace); }
 
 .am-diagram-expand {
   /* In flow and sticky: it sits at the end edge (right on a left-to-right page) and stays in view when the diagram scrolls sideways.
@@ -639,7 +861,7 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 .am-lightbox-title {
   display: inline-flex; align-items: center; gap: 8px;
   color: rgba(255, 255, 255, 0.92);
-  font: 13px/1 var(--font-sans, sans-serif); font-weight: 500;
+  font: var(--am-fs-text)/1 var(--font-sans, sans-serif); font-weight: 500;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   pointer-events: auto;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 60vw;
@@ -654,7 +876,7 @@ body.am-has-reply-bar { padding-block-end: 72px; }
   border: var(--bw, 1px) solid var(--line-2);
   border-radius: 50%;
   color: var(--ink);
-  font-size: 15px; line-height: 1;
+  font-size: var(--am-fs-heading); line-height: 1;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -693,12 +915,49 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 }
 
 /* ── doc template ────────────────────────── */
-.am-doc { max-width: 1120px; margin: 0 auto; padding: 40px 28px 64px; }
-.am-doc-layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; align-items: start; }
-.am-doc-layout--notoc { grid-template-columns: minmax(0, 1fr); max-width: 860px; }
-.am-toc { position: sticky; top: 24px; font-size: 13px; }
-.am-toc a { display: block; color: var(--ink-2); text-decoration: none; padding: 4px 0; padding-inline-start: 10px; border-inline-start: 2px solid var(--line-2); }
-.am-toc a:hover { color: var(--ink); border-inline-start-color: var(--accent); }
+.am-doc { max-width: 916px; margin: 0 auto; padding: 40px 28px 64px; }
+.am-doc-layout { position: relative; }
+/* The outline rail: a zero-height sticky strip whose child hangs 8px outside the body on the chosen side. "start" and "end" are
+   logical, so the rail mirrors on a right-to-left page. data-flow says which way the label and the list open: "out" away from the
+   body, "in" over it (src/runtime/outline.js picks it from the room left in the viewport; the markup starts with "in"). */
+/* Above panels and the diagram expand button (2), below the fixed toolbar and reply bar (10). */
+.am-toc { position: sticky; top: 72px; height: 0; z-index: 5; font-size: var(--am-fs-text); }
+.am-outline { position: absolute; top: 0; inset-inline-start: calc(100% + 8px); }
+.am-toc[data-side="start"] .am-outline { inset-inline-start: auto; inset-inline-end: calc(100% + 8px); }
+.am-outline > summary { display: block; width: 16px; list-style: none; cursor: pointer; border-radius: 4px; }
+.am-outline > summary::-webkit-details-marker { display: none; }
+.am-outline > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.am-ticks { display: flex; flex-direction: column; max-height: calc(100vh - 100px); }
+.am-tick { position: relative; display: block; font-style: normal; flex: 0 1 9px; min-height: 2px; }
+.am-tick::before { content: ""; position: absolute; inset-inline: 3px; top: 50%; height: 2px; margin-top: -1px; border-radius: 1px; background: var(--ink-3); opacity: .55; }
+.am-tick:hover::before, .am-tick.is-peek::before { background: var(--ink); opacity: 1; }
+.am-tick.is-current::before { inset-inline: 0; height: 3px; margin-top: -1.5px; background: var(--accent); opacity: 1; }
+.am-tick::after {
+  content: attr(data-title); display: none; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; pointer-events: none;
+  max-width: min(240px, calc(100vw - 48px)); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  padding: 3px 8px; font-size: var(--am-fs-small); color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 4px 16px rgba(0, 0, 0, .12);
+}
+.am-tick:hover::after, .am-tick.is-peek::after { display: block; }
+.am-outline[open] .am-tick::after { display: none; }
+.am-outline-list {
+  position: absolute; top: -6px; z-index: 2; margin: 0; padding: 6px; list-style: none;
+  width: min(240px, calc(100vw - 48px)); max-height: calc(100vh - 96px); overflow-y: auto;
+  background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 6px 24px rgba(0, 0, 0, .14);
+}
+.am-outline-list a { display: block; padding: 5px 8px; color: var(--ink-2); text-decoration: none; border-radius: 4px; border-inline-start: 2px solid transparent; }
+.am-outline-list a:hover { color: var(--ink); background: var(--line-2); }
+.am-outline-list a[aria-current="true"] { color: var(--ink); font-weight: 600; border-inline-start-color: var(--accent); }
+.am-outline-list a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+/* Opens toward inline-end: end rail flowing out, start rail flowing in. Otherwise toward inline-start. */
+.am-toc[data-side="end"][data-flow="out"] .am-tick::after, .am-toc[data-side="start"][data-flow="in"] .am-tick::after,
+.am-toc[data-side="end"][data-flow="out"] .am-outline-list, .am-toc[data-side="start"][data-flow="in"] .am-outline-list { inset-inline-start: calc(100% + 6px); }
+.am-toc[data-side="start"][data-flow="out"] .am-tick::after, .am-toc[data-side="end"][data-flow="in"] .am-tick::after,
+.am-toc[data-side="start"][data-flow="out"] .am-outline-list, .am-toc[data-side="end"][data-flow="in"] .am-outline-list { inset-inline-end: calc(100% + 6px); }
+@media (prefers-reduced-motion: no-preference) {
+  .am-outline[open] .am-outline-list { animation: am-outline-in .14s ease-out; }
+  .am-tick::before { transition: inset-inline .12s, height .12s, opacity .12s; }
+}
+@keyframes am-outline-in { from { opacity: 0; } to { opacity: 1; } }
 .am-doc-body > .am-panel + .am-panel { margin-top: 20px; }
 
 /* ── Responsive and print ─────────────────────────── */
@@ -709,11 +968,20 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 }
 @media (max-width: 760px) {
   .am-sheet, .am-doc { padding: 56px 12px 24px; }
+  /* The toolbar holds more controls than a phone fits on one row. It scrolls sideways in place, so Theme and Mode stay reachable
+     and the page keeps the 56px top padding for one row. The rings focus draws outside a button are clipped by that scroll box. */
+  .am-toolbar { max-width: calc(100vw - 24px); overflow-x: auto; scrollbar-width: none; }
+  .am-toolbar::-webkit-scrollbar { display: none; }
+  .am-toolbar > * { flex: none; }
+  .am-toolbar .am-btn:focus-visible, .am-toolbar .am-pick:focus-within { outline-offset: -2px; }
   .am-head { padding-inline-end: 0; }
   .am-grid { grid-template-columns: minmax(0, 1fr); }
   .am-grid > .am-panel.am-span-wide { grid-column: auto !important; }
-  .am-doc-layout { grid-template-columns: minmax(0, 1fr); }
-  .am-toc { position: static; }
+  /* The rail hugs the viewport edge inside a strip of its own, so it never covers text and never pushes the body down. */
+  .am-doc-layout--rail-end { padding-inline-end: 18px; }
+  .am-doc-layout--rail-start { padding-inline-start: 18px; }
+  .am-toc[data-side="end"] .am-outline { inset-inline-start: auto; inset-inline-end: -17px; }
+  .am-toc[data-side="start"] .am-outline { inset-inline-end: auto; inset-inline-start: -17px; }
   .am-tree-cols { grid-template-columns: minmax(0, 1fr); }
   /* Tables and diagrams keep their size: the wrapper scrolls horizontally when they overflow. A cell is never narrower than about
      two short words, so a phone does not stack them one per line. On wider screens the sheet layout (src/runtime/layout-dom.js)
@@ -723,11 +991,11 @@ body.am-has-reply-bar { padding-block-end: 72px; }
   .am-lightbox-header { top: 8px; left: 12px; right: 12px; }
   .am-lightbox-stage { top: 46px; bottom: 12px; left: 12px; right: 12px; border-radius: max(var(--radius), 10px); }
 }
-.am-colophon { margin: 0 0 8px; font: 11px var(--font-mono); color: var(--ink-3); }
+.am-colophon { margin: 0 0 8px; font: var(--am-fs-label) var(--font-mono); color: var(--ink-3); }
 .am-colophon a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 
 @media print {
-  .am-toolbar, .am-diagram-expand, .am-lightbox, .am-code-copy, .am-comment-btn, .am-comment, .am-reply, .am-reply-bar { display: none !important; }
+  .am-toolbar, .am-diagram-expand, .am-lightbox, .am-code-copy, .am-toc, .am-comment-btn, .am-comment, .am-reply, .am-reply-bar { display: none !important; }
   body { background: var(--paper); }
   .am-panel { break-inside: avoid; box-shadow: none; }
 }
@@ -747,6 +1015,8 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 .am-btn--remark-clear { color: var(--err); }
 .am-btn--remark-clear.is-armed { background: var(--err-bg); border-color: var(--err); }
 .am-remark-hover { outline: 1px dashed var(--ink-3); outline-offset: 2px; cursor: pointer; }
+[data-am-pick]:focus { outline: none; }
+[data-am-pick]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 :is(.am-mark, .am-remark-kind)[data-kind="suggestion"] { --mark: var(--warn); --mark-bg: var(--warn-bg); }
 :is(.am-mark, .am-remark-kind)[data-kind="keep"] { --mark: var(--ok); --mark-bg: var(--ok-bg); }
 :is(.am-mark, .am-remark-kind)[data-kind="question"] { --mark: var(--accent); --mark-bg: var(--accent-bg); }
@@ -755,7 +1025,7 @@ body.am-has-reply-bar { padding-block-end: 72px; }
 /* The note chip sits inside the marked block (a table takes it as its caption, a list item puts it before its sub-list), so lists and
    grids keep their children. */
 .am-mark-note {
-  display: block; margin-block-start: 4px; font: 12px/1.5 var(--font-sans); letter-spacing: normal; text-transform: none;
+  display: block; margin-block-start: 4px; font: var(--am-fs-small)/1.5 var(--font-sans); letter-spacing: normal; text-transform: none;
   color: var(--ink-2); white-space: pre-wrap; caption-side: bottom; text-align: start;
 }
 .am-mark-note b { color: var(--ink); font-weight: 600; }
@@ -768,44 +1038,16 @@ table.am-mark { background: none; }
 }
 .am-remark-pop[hidden] { display: none; }
 .am-remark-kinds { display: flex; gap: 6px; flex-wrap: wrap; }
-.am-remark-kind { font: 12px/1 var(--font-sans); color: var(--ink-2); background: var(--paper); border: 1px solid var(--line-2); border-radius: 999px; padding: 4px 10px; cursor: pointer; }
+.am-remark-kind { font: var(--am-fs-small)/1 var(--font-sans); color: var(--ink-2); background: var(--paper); border: 1px solid var(--line-2); border-radius: 999px; padding: 4px 10px; cursor: pointer; }
 .am-remark-kind:hover { border-color: var(--ink-3); }
 .am-remark-kind[aria-pressed="true"] { color: var(--ink); border-color: var(--mark); background: var(--mark-bg); }
 .am-remark-kind:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-.am-remark-pop textarea { font: 13px/1.5 var(--font-sans); color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 6px 8px; resize: vertical; }
+.am-remark-pop textarea { font: var(--am-fs-text)/1.5 var(--font-sans); color: var(--ink); background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 6px 8px; resize: vertical; }
 .am-remark-actions { display: flex; gap: 6px; }
 .am-remark-actions .am-btn:disabled { opacity: .5; cursor: default; }
+.am-remark-need { align-self: center; color: var(--ink-3); font-size: var(--am-fs-small); }
+.am-remark-kind::before { content: attr(data-n); margin-inline-end: 5px; color: var(--ink-3); font-family: var(--font-mono); font-size: var(--am-fs-label); }
 @media print { .am-remark-pop { display: none !important; } }
-
-
-/* New-version button and popover (src/render.js adds this file only to a page that has the button). The popover sits under the
-   toolbar and stays hidden unless open, so a browser without native popovers never shows it. */
-.am-btn--update { color: var(--ok); border-color: var(--ok); white-space: nowrap; }
-.am-update { display: none; }
-.am-update:popover-open {
-  display: block; position: fixed; inset-block: 52px auto; inset-inline: auto 12px; margin: 0; width: min(380px, calc(100vw - 24px));
-  padding: 14px 16px; font-size: 13px; color: var(--ink); background: var(--paper);
-  border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,.25);
-}
-.am-update p { margin: 0 0 8px; }
-.am-update-title { font-weight: 600; color: var(--ok); }
-.am-update-label { color: var(--ink-2); font-size: 12px; }
-.am-update-notes { margin: 0 0 12px; padding-inline-start: 18px; }
-.am-update-notes li { margin: 2px 0; }
-.am-update-notes code { font-size: 12px; }
-.am-update-row { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; }
-.am-update-row > :first-child {
-  flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font-size: 12px; padding: 6px 8px;
-  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
-}
-.am-update a { color: var(--accent); font-size: 12px; }
-/* A phone has no room for the words: the button keeps only its dot, and its aria-label still names the version. */
-@media (max-width: 760px) {
-  .am-btn--update .am-update-text { display: none; }
-}
-@media print {
-  .am-update { display: none !important; }
-}
 
 
 html[data-theme="blueprint"] .am-frame { border: 1px solid var(--line); padding: 30px; }
@@ -813,14 +1055,14 @@ html[data-theme="blueprint"] .am-frame::before {
   content: ""; position: absolute; inset: 18px; border: 1px solid var(--line); pointer-events: none;
 }
 html[data-theme="blueprint"] .am-ruler {
-  display: flex; position: absolute; font: 10px/1 var(--font-mono); color: var(--ink-3);
+  display: flex; position: absolute; font: var(--am-fs-tick)/1 var(--font-mono); color: var(--ink-3);
 }
 @media (max-width: 760px) {
   html[data-theme="blueprint"] .am-frame { padding: 0; border: 0; }
   html[data-theme="blueprint"] .am-frame::before, html[data-theme="blueprint"] .am-ruler { display: none; }
 }
 
-html[data-theme="shadcn"] .am-panel-id { border-radius: 6px; min-width: 24px; height: 24px; margin: 9px 0 9px 14px; font-size: 12px; }
+html[data-theme="shadcn"] .am-panel-id { border-radius: 6px; min-width: 24px; height: 24px; margin: 9px 0 9px 14px; font-size: var(--am-fs-small); }
 html[data-theme="shadcn"] .am-panel-head { border-bottom-width: 1px; }
 html[data-theme="shadcn"] .am-kv { border-color: var(--line); border-radius: var(--radius); overflow: hidden; }
 
@@ -829,38 +1071,151 @@ html[data-theme="paper"]:lang(ja)[data-mode] { --font-serif: "Iowan Old Style", 
 html[data-theme="paper"]:lang(he)[data-mode] { --font-serif: "Iowan Old Style", Palatino, Georgia, "Noto Serif Hebrew", "Frank Ruehl CLM", David, "Times New Roman", serif; }
 html[data-theme="paper"] .am-head h1, html[data-theme="paper"] .am-panel-head h2, html[data-theme="paper"] .am-md, html[data-theme="paper"] .am-intro, html[data-theme="paper"] .am-callout { font-family: var(--font-serif); }
 html[data-theme="paper"] .am-head h1 { font-weight: 600; letter-spacing: 0; }
-html[data-theme="paper"] .am-md p, html[data-theme="paper"] .am-md li, html[data-theme="paper"] .am-md blockquote, html[data-theme="paper"] .am-intro { font-size: 15.5px; line-height: 1.75; }
+html[data-theme="paper"] .am-md p, html[data-theme="paper"] .am-md li, html[data-theme="paper"] .am-md blockquote, html[data-theme="paper"] .am-intro { font-size: var(--am-fs-lead); line-height: 1.75; }
 html[data-theme="paper"] .am-md p { margin-bottom: 12px; }
 html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
+
+
+html[data-theme="x-daily"] .am-head { margin-bottom: 22px; }
+html[data-theme="x-daily"] .am-head h1 { font-family: var(--font-reading); font-size: calc(32px * var(--am-scale, 1)); line-height: 1.25; font-weight: 600; letter-spacing: -0.03em; color: var(--title-1); }
+html[data-theme="x-daily"] .am-head-meta { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 14px; }
+html[data-theme="x-daily"] .am-intro { font-size: calc(15px * var(--am-scale, 1)); line-height: 1.75; color: var(--ink-2); max-width: 72ch; }
+html[data-theme="x-daily"] .am-panel { border-color: var(--line); scroll-margin-top: 72px; box-shadow: 0 1px 0 var(--ambient); }
+html[data-theme="x-daily"] .am-panel-head { min-height: 44px; border-bottom: 1px solid var(--line-2); background: linear-gradient(180deg, var(--fill), var(--paper)); }
+html[data-theme="x-daily"] .am-panel-head h2 { font-family: var(--font-reading); font-size: calc(18px * var(--am-scale, 1)); font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; color: var(--title-2); padding-block: 10px; }
+html[data-theme="x-daily"] .am-panel-id { align-self: center; min-width: 26px; height: 26px; margin-inline-start: 14px; border: 1px solid var(--line); border-radius: 7px; background: var(--accent-bg); color: var(--accent); font: 600 calc(12px * var(--am-scale, 1))/1 var(--font-mono); }
+html[data-theme="x-daily"] .am-panel-meta { font-weight: 600; color: var(--accent); }
+html[data-theme="x-daily"] .am-panel-body { padding: 18px 18px 20px; }
+html[data-theme="x-daily"] .am-md { font-size: calc(15px * var(--am-scale, 1)); line-height: 1.75; }
+html[data-theme="x-daily"] .am-md p { margin-bottom: 10px; max-width: 72ch; }
+html[data-theme="x-daily"] .am-md h3 {
+  font-family: var(--font-reading);
+  font-size: calc(19px * var(--am-scale, 1));
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--title-3);
+  margin: 28px 0 8px;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line-2);
+}
+html[data-theme="x-daily"] .am-md > h3:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+html[data-theme="x-daily"] .am-md h3 + p em,
+html[data-theme="x-daily"] .am-md h3 + em,
+html[data-theme="x-daily"] .am-md p:has(> em:only-child) {
+  display: block;
+  font-style: normal;
+  font-size: calc(12.5px * var(--am-scale, 1));
+  color: var(--ink-3);
+  margin: 0 0 10px;
+  letter-spacing: 0.01em;
+}
+html[data-theme="x-daily"] .am-md strong { font-weight: 650; color: var(--ink); }
+html[data-theme="x-daily"] .am-md a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+html[data-theme="x-daily"] .am-md ul, html[data-theme="x-daily"] .am-md ol { margin: 8px 0 14px; padding-inline-start: 1.25em; max-width: 72ch; }
+html[data-theme="x-daily"] .am-md li { margin: 4px 0; }
+html[data-theme="x-daily"] .am-md li + li { margin-top: 6px; }
+html[data-theme="x-daily"] .am-callout { border-radius: 10px; }
+html[data-theme="x-daily"] .am-callout--warn { border-inline-start-width: 4px; }
+html[data-theme="x-daily"] .am-callout--err { border-inline-start-width: 4px; }
+html[data-theme="x-daily"] .am-toc a { font-weight: 500; }
+@media (max-width: 760px) {
+  html[data-theme="x-daily"] .am-head h1 { font-size: calc(26px * var(--am-scale, 1)); }
+  html[data-theme="x-daily"] .am-md h3 { font-size: calc(17px * var(--am-scale, 1)); }
+  html[data-theme="x-daily"] .am-panel { scroll-margin-top: 100px; }
+}
+
 </style>
 </head>
 <body>
-<div class="am-toolbar" data-am-root-lang="zh-CN" data-am-root-theme="shadcn" data-am-root-mode="auto" data-am-root-style="off">
-<button class="am-btn am-btn--update" type="button" data-am="update" popovertarget="am-update" aria-label="新版本 0.5.7" hidden>● <span class="am-update-text">新版本 <bdi>0.5.7</bdi></span></button>
-<label class="am-pick">主题<select data-am="theme"><option value="blueprint">图纸</option><option value="shadcn" selected>卡片</option><option value="paper">纸张</option></select></label>
+<div class="am-toolbar" data-am-root-lang="zh-CN" data-am-root-theme="x-daily" data-am-root-mode="auto" data-am-root-style="off">
+<label class="am-pick">主题<select data-am="theme"><option value="blueprint">图纸</option><option value="shadcn">卡片</option><option value="paper">纸张</option><option value="x-daily" selected>X 日报</option></select></label>
 <label class="am-pick">明暗<select data-am="mode"><option value="auto" selected>跟随系统</option><option value="light">亮</option><option value="dark">暗</option></select></label>
-<button class="am-btn am-btn--reply" type="button" data-am="reply" data-ui="{&quot;button&quot;:&quot;回复&quot;,&quot;comment&quot;:&quot;评论&quot;,&quot;commentHint&quot;:&quot;对这个面板的意见&quot;,&quot;title&quot;:&quot;你的回复&quot;,&quot;hint&quot;:&quot;复制后粘贴回和 Agent 的对话，它会按你的选择和意见继续。&quot;,&quot;copy&quot;:&quot;复制回复&quot;,&quot;copyFailed&quot;:&quot;复制失败 — 请按 Cmd/Ctrl+C&quot;,&quot;close&quot;:&quot;关闭&quot;,&quot;suggested&quot;:&quot;建议&quot;,&quot;empty&quot;:&quot;先选择选项，或在面板上写评论。&quot;,&quot;decisions&quot;:&quot;决定&quot;,&quot;comments&quot;:&quot;评论&quot;,&quot;confirmed&quot;:&quot;确认了建议&quot;,&quot;untouched&quot;:&quot;未作答，保留建议&quot;,&quot;was&quot;:&quot;原为&quot;,&quot;typed&quot;:&quot;以 \&quot;&gt;\&quot; 开头的行是读者输入的文字。&quot;,&quot;raw&quot;:&quot;查看将复制的文本&quot;,&quot;preview&quot;:&quot;预览&quot;,&quot;count&quot;:{&quot;answered&quot;:&quot;已作答 {n} 项&quot;,&quot;comments&quot;:&quot;评论 {n} 条&quot;,&quot;remarks&quot;:&quot;标注 {n} 处&quot;},&quot;done&quot;:&quot;已复制 ✓&quot;,&quot;remarks&quot;:&quot;标注&quot;,&quot;kinds&quot;:{&quot;suggestion&quot;:&quot;建议&quot;,&quot;keep&quot;:&quot;保留&quot;,&quot;question&quot;:&quot;疑问&quot;,&quot;concern&quot;:&quot;关注&quot;}}">回复</button>
-<button class="am-btn am-btn--remark" type="button" data-am="remark" data-ui="{&quot;button&quot;:&quot;标注&quot;,&quot;hint&quot;:&quot;批注（可选）&quot;,&quot;save&quot;:&quot;保存&quot;,&quot;remove&quot;:&quot;删除&quot;,&quot;clear&quot;:&quot;清除所有标注&quot;,&quot;clearConfirm&quot;:&quot;再次点击以清除 {n} 条标注&quot;,&quot;section&quot;:&quot;标注&quot;,&quot;kinds&quot;:{&quot;suggestion&quot;:&quot;建议&quot;,&quot;keep&quot;:&quot;保留&quot;,&quot;question&quot;:&quot;疑问&quot;,&quot;concern&quot;:&quot;关注&quot;}}">标注</button>
+<button class="am-btn" type="button" data-am="scale-down" data-min="0.8" data-max="1.5" data-step="0.05" aria-label="缩小文字" title="缩小文字" hidden>A−</button><button class="am-btn" type="button" data-am="scale-up" data-min="0.8" data-max="1.5" data-step="0.05" aria-label="放大文字" title="放大文字" hidden>A+</button>
+<button class="am-btn am-btn--reply" type="button" data-am="reply" data-ui="{&quot;button&quot;:&quot;回复&quot;,&quot;comment&quot;:&quot;评论&quot;,&quot;commentHint&quot;:&quot;对这个面板的意见&quot;,&quot;title&quot;:&quot;你的回复&quot;,&quot;hint&quot;:&quot;复制后粘贴回和 Agent 的对话，它会按你的选择和意见继续。&quot;,&quot;copy&quot;:&quot;复制回复&quot;,&quot;copyFailed&quot;:&quot;复制失败 — 请按 Cmd/Ctrl+C&quot;,&quot;close&quot;:&quot;关闭&quot;,&quot;suggested&quot;:&quot;建议&quot;,&quot;empty&quot;:&quot;先选择选项，或在面板上写评论。&quot;,&quot;decisions&quot;:&quot;决定&quot;,&quot;comments&quot;:&quot;评论&quot;,&quot;confirmed&quot;:&quot;确认了建议&quot;,&quot;untouched&quot;:&quot;未作答，建议&quot;,&quot;was&quot;:&quot;原为&quot;,&quot;typed&quot;:&quot;以 \&quot;&gt;\&quot; 开头的行是读者输入的文字。&quot;,&quot;raw&quot;:&quot;查看将复制的文本&quot;,&quot;preview&quot;:&quot;预览&quot;,&quot;count&quot;:{&quot;answered&quot;:&quot;已作答 {n} 项&quot;,&quot;comments&quot;:&quot;评论 {n} 条&quot;,&quot;remarks&quot;:&quot;标注 {n} 处&quot;},&quot;done&quot;:&quot;已复制 ✓&quot;,&quot;remarks&quot;:&quot;标注&quot;,&quot;kinds&quot;:{&quot;suggestion&quot;:&quot;建议&quot;,&quot;keep&quot;:&quot;保留&quot;,&quot;question&quot;:&quot;疑问&quot;,&quot;concern&quot;:&quot;关注&quot;}}">回复</button>
+<button class="am-btn am-btn--remark" type="button" data-am="remark" data-ui="{&quot;button&quot;:&quot;标注&quot;,&quot;need&quot;:&quot;选择标签后才能保存&quot;,&quot;hint&quot;:&quot;批注（可选）&quot;,&quot;save&quot;:&quot;保存&quot;,&quot;remove&quot;:&quot;删除&quot;,&quot;clear&quot;:&quot;清除所有标注&quot;,&quot;clearConfirm&quot;:&quot;再次点击以清除 {n} 条标注&quot;,&quot;section&quot;:&quot;标注&quot;,&quot;kinds&quot;:{&quot;suggestion&quot;:&quot;建议&quot;,&quot;keep&quot;:&quot;保留&quot;,&quot;question&quot;:&quot;疑问&quot;,&quot;concern&quot;:&quot;关注&quot;}}">标注</button>
 <button class="am-btn" type="button" data-am="copy" data-done="已复制 ✓">复制源稿</button>
 </div>
-<div class="am-update" id="am-update" popover>
-<p class="am-update-title">新版本 <bdi>0.5.7</bdi></p>
-<p>当前 <bdi>0.5.5</bdi>。生成此页时检测到新版本。</p>
-<p class="am-update-label">这次更新：</p>
-<ul class="am-update-notes"><li>草稿错误一次列全；stdin 草稿会保存下来，只改出错的行</li><li>表格缺少 |---| 分隔行时报错，不再输出成一行行竖线</li><li>flow 图里绕到外侧的长连线不再被裁掉</li></ul>
-<p class="am-update-label">在终端运行：</p>
-<div class="am-update-row"><code dir="ltr">npx skills update answer-me-with-html -y</code><button class="am-btn" type="button" data-am="copy-text" data-text="npx skills update answer-me-with-html -y" data-done="已复制 ✓">复制</button></div>
-<p class="am-update-label">或者告诉 Agent：</p>
-<div class="am-update-row"><span>更新 answer-me-with-html</span><button class="am-btn" type="button" data-am="copy-text" data-text="更新 answer-me-with-html" data-done="已复制 ✓">复制</button></div>
-<a href="https://github.com/QingYunA/answer-me-with-html/releases" target="_blank" rel="noopener">查看更新内容</a>
-</div>
 <main class="am-doc">
-<header class="am-head"><p class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.5 · 2026-10-28 08:09 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></p><h1>X 日报 · 2026-10-28</h1><p class="am-sub">时间范围：2026-10-27 08:00 至 2026-10-28 08:00，北京时间</p><div class="am-intro am-md"><div class="am-callout am-callout--info" role="note"><div class="am-callout-title">本期概况</div><div class="am-callout-body am-md"><p>本期概况：名单 115 个账号，跳过私密账号 1 个（clowwindy），已知噪音账号 4 个（fhwofjow51260、MateCafe、pplxtop、xkajon）不读，实际读取 110 个账号。用免费的 x 帖子搜索按 from: 账号分 5 组批量读取（共 25 次搜索调用，每组翻页至窗口起点），另用 1 次 get_posts_by_ids 补全 87 条长帖和短链；窗口内共 570 条帖子，48 个账号有更新；去掉回复他人和纯转推后剩 229 条候选，合并同主题后保留 40 条条目；校验 GitHub 仓库 27 个、外部网站约 45 个（openai.com 对脚本返回 403，按规则保留）。过滤掉的噪音：马斯克和特朗普的政治帖、投资语录与交易所活动推广（DtDt666、tychozzz）、Python 刷题与面试题（clcoding、javarevisited）、留学求职推广（wakawaka_doctor）、算力租赁广告（passluo）、邀请码推广、时政评论、生活流水账、表情帖和纯图片帖。无限额问题，所有分组均已读全。</p>
-</div></div></div></header>
-<div class="am-doc-layout">
-<nav class="am-toc" aria-label="目录"><a href="#panel-A">A · AI 研究与行业动态</a><a href="#panel-B">B · AI 编程与 Agent 实践</a><a href="#panel-C">C · AI 工具、网关与免费额度</a><a href="#panel-D">D · Grok Bot</a><a href="#panel-E">E · 开源项目与工具</a><a href="#panel-F">F · 安全与系统更新</a><a href="#panel-G">G · 科技新闻</a><a href="#panel-H">H · 健康与生活</a></nav><div class="am-doc-body">
-<section class="am-panel" id="panel-A">
-<header class="am-panel-head"><span class="am-panel-id">A</span><h2>AI 研究与行业动态</h2><span class="am-panel-meta">6 条</span></header>
+<header class="am-head"><p class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.10 · 2026-10-27 21:58 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></p><h1>X 日报 · 2026-10-28</h1><p class="am-sub">时间范围：2026-10-27 08:00 至 2026-10-28 08:00，北京时间</p></header>
+<div class="am-doc-layout am-doc-layout--rail-end">
+<nav class="am-toc" aria-label="目录" data-side="end" data-flow="in"><details class="am-outline"><summary aria-label="目录"><span class="am-ticks" aria-hidden="true"><i class="am-tick" data-id="A" data-title="A · 今日速览"></i><i class="am-tick" data-id="B" data-title="B · 本期概况"></i><i class="am-tick" data-id="C" data-title="C · AI 研究与行业动态"></i><i class="am-tick" data-id="D" data-title="D · AI 编程与 Agent 实践"></i><i class="am-tick" data-id="E" data-title="E · AI 工具、网关与免费额度"></i><i class="am-tick" data-id="F" data-title="F · Grok Bot"></i><i class="am-tick" data-id="G" data-title="G · 开源项目与工具"></i><i class="am-tick" data-id="H" data-title="H · 安全与系统更新"></i><i class="am-tick" data-id="I" data-title="I · 科技新闻"></i><i class="am-tick" data-id="J" data-title="J · 健康与生活"></i></span></summary><ol class="am-outline-list"><li><a href="#panel-A">A · 今日速览</a></li><li><a href="#panel-B">B · 本期概况</a></li><li><a href="#panel-C">C · AI 研究与行业动态</a></li><li><a href="#panel-D">D · AI 编程与 Agent 实践</a></li><li><a href="#panel-E">E · AI 工具、网关与免费额度</a></li><li><a href="#panel-F">F · Grok Bot</a></li><li><a href="#panel-G">G · 开源项目与工具</a></li><li><a href="#panel-H">H · 安全与系统更新</a></li><li><a href="#panel-I">I · 科技新闻</a></li><li><a href="#panel-J">J · 健康与生活</a></li></ol></details></nav>
+<div class="am-doc-body">
+<section class="am-panel am-panel--bare" id="panel-A">
+<div class="am-panel-body"><div class="am-callout am-callout--ok" role="note"><div class="am-callout-title">今日重点（点目录或往下扫标题）</div><div class="am-callout-body am-md"><p><strong>AI 研究与行业动态</strong></p>
+<ul>
+<li>Axiom 用几十个 AI agent 花 24 天，把 1.5 万页的「有限单群分类定理」全部转成 Lean 并通过检查</li>
+<li>OpenAI 与 Anthropic 同日宣布 AI 推翻「指数时间假设」（ETH）</li>
+<li>Anthropic 公布 Claude 参与新药研发进展：最快 2028 年底进入人体试验</li>
+<li>Anthropic 招股书 20 个细节（续）</li>
+<li>10 亿参数的 Limite-1B-Violetto 在 AIME 2026 拿到 94.01 分</li>
+<li>微软向四国员工发出「自愿离职」方案；Lenny 列出当前 25 个最高薪岗位</li>
+</ul>
+<p><strong>AI 编程与 Agent 实践</strong></p>
+<ul>
+<li>《用 Manus 改造 Manus》：一份 AI Native 组织改造的一手实践</li>
+<li>多 Agent 并行会成为趋势：每个人都要从 IC 转成管理 Agent 的经理</li>
+<li>Anthropic 工程经理 Felix Rieseberg：面试不再考编程题，「冲劲胜过资历」</li>
+<li>Anthropic 平台工程负责人 Katelyn Lesse：上千个 Agent 一起干活，还缺工程师解决四个难题</li>
+<li>Anthropic 建议：子 agent 太多反而又慢又笨，附一段「收拢子 agent」的提示词</li>
+<li>《如何与 AI agent 协作》与 pstack 作者播客推荐</li>
+<li>Matt Pocock：领域知识对指挥 Agent 极其值钱</li>
+<li>编程工具小更新：Cursor 设计模式加入标注、Bun AOT 实测、Codex 20x 倍率 10 月 30 日到期</li>
+<li>GPT-6.1 Terra 上手实测</li>
+</ul>
+<p><strong>AI 工具、网关与免费额度</strong></p>
+<ul>
+<li>Magpie、AstrLink、agent-quota-gateway：把多个 AI 订阅和 API 统一到本地一个入口</li>
+<li>Free Claude Code：一个月 6 万星的「免费模型转发」项目</li>
+<li>限时免费：Qoder 免费用 DeepSeek-V4.1-Flash 到 10 月 31 日；ZCode 每天送 3 亿 GLM-5.3-F…</li>
+<li>DeepSeek Harness 0.2.1：Agent 能自己写插件，接入 DeepSeek 搜索</li>
+<li>新工具速览：JetBrains 开源 ThinkRail、墨问 Bots 公测、AgentScope 免费云端 Agent、todos 工作台</li>
+<li>用 BaoCut 把张爱玲 1969 年哈佛英文讲座做成双语视频</li>
+</ul>
+<p><strong>Grok Bot</strong></p>
+<ul>
+<li>Grok Bot 新功能汇总：Pages、Vault、1Password、Apple 集成、做视频</li>
+<li>Grok Bot 的 X 连接器免费了，附 5 个资源站、5 个官方用法、5 个值得关注的账号</li>
+</ul>
+<p><strong>开源项目与工具</strong></p>
+<ul>
+<li>Ghostty 1.4 发布；JetBrains 全系 IDE 终端改用 libghostty</li>
+<li>妙言 MiaoYan 上架 iPhone 和 iPad</li>
+<li>Snow Shot：开源免费的截图、贴图、OCR 和录屏一体工具</li>
+<li>Oleafly：免费开源的 LaTeX / Typst 论文编辑器，支持实时协作和 AI Agent</li>
+<li>net-merge：把 Wi-Fi、网线和手机热点叠加起来用</li>
+<li>android-ad-cleaner：不 root 关掉国产安卓系统里的广告和热搜</li>
+<li>学习与阅读：StudyAI、awesome-english-ebooks、BookOrbit、词光</li>
+<li>娱乐与创作：awesome-decomp-games、OnKey 练歌、ai-design-skills、刘春霖小楷书房</li>
+<li>Minilytics：跑在 Cloudflare Workers 上的轻量网站分析</li>
+<li>ESP32 上的三个有趣项目：离线小模型、Agent 状态屏、DIY 摇头灯</li>
+<li>出国路径测试工具「run-abroad」</li>
+<li>小众软件「开发者自荐」合集与 V2EX 网页版 WinXP</li>
+</ul>
+<p><strong>安全与系统更新</strong></p>
+<ul>
+<li>Cloudflare 提醒所有 Tunnel 用户尽快升级 cloudflared</li>
+<li>微软 Authenticator 安卓版曝高危漏洞 CVE-2026-80097</li>
+<li>iOS 27.2 正式版：国行可在系统层关掉「摇一摇」广告</li>
+</ul>
+<p><strong>科技新闻</strong></p>
+<ul>
+<li>第一批 iPhone Duo 应用上线，京东已次日达；Mac mini M6 国补后 4902 元</li>
+<li>Starlink Mobile 在巴西全国上线</li>
+<li>张一鸣以 6700 亿元登顶中国首富；盈透户均资产远超其他美股券商</li>
+</ul>
+<p><strong>健康与生活</strong></p>
+<ul>
+<li>坐飞机选靠窗还是靠过道：一项研究的数据</li>
+</ul>
+</div></div></div>
+</section>
+<section class="am-panel am-panel--bare" id="panel-B">
+<div class="am-panel-body"><div class="am-callout am-callout--info" role="note"><div class="am-callout-title">本期概况</div><div class="am-callout-body am-md"><p>本期概况：名单 115 个账号，跳过私密账号 1 个（clowwindy），已知噪音账号 4 个（fhwofjow51260、MateCafe、pplxtop、xkajon）不读，实际读取 110 个账号。用免费的 x 帖子搜索按 from: 账号分 5 组批量读取（共 25 次搜索调用，每组翻页至窗口起点），另用 1 次 get_posts_by_ids 补全 87 条长帖和短链；窗口内共 570 条帖子，48 个账号有更新；去掉回复他人和纯转推后剩 229 条候选，合并同主题后保留 40 条条目；校验 GitHub 仓库 27 个、外部网站约 45 个（openai.com 对脚本返回 403，按规则保留）。过滤掉的噪音：马斯克和特朗普的政治帖、投资语录与交易所活动推广（DtDt666、tychozzz）、Python 刷题与面试题（clcoding、javarevisited）、留学求职推广（wakawaka_doctor）、算力租赁广告（passluo）、邀请码推广、时政评论、生活流水账、表情帖和纯图片帖。无限额问题，所有分组均已读全。</p>
+</div></div></div>
+</section>
+<section class="am-panel" id="panel-C">
+<header class="am-panel-head"><span class="am-panel-id">C</span><h2>AI 研究与行业动态</h2><span class="am-panel-meta">6 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>Axiom 用几十个 AI agent 花 24 天，把 1.5 万页的「有限单群分类定理」全部转成 Lean 并通过检查</h3>
 <p><em>作者：宝玉（@dotey）· 10/28 02:15 北京时间</em></p>
 <p>AI 数学公司 Axiom 10 月 26 日宣布，把散落在 500 多篇论文、约 1.5 万页的「有限单群分类定理」（外号「巨大定理」，约 100 位数学家花几十年完成）全部改写成证明检查工具 Lean 能逐步核对的代码，检查全部通过。结论是定理本身没错，但 John Walter 1986 年对中间结论「不平衡群定理」的证法引用了一个错误说法，AI 给出了具体反例，并借用 Solomon 1976 年的思路写出新证法（已整理成 35 页论文）补上。整个工程约 4310 万行 Lean 代码（推文称约 5000 万行，博客和官网都是 4310 万），其中约 120 万行来自清华大学求真书院团队此前开源的项目；Axiom 没说用了哪些模型。宝玉提醒：Lean 只能保证推导每一步正确，开头那句「定理」的翻译是否忠实只能靠人读，目前还没有外部独立核查结果，Axiom 已邀请群论学家和 Lean 社区复核。</p>
@@ -918,8 +1273,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-B">
-<header class="am-panel-head"><span class="am-panel-id">B</span><h2>AI 编程与 Agent 实践</h2><span class="am-panel-meta">9 条</span></header>
+<section class="am-panel" id="panel-D">
+<header class="am-panel-head"><span class="am-panel-id">D</span><h2>AI 编程与 Agent 实践</h2><span class="am-panel-meta">9 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>《用 Manus 改造 Manus》：一份 AI Native 组织改造的一手实践</h3>
 <p><em>作者：宝玉（@dotey）· 10/27 11:56 北京时间</em></p>
 <p>宝玉推荐并提炼了 Manus 团队的文章：工程基建从「对人友好」变成「向 AI 暴露接口」，让 Agent 能跑端到端测试、读线上日志和报警、控制 Feature Flag；人和 AI 的交互从微管理变成「只给目标、要证据」，比如让 Agent 用测试账号走完注册支付并录屏；工程师一人同时开十几二十个 Session，从「人等 Agent」变成「Agent 等人」。组织上，7 个人维护 4 个 App，所有产品经理都提交过代码，人均每月约 1 万美元 token 开销，被解释为买的是时间和注意力；运维把发版流程写进 Agents.md 后，谁都能让 AI 发版。</p>
@@ -998,8 +1353,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-C">
-<header class="am-panel-head"><span class="am-panel-id">C</span><h2>AI 工具、网关与免费额度</h2><span class="am-panel-meta">6 条</span></header>
+<section class="am-panel" id="panel-E">
+<header class="am-panel-head"><span class="am-panel-id">E</span><h2>AI 工具、网关与免费额度</h2><span class="am-panel-meta">6 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>Magpie、AstrLink、agent-quota-gateway：把多个 AI 订阅和 API 统一到本地一个入口</h3>
 <p><em>作者：Geek（@geekbb）· 10/27 10:06；shukebeta（@shukebeta）· 10/27 17:21 北京时间</em></p>
 <p>Geek 推荐了两个本地 AI 网关：yetone 的 Magpie 从菜单栏统一管理各 Agent 用的模型（比如让 Codex 跑 DeepSeek、Claude Code 跑 Kimi）；AstrLink 是本地 AI 网关，统一订阅和 API 提供商，带智能路由和本机隐私保护。shukebeta 则写了 agent-quota-gateway：一个只用标准库的 Go 小程序，Agent 只连本地端点并发送「池名」，网关保管凭据、让每个 Agent 固定在一个账号上（保住提示缓存），遇到真正的 429 就按顺序切到下一个账号，整个池用尽时返回 503 和 Retry-After，让 Claude Code 等额度重置后继续而不是中断。它不做协议转换和计费，免费，源码以 BSL 1.1 发布（禁止做成托管服务出售，每个版本四年后转 Apache 2.0）。</p>
@@ -1067,8 +1422,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-D">
-<header class="am-panel-head"><span class="am-panel-id">D</span><h2>Grok Bot</h2><span class="am-panel-meta">2 条</span></header>
+<section class="am-panel" id="panel-F">
+<header class="am-panel-head"><span class="am-panel-id">F</span><h2>Grok Bot</h2><span class="am-panel-meta">2 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>Grok Bot 新功能汇总：Pages、Vault、1Password、Apple 集成、做视频</h3>
 <p><em>作者：Elon Musk（@elonmusk）· 10/28 00:31；Lenny Rachitsky（@lennysan）· 10/28 04:42 北京时间</em></p>
 <p>马斯克转发了 Grok Bot 团队 Matt Palmer 的本周更新视频，章节包括：Grok Bot 里的 Pages、Vault、1Password 集成、Apple 集成、Bot 自己做视频、新的 Bot 角色、X Spaces、字体和界面打磨。Lenny 转发了一位用户分享的两个公开 Bot：一个帮忙把电话号码从骚扰电话名单里移除，一个把个人信息从公开网站上清掉，称几秒钟就设好了。</p>
@@ -1095,8 +1450,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-E">
-<header class="am-panel-head"><span class="am-panel-id">E</span><h2>开源项目与工具</h2><span class="am-panel-meta">12 条</span></header>
+<section class="am-panel" id="panel-G">
+<header class="am-panel-head"><span class="am-panel-id">G</span><h2>开源项目与工具</h2><span class="am-panel-meta">12 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>Ghostty 1.4 发布；JetBrains 全系 IDE 终端改用 libghostty</h3>
 <p><em>作者：Mitchell Hashimoto（@mitchellh）· 10/27 23:19、10/28 00:52、02:16 北京时间</em></p>
 <p>Ghostty 1.4 是 172 位贡献者、7 个月、2,889 次提交的成果：滚动缓冲区平均压缩 90% 以上，整体内存占用降低 50%–90%；Kitty 图形协议 100% 完整（含动画，是 Kitty 之外第一个做到的终端）；支持 Kitty 剪贴板协议、macOS 27、Linux 新 OpenGL 渲染器和分屏拖放；<code>ghostty +ssh</code> 会自动在远程主机装好 terminfo；还修了 10 个安全公告，作者建议尽快升级。同时 JetBrains 宣布所有 IDE 终端改用 libghostty，按其年报超过 1250 万活跃用户，约是 Ghostty 自身用户的 6 倍。libghostty 现已覆盖 Ghostty 几乎全部核心，在 macOS/iOS/visionOS、Windows、Linux、FreeBSD、Android、WebAssembly 和裸机上构建测试，并有 C、Zig、Go、Swift、Python、Rust、.NET 等绑定；作者称在 4 核 8 GB 的 Linux 服务器上跑过 1 万个活跃终端。</p>
@@ -1233,8 +1588,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-F">
-<header class="am-panel-head"><span class="am-panel-id">F</span><h2>安全与系统更新</h2><span class="am-panel-meta">3 条</span></header>
+<section class="am-panel" id="panel-H">
+<header class="am-panel-head"><span class="am-panel-id">H</span><h2>安全与系统更新</h2><span class="am-panel-meta">3 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>Cloudflare 提醒所有 Tunnel 用户尽快升级 cloudflared</h3>
 <p><em>作者：小众软件（@appinn）· 10/27 11:32 北京时间</em></p>
 <p>Cloudflare 给 Tunnel 用户发邮件，提醒尽快升级 cloudflared：旧版仍信任此前由 eMudhra 签发的证书，可能被用于中间人攻击（MITM）。用 Cloudflare Tunnel 暴露内网服务的，建议检查版本并升级到最新。</p>
@@ -1260,8 +1615,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-G">
-<header class="am-panel-head"><span class="am-panel-id">G</span><h2>科技新闻</h2><span class="am-panel-meta">3 条</span></header>
+<section class="am-panel" id="panel-I">
+<header class="am-panel-head"><span class="am-panel-id">I</span><h2>科技新闻</h2><span class="am-panel-meta">3 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>第一批 iPhone Duo 应用上线，京东已次日达；Mac mini M6 国补后 4902 元</h3>
 <p><em>作者：小众软件（@appinn）· 10/27 12:32、15:02；ahhhhfs（@abskoop）· 10/27 20:44 北京时间</em></p>
 <p>小众软件盘点了第一批 iPhone Duo 应用；abskoop 晒出京东上 iPhone Duo 已经次日达。另据小众软件，苹果产品全线涨价（平均约 21%）后，Mac mini M6 官网价已到 6999 元，国补后约 4902 元，被不少人当作跑 AI Agent 的首选硬件（上一代 M4 曾不到 3000 元）。</p>
@@ -1291,8 +1646,8 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </ul>
 </div></div>
 </section>
-<section class="am-panel" id="panel-H">
-<header class="am-panel-head"><span class="am-panel-id">H</span><h2>健康与生活</h2><span class="am-panel-meta">1 条</span></header>
+<section class="am-panel" id="panel-J">
+<header class="am-panel-head"><span class="am-panel-id">J</span><h2>健康与生活</h2><span class="am-panel-meta">1 条</span></header>
 <div class="am-panel-body"><div class="am-md"><h3>坐飞机选靠窗还是靠过道：一项研究的数据</h3>
 <p><em>作者：老白（@laobaishare）· 10/27 18:00 北京时间</em></p>
 <p>帖子引用埃默里大学对 10 趟 3–5 小时航班乘客的跟踪：过道座位 80% 的人至少站起来过一次，靠窗只有 43%；靠窗的人平均与他人接触 12 次，过道是 64 次，接触少意味着被传染感冒的风险更低。代价是靠窗久坐不动，美国肺科医生认为长途飞行中靠窗是腿部血栓的风险因素之一，概率不高但存在，所以靠窗也要记得起来活动。</p>
@@ -1307,13 +1662,75 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </main>
 <textarea id="am-source" hidden readonly aria-hidden="true">---
 template: doc
-theme: shadcn
+theme: x-daily
 lang: zh
 style: off
 title: X 日报 · 2026-10-28
 subtitle: &quot;时间范围：2026-10-27 08:00 至 2026-10-28 08:00，北京时间&quot;
 ---
 
+## 今日速览 {bare}
+```callout ok 今日重点（点目录或往下扫标题）
+**AI 研究与行业动态**
+- Axiom 用几十个 AI agent 花 24 天，把 1.5 万页的「有限单群分类定理」全部转成 Lean 并通过检查
+- OpenAI 与 Anthropic 同日宣布 AI 推翻「指数时间假设」（ETH）
+- Anthropic 公布 Claude 参与新药研发进展：最快 2028 年底进入人体试验
+- Anthropic 招股书 20 个细节（续）
+- 10 亿参数的 Limite-1B-Violetto 在 AIME 2026 拿到 94.01 分
+- 微软向四国员工发出「自愿离职」方案；Lenny 列出当前 25 个最高薪岗位
+
+**AI 编程与 Agent 实践**
+- 《用 Manus 改造 Manus》：一份 AI Native 组织改造的一手实践
+- 多 Agent 并行会成为趋势：每个人都要从 IC 转成管理 Agent 的经理
+- Anthropic 工程经理 Felix Rieseberg：面试不再考编程题，「冲劲胜过资历」
+- Anthropic 平台工程负责人 Katelyn Lesse：上千个 Agent 一起干活，还缺工程师解决四个难题
+- Anthropic 建议：子 agent 太多反而又慢又笨，附一段「收拢子 agent」的提示词
+- 《如何与 AI agent 协作》与 pstack 作者播客推荐
+- Matt Pocock：领域知识对指挥 Agent 极其值钱
+- 编程工具小更新：Cursor 设计模式加入标注、Bun AOT 实测、Codex 20x 倍率 10 月 30 日到期
+- GPT-6.1 Terra 上手实测
+
+**AI 工具、网关与免费额度**
+- Magpie、AstrLink、agent-quota-gateway：把多个 AI 订阅和 API 统一到本地一个入口
+- Free Claude Code：一个月 6 万星的「免费模型转发」项目
+- 限时免费：Qoder 免费用 DeepSeek-V4.1-Flash 到 10 月 31 日；ZCode 每天送 3 亿 GLM-5.3-F…
+- DeepSeek Harness 0.2.1：Agent 能自己写插件，接入 DeepSeek 搜索
+- 新工具速览：JetBrains 开源 ThinkRail、墨问 Bots 公测、AgentScope 免费云端 Agent、todos 工作台
+- 用 BaoCut 把张爱玲 1969 年哈佛英文讲座做成双语视频
+
+**Grok Bot**
+- Grok Bot 新功能汇总：Pages、Vault、1Password、Apple 集成、做视频
+- Grok Bot 的 X 连接器免费了，附 5 个资源站、5 个官方用法、5 个值得关注的账号
+
+**开源项目与工具**
+- Ghostty 1.4 发布；JetBrains 全系 IDE 终端改用 libghostty
+- 妙言 MiaoYan 上架 iPhone 和 iPad
+- Snow Shot：开源免费的截图、贴图、OCR 和录屏一体工具
+- Oleafly：免费开源的 LaTeX / Typst 论文编辑器，支持实时协作和 AI Agent
+- net-merge：把 Wi-Fi、网线和手机热点叠加起来用
+- android-ad-cleaner：不 root 关掉国产安卓系统里的广告和热搜
+- 学习与阅读：StudyAI、awesome-english-ebooks、BookOrbit、词光
+- 娱乐与创作：awesome-decomp-games、OnKey 练歌、ai-design-skills、刘春霖小楷书房
+- Minilytics：跑在 Cloudflare Workers 上的轻量网站分析
+- ESP32 上的三个有趣项目：离线小模型、Agent 状态屏、DIY 摇头灯
+- 出国路径测试工具「run-abroad」
+- 小众软件「开发者自荐」合集与 V2EX 网页版 WinXP
+
+**安全与系统更新**
+- Cloudflare 提醒所有 Tunnel 用户尽快升级 cloudflared
+- 微软 Authenticator 安卓版曝高危漏洞 CVE-2026-80097
+- iOS 27.2 正式版：国行可在系统层关掉「摇一摇」广告
+
+**科技新闻**
+- 第一批 iPhone Duo 应用上线，京东已次日达；Mac mini M6 国补后 4902 元
+- Starlink Mobile 在巴西全国上线
+- 张一鸣以 6700 亿元登顶中国首富；盈透户均资产远超其他美股券商
+
+**健康与生活**
+- 坐飞机选靠窗还是靠过道：一项研究的数据
+```
+
+## 本期概况 {bare}
 ```callout info 本期概况
 本期概况：名单 115 个账号，跳过私密账号 1 个（clowwindy），已知噪音账号 4 个（fhwofjow51260、MateCafe、pplxtop、xkajon）不读，实际读取 110 个账号。用免费的 x 帖子搜索按 from: 账号分 5 组批量读取（共 25 次搜索调用，每组翻页至窗口起点），另用 1 次 get_posts_by_ids 补全 87 条长帖和短链；窗口内共 570 条帖子，48 个账号有更新；去掉回复他人和纯转推后剩 229 条候选，合并同主题后保留 40 条条目；校验 GitHub 仓库 27 个、外部网站约 45 个（openai.com 对脚本返回 403，按规则保留）。过滤掉的噪音：马斯克和特朗普的政治帖、投资语录与交易所活动推广（DtDt666、tychozzz）、Python 刷题与面试题（clcoding、javarevisited）、留学求职推广（wakawaka_doctor）、算力租赁广告（passluo）、邀请码推广、时政评论、生活流水账、表情帖和纯图片帖。无限额问题，所有分组均已读全。
 ```
@@ -1860,6 +2277,99 @@ const textWithMath = (node) => (node.nodeType === 3 ? nodeText(node) : [...node.
     select.addEventListener('change', () => root.setAttribute(attr, select.value));
   }
 
+  // ── Text size ─────────────────────────────
+  // A− / A+ set --am-scale on the root; every page size and line (src/themes/type-scale.js) follows it, and the drawing boxes grow
+  // with it while their viewBox keeps the units Node measured. The buttons carry the range from SCALE, so this script keeps no
+  // second copy of the numbers. A reader's choice is remembered in this browser and wins over the page's own scale; where storage
+  // is off (am serve, file://) it lasts for this tab, and the click still works.
+  const scaleDown = document.querySelector('[data-am="scale-down"]');
+  const scaleUp = document.querySelector('[data-am="scale-up"]');
+  if (scaleDown && scaleUp) {
+    const min = Number(scaleDown.dataset.min);
+    const max = Number(scaleDown.dataset.max);
+    const step = Number(scaleDown.dataset.step);
+    const storeKey = 'am-scale';
+    let value;
+
+    const inRange = (n) => Number.isFinite(n) && n >= min && n <= max;
+    const savedScale = () => {
+      try {
+        return Number(localStorage.getItem(storeKey));
+      } catch {
+        return NaN;
+      }
+    };
+    const saveScale = (n) => {
+      try {
+        localStorage.setItem(storeKey, String(n));
+      } catch {
+        // Storage may be off (am serve, file://); the size then lasts until the tab closes.
+      }
+    };
+
+    const updateButtons = () => {
+      const setUnavailable = (btn, unavailable) => {
+        if (unavailable) btn.setAttribute('aria-disabled', 'true');
+        else btn.removeAttribute('aria-disabled');
+      };
+      setUnavailable(scaleDown, value <= min);
+      setUnavailable(scaleUp, value >= max);
+    };
+
+    // One step is a multiple of `step`: Math.round first, then two decimals, so 1.1500000000000001 becomes 1.15.
+    const setScale = (next, remember = false) => {
+      value = Math.min(max, Math.max(min, Number((Math.round(next / step) * step).toFixed(2))));
+      root.style.setProperty('--am-scale', String(value));
+      for (const svg of document.querySelectorAll('.am-diagram:not(.am-lightbox-canvas) > svg[role="img"]')) {
+        const box = svg.viewBox?.baseVal;
+        if (!box || !(box.width > 0) || !(box.height > 0)) continue;
+        svg.setAttribute('width', String(Math.ceil(box.width * value)));
+        svg.setAttribute('height', String(Math.ceil(box.height * value)));
+      }
+      updateButtons();
+      if (remember) saveScale(value);
+      window.dispatchEvent(new Event('am-scale'));
+    };
+
+    // A page with no stored choice is left exactly as it was rendered: no inline variable, no svg rewrite, no extra layout pass.
+    value = parseFloat(getComputedStyle(root).getPropertyValue('--am-scale')) || 1;
+    updateButtons();
+    const saved = savedScale();
+    if (inRange(saved) && saved !== value) setScale(saved);
+    scaleDown.hidden = false;
+    scaleUp.hidden = false;
+    scaleDown.addEventListener('click', () => {
+      if (scaleDown.getAttribute('aria-disabled') === 'true') return;
+      setScale(value - step, true);
+    });
+    scaleUp.addEventListener('click', () => {
+      if (scaleUp.getAttribute('aria-disabled') === 'true') return;
+      setScale(value + step, true);
+    });
+  }
+
+  // A phone cannot show the whole toolbar. Its end (Reply, Remark, Copy source) is what a phone showed before the text-size
+  // buttons, so open at that end: Theme, Mode and A− / A+ are reached by scrolling toward the start. A reader scroll leaves the
+  // position we set, so a later resize does not pull the toolbar back.
+  if (carrier) {
+    const rtl = getComputedStyle(carrier).direction === 'rtl';
+    let lastProgrammatic = null;
+    let readerScrolled = false;
+    const scrollToEnd = () => {
+      if (carrier.scrollWidth <= carrier.clientWidth) return;
+      // Chrome keeps a right-to-left box's scrollLeft negative; the browser clamps either value to the real end.
+      carrier.scrollTo({ left: rtl ? -carrier.scrollWidth : carrier.scrollWidth });
+      lastProgrammatic = carrier.scrollLeft;
+    };
+    carrier.addEventListener('scroll', () => {
+      if (Math.abs(carrier.scrollLeft - lastProgrammatic) > 1) readerScrolled = true;
+    });
+    scrollToEnd();
+    addEventListener('resize', () => {
+      if (!readerScrolled) scrollToEnd();
+    });
+  }
+
   const copyText = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
@@ -2096,8 +2606,11 @@ function replyText({ title, decisions, comments, remarks = [], ui, rtl = false }
     out.push('', `## ${ui.decisions}`);
     decisions.forEach((d, i) => {
       const answer = d.picked.length ? d.picked.map((l) => `**${l}**`).join(', ') : '**—**';
+      // Every option starts unselected, so an ask the reader never clicked has no answer: the reply names the suggestion
+      // instead of passing it off as the reader's choice.
       const same = d.picked.length === d.suggested.length && d.picked.every((l) => d.suggested.includes(l));
-      const why = same ? (d.touched ? ui.confirmed : ui.untouched) : `${ui.was}: ${d.suggested.join(', ') || '—'}`;
+      const suggested = d.suggested.join(', ') || '—';
+      const why = !d.touched ? `${ui.untouched}: ${suggested}` : same ? ui.confirmed : `${ui.was}: ${suggested}`;
       out.push(`${i + 1}. [${d.panel}] ${d.question}`, `   ${arrow} ${answer} _(${why})_`);
     });
   }
@@ -2221,10 +2734,11 @@ if (replyBtn) {
   for (const ask of asks) {
     const inputs = [...ask.querySelectorAll('input')];
     const state = saved.asks?.[keyOf(ask)];
-    // A saved answer applies only while every picked option still exists on the page.
-    if (state && state.picked.every((v) => inputs.some((i) => i.value === v))) {
+    // A saved answer applies only while every picked option still exists on the page, and only if the reader clicked: older versions started
+    // with the suggestion selected and saved it untouched, and that state must come back unselected.
+    if (state?.touched && state.picked.every((v) => inputs.some((i) => i.value === v))) {
       for (const input of inputs) input.checked = state.picked.includes(input.value);
-      if (state.touched) touched.add(ask);
+      touched.add(ask);
     }
     // A click counts even on the option that is already picked: the reader confirms the suggestion.
     const answer = () => {
@@ -2424,7 +2938,7 @@ function occurrenceKeys(bases) {
   // The one definition of a block a reader can mark: the content under <main>. The page and panel titles are left out, because the
   // reply reads them as text; a panel has its Comment button.
   // A $$ block on its own is a div; a $$ formula inside a sentence is a span of its paragraph.
-  const BLOCK = 'main :is(h1,h2,h3,h4,h5,h6,p,li,blockquote,pre,table,dd,dt,figure,div.am-math-block):not(.am-head *, .am-panel-head *)';
+  const BLOCK = 'main :is(h1,h2,h3,h4,h5,h6,p,li,blockquote,pre,table,dd,dt,figure,div.am-math-block):not(.am-head *, .am-panel-head *, .am-toc *)';
   // A click on these does what it always did.
   const LIVE = '.am-remark-pop, .am-toolbar, a, button, input, textarea, select, label';
   const blockAt = (target) => (target.closest(LIVE) ? null : target.closest(BLOCK));
@@ -2478,11 +2992,15 @@ function occurrenceKeys(bases) {
   };
   // A mark whose block is gone from the page stays stored (it may return with `am patch`); it is neither painted nor sent.
   const marks = new Map(load().map((m) => [m.key, { key: m.key, kind: m.kind, note: String(m.note ?? '') }]));
+  // Kind and note of a popover closed without Save, by block key, until the page reloads (see open below).
+  const drafts = new Map();
   const clearBtn = document.createElement('button');
   clearBtn.type = 'button';
   clearBtn.className = 'am-btn am-btn--remark-clear';
-  clearBtn.hidden = true;
   clearBtn.textContent = ui.clear;
+  // Clear all drops saved marks and drafts, so it shows while either exists.
+  const toClear = () => marks.size + drafts.size;
+  const showClear = () => { clearBtn.hidden = toClear() === 0; };
   btn.insertAdjacentElement('afterend', clearBtn);
   let clearTimer = null;
   let clearArmed = false;
@@ -2492,12 +3010,12 @@ function occurrenceKeys(bases) {
     clearArmed = false;
     clearBtn.classList.remove('is-armed');
     clearBtn.textContent = ui.clear;
-    clearBtn.hidden = marks.size === 0;
+    showClear();
   };
   const armClear = () => {
     clearArmed = true;
     clearBtn.classList.add('is-armed');
-    clearBtn.textContent = ui.clearConfirm.replace('{n}', marks.size);
+    clearBtn.textContent = ui.clearConfirm.replace('{n}', toClear());
     clearTimer = setTimeout(resetClear, 4000);
   };
   clearBtn.addEventListener('click', () => {
@@ -2507,6 +3025,8 @@ function occurrenceKeys(bases) {
     }
     for (const el of document.querySelectorAll('.am-mark')) unpaint(el);
     marks.clear();
+    // A draft is a remark the reader has not saved yet; Clear all drops it too, so no block reopens with an old kind.
+    drafts.clear();
     try {
       localStorage.removeItem(storeKey);
     } catch {
@@ -2523,7 +3043,7 @@ function occurrenceKeys(bases) {
     }
     // The reply bar (reply.js) shows the number of marks.
     document.dispatchEvent(new Event('am-remark-change'));
-    clearBtn.hidden = marks.size === 0;
+    showClear();
   };
 
   const chip = (el, mark) => {
@@ -2551,10 +3071,11 @@ function occurrenceKeys(bases) {
     el.classList.remove('am-mark');
     delete el.dataset.kind;
   };
-  clearBtn.hidden = marks.size === 0;
+  showClear();
   if (marks.size) for (const [el, key] of keyMap()) if (marks.has(key)) paint(el, marks.get(key));
 
-  // The popover edits one block. Save stays off until a kind is picked.
+  // The popover edits one block. Save stays off until a kind is picked, and a hint says so. 1–4 pick a kind from the keyboard and
+  // move to the note; Ctrl / Cmd + Enter saves. A popover closed without Save keeps its kind and note as a draft for that block until the page reloads.
   const pop = document.createElement('div');
   pop.className = 'am-remark-pop';
   pop.hidden = true;
@@ -2563,8 +3084,11 @@ function occurrenceKeys(bases) {
   document.body.append(pop);
   let opener = null;
   let anchor = null;
+  let keepDraft = null;
   const close = (restoreFocus) => {
     if (pop.hidden) return;
+    keepDraft?.();
+    keepDraft = null;
     pop.hidden = true;
     if (restoreFocus) (opener?.isConnected && opener !== document.body ? opener : btn).focus();
   };
@@ -2581,14 +3105,23 @@ function occurrenceKeys(bases) {
   const open = (el) => {
     const key = keyMap().get(el);
     const mark = marks.get(key);
-    let kind = mark?.kind ?? '';
+    const draft = drafts.get(key);
+    let kind = draft?.kind ?? mark?.kind ?? '';
     opener = document.activeElement;
     anchor = el;
 
-    const note = make('textarea', { rows: 2, placeholder: ui.hint, value: mark?.note ?? '' });
+    const note = make('textarea', { rows: 2, placeholder: ui.hint, value: draft?.note ?? mark?.note ?? '' });
     note.setAttribute('aria-label', ui.hint);
     const keep = make('button', { type: 'button', className: 'am-btn', textContent: ui.save, disabled: !kind });
+    const need = make('span', { className: 'am-remark-need', textContent: ui.need, hidden: Boolean(kind) });
+    keepDraft = () => {
+      if (kind || note.value.trim()) drafts.set(key, { kind, note: note.value });
+      else drafts.delete(key);
+      showClear();
+    };
+    const done = () => { drafts.delete(key); keepDraft = null; showClear(); };
     keep.addEventListener('click', () => {
+      done();
       const saved = { key, kind, note: note.value.trim() };
       marks.set(key, saved);
       save();
@@ -2600,6 +3133,7 @@ function occurrenceKeys(bases) {
     if (mark) {
       const drop = make('button', { type: 'button', className: 'am-btn', textContent: ui.remove });
       drop.addEventListener('click', () => {
+        done();
         marks.delete(key);
         save();
         unpaint(el);
@@ -2607,17 +3141,34 @@ function occurrenceKeys(bases) {
       });
       actions.append(drop);
     }
-    const kindBtns = KINDS.map((k) => {
+    const choose = (k) => {
+      kind = k;
+      for (const other of kindBtns) other.setAttribute('aria-pressed', String(other.dataset.kind === k));
+      keep.disabled = false;
+      need.hidden = true;
+    };
+    const kindBtns = KINDS.map((k, i) => {
       const kb = make('button', { type: 'button', className: 'am-remark-kind', textContent: ui.kinds[k] });
       kb.dataset.kind = k;
+      kb.dataset.n = i + 1;
       kb.setAttribute('aria-pressed', String(k === kind));
-      kb.addEventListener('click', () => {
-        kind = k;
-        for (const other of kindBtns) other.setAttribute('aria-pressed', String(other === kb));
-        keep.disabled = false;
-      });
+      kb.addEventListener('click', () => choose(k));
       return kb;
     });
+    // Ctrl / Cmd + Enter presses Save (nothing while Save waits for a kind). A digit types into the note, so it picks a kind
+    // only while the focus is outside the note.
+    pop.onkeydown = (e) => {
+      if (e.key === 'Enter' && (e.ctrlKey || e.metaKey) && !e.isComposing) {
+        e.preventDefault();
+        if (!keep.disabled) keep.click();
+        return;
+      }
+      if (e.target === note || e.ctrlKey || e.metaKey || e.altKey || !/^[1-4]$/.test(e.key)) return;
+      e.preventDefault();
+      choose(KINDS[Number(e.key) - 1]);
+      note.focus();
+    };
+    actions.append(need);
     pop.replaceChildren(make('div', { className: 'am-remark-kinds' }), note, actions);
     pop.firstChild.append(...kindBtns);
     pop.hidden = false;
@@ -2639,6 +3190,25 @@ function occurrenceKeys(bases) {
     const el = blockAt(e.target);
     if (el) open(el);
   };
+  // The keyboard picks too: while the mode is on, every block takes focus with Tab, and Enter or Space opens its popover. A block
+  // that already had a tabindex keeps it; only the ones the mode added lose it again.
+  const pickKey = (e) => {
+    if ((e.key !== 'Enter' && e.key !== ' ') || e.ctrlKey || e.metaKey || e.altKey || !e.target.hasAttribute?.('data-am-pick')) return;
+    e.preventDefault();
+    open(e.target);
+  };
+  const focusable = (on) => {
+    if (!on && !keys) return; // the mode starts off: a page nobody marked builds no block keys
+    for (const el of keyMap().keys()) {
+      if (on && !el.hasAttribute('tabindex')) {
+        el.tabIndex = 0;
+        el.setAttribute('data-am-pick', '');
+      } else if (!on && el.hasAttribute('data-am-pick')) {
+        el.removeAttribute('tabindex');
+        el.removeAttribute('data-am-pick');
+      }
+    }
+  };
   const setMode = (on) => {
     btn.classList.toggle('is-on', on);
     btn.setAttribute('aria-pressed', String(on));
@@ -2646,6 +3216,8 @@ function occurrenceKeys(bases) {
     document.body[toggle]('click', pick);
     document.body[toggle]('mouseover', track);
     document.body[toggle]('mouseout', track);
+    document.body[toggle]('keydown', pickKey);
+    focusable(on);
     if (!on) {
       track({ type: 'mouseout', relatedTarget: null });
       close(false);
@@ -2874,12 +3446,17 @@ if (panels.length > 1) {
   const SINGLE_COLUMN = '(max-width: 760px)'; // the single-column breakpoint in src/themes/base.css
   const TWO_COLUMNS = '(max-width: 1100px)'; // below this the CSS grid has two columns
   const SAMPLE_STEP = 20; // width sampling step, px; the planner interpolates between samples
+  // The width floors are text sizes (px at scale 1). They take the page scale on every pass, so a runtime change of --am-scale re-plans.
   const TEXT_MIN = 260; // text keeps at least about 16 CJK characters per line
   const TABLE_COL_MIN = 96; // per table column, px
   const TABLE_COL_COMFORT = 220; // a table column this wide reads three or four words per line
   const KV_COL_MIN = 120; // per key-value column, px: a value of two short words stays on one line
   const DIAGRAM_MIN = 160;
   const RESIZE_DELAY = 150;
+  const pageScale = () => {
+    const scale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--am-scale'));
+    return Number.isFinite(scale) && scale > 0 ? scale : 1;
+  };
   const OVERFLOWING = '.am-table-wrap, .am-diagram, .am-annot-scroll, pre';
 
   // The first-row cells of each table carry the column widths fitTables() sets, so restore() resets them too.
@@ -2907,7 +3484,7 @@ if (panels.length > 1) {
   // needs more. Below it the cells wrap one word per line, so a panel with a table is not planned narrower than the sum, and
   // fitTables() keeps each column at its share (the browser would otherwise give the room to the longest column).
   const columnWidths = new Map();
-  function comfortableWidth(table) {
+  function comfortableWidth(table, scale) {
     const saved = table.getAttribute('style');
     const columns = (width) => {
       table.style.width = width;
@@ -2918,7 +3495,7 @@ if (panels.length > 1) {
     if (saved === null) table.removeAttribute('style');
     else table.setAttribute('style', saved);
     // A max-content column comes out a fraction under its text in Chrome, enough to wrap the last word, so it gets one pixel more.
-    const want = most.map((w, i) => Math.min(Math.ceil(w) + 1, Math.max(least[i], TABLE_COL_COMFORT)));
+    const want = most.map((w, i) => Math.min(Math.ceil(w) + 1, Math.max(least[i], TABLE_COL_COMFORT * scale)));
     columnWidths.set(table, { least, want });
     return want.reduce((sum, w) => sum + w, 0);
   }
@@ -2939,6 +3516,7 @@ if (panels.length > 1) {
   // Height (and, for panels with tables or code, the narrowest width without sideways scrolling) at sampled widths.
   // Only one panel is displayed while it is measured, so each width change lays out that panel alone.
   function measure(width) {
+    const scale = pageScale();
     grid.style.display = 'block';
     for (const el of panels) {
       el.style.display = 'none';
@@ -2958,10 +3536,10 @@ if (panels.length > 1) {
       const pad = svg ? el.offsetWidth - svg.parentElement.clientWidth : 0;
       const natural = svg ? naturalWidth(svg) : 0;
       const shrunk = Math.max(0, ...svgs.map((s) => naturalWidth(s) * MIN_SCALE)) + (svg ? pad : 34);
-      const tableFloors = [...el.querySelectorAll('.am-table-wrap > table')].map((t) => comfortableWidth(t) + el.offsetWidth - t.parentElement.clientWidth);
+      const tableFloors = [...el.querySelectorAll('.am-table-wrap > table')].map((t) => comfortableWidth(t, scale) + el.offsetWidth - t.parentElement.clientWidth);
       // A key-value grid gets the same care: the room a table gains must not squeeze a neighbouring grid to one word per line.
-      const kvs = [...el.querySelectorAll('.am-kv')].map((kv) => (Number(kv.style.getPropertyValue('--kv-cols')) || 1) * KV_COL_MIN + el.offsetWidth - kv.clientWidth);
-      const floor = svg ? Math.max(DIAGRAM_MIN, natural * MIN_SCALE + pad) : Math.max(TEXT_MIN, shrunk, tableCols * TABLE_COL_MIN + 34, ...tableFloors, ...kvs);
+      const kvs = [...el.querySelectorAll('.am-kv')].map((kv) => (Number(kv.style.getPropertyValue('--kv-cols')) || 1) * KV_COL_MIN * scale + el.offsetWidth - kv.clientWidth);
+      const floor = svg ? Math.max(DIAGRAM_MIN * scale, natural * MIN_SCALE + pad) : Math.max(TEXT_MIN * scale, shrunk, tableCols * TABLE_COL_MIN * scale + 34, ...tableFloors, ...kvs);
       const from = Math.min(width, Math.floor(floor / STEP) * STEP);
       const samples = [];
       let fits = null;
@@ -3070,6 +3648,8 @@ if (panels.length > 1) {
   };
   justify();
   addEventListener('resize', later);
+  // A reader's text size changes every panel's text widths and heights, so the sheet is planned again like a resize.
+  addEventListener('am-scale', later);
   addEventListener('beforeprint', () => {
     printing = true;
     toPrint();
@@ -3086,32 +3666,112 @@ if (panels.length > 1) {
   document.querySelector('[data-am="theme"]')?.addEventListener('click', later);
 }
 })();
-})();
-// Pages with a new-version button only: src/render.js adds this script after the page script.
-// The button shows where the browser has native popovers (they open and close the popover with no script). A page that am serve
-// sends to another device has no button (src/serve.js), so this script does not look at the address.
+// The outline rail of a doc page (src/templates/doc.js): the markup already works without a script, <details> opens the list and the
+// links jump. This adds the hover dwell, the open direction, the keys, the tap outside and the marking of the current section.
 (() => {
-  const button = document.querySelector('[data-am="update"]');
-  if (!button || !Object.hasOwn(HTMLElement.prototype, 'popover')) return;
-  button.hidden = false;
-  // Each copy button copies its data-text and reads data-done for a moment, then comes back to the label it started from. That
-  // label is read once, here: a second click inside the moment would otherwise read the copied label off the button and restore
-  // that instead, and the label would never come back. The moment starts again on each click: the timer of the previous one is
-  // left to fire and does nothing.
-  for (const copy of document.querySelectorAll('[data-am="copy-text"]')) {
-    const idle = copy.textContent;
-    let clicks = 0;
-    copy.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(copy.dataset.text);
-      } catch {
-        return;
-      }
-      copy.textContent = copy.dataset.done;
-      const mine = ++clicks;
-      setTimeout(() => { if (mine === clicks) copy.textContent = idle; }, 1400);
+  const nav = document.querySelector('nav.am-toc');
+  const box = nav && nav.querySelector('details.am-outline');
+  if (!box) return;
+  const sum = box.querySelector('summary');
+  const links = Array.from(box.querySelectorAll('.am-outline-list a'));
+  const ticks = Array.from(box.querySelectorAll('.am-tick'));
+  const LIST_W = 240; // keep in step with .am-outline-list in src/themes/base.css
+  const EDGE = 10; // the 6px gap to the rail plus a margin to the viewport edge
+  let current = '';
+  let byHover = false;
+  let dwell = 0;
+  let leave = 0;
+
+  // Open away from the body when the room outside the rail fits the list; otherwise over the body. Never past the viewport.
+  const place = () => {
+    const r = sum.getBoundingClientRect();
+    const right = r.left + r.width / 2 > innerWidth / 2;
+    const room = right ? innerWidth - r.right : r.left;
+    nav.dataset.flow = room >= Math.min(LIST_W, innerWidth - 48) + EDGE ? 'out' : 'in';
+  };
+  const setOpen = (open) => {
+    if (open) place();
+    box.open = open;
+    if (!open) byHover = false;
+  };
+  const peek = (tick) => ticks.forEach((t) => t.classList.toggle('is-peek', t === tick));
+  const currentLink = () => links.find((a) => a.getAttribute('aria-current') === 'true') || links[0];
+
+  const mark = (id) => {
+    current = id;
+    ticks.forEach((t) => t.classList.toggle('is-current', t.dataset.id === id));
+    links.forEach((a) => {
+      if (a.getAttribute('href') === `#panel-${id}`) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
     });
+  };
+  const sections = ticks.map((t) => document.getElementById(`panel-${t.dataset.id}`)).filter(Boolean);
+  if (sections.length) mark(sections[0].id.slice(6));
+  if (sections.length && 'IntersectionObserver' in window) {
+    // A thin band a third of the way down the viewport: the section across it is the one being read.
+    const seen = new Set();
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => (e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)));
+      const hit = sections.filter((s) => seen.has(s)).pop();
+      if (hit && hit.id.slice(6) !== current) mark(hit.id.slice(6));
+    }, { rootMargin: '-30% 0px -65% 0px' });
+    sections.forEach((s) => io.observe(s));
   }
+
+  place();
+  addEventListener('resize', place);
+
+  // Mouse: dwelling on the rail opens the list, leaving it closes a list opened that way. A tap or click opens it for good.
+  box.addEventListener('pointerenter', (e) => {
+    clearTimeout(leave);
+    if (e.pointerType !== 'mouse' || box.open) return;
+    dwell = setTimeout(() => { setOpen(true); byHover = true; }, 300);
+  });
+  box.addEventListener('pointerleave', () => {
+    clearTimeout(dwell);
+    // A link the keyboard moved into keeps the list open; focusout closes it once the focus leaves the nav.
+    if (byHover) leave = setTimeout(() => { if (!nav.contains(document.activeElement)) setOpen(false); }, 250);
+  });
+  sum.addEventListener('click', (e) => {
+    clearTimeout(dwell);
+    if (box.open && byHover) { e.preventDefault(); byHover = false; return; }
+    place();
+  });
+  box.addEventListener('toggle', () => { if (box.open) peek(null); });
+
+  // Keyboard: the summary opens with Enter or Space (native); arrows move through the links; Esc closes and returns to the rail.
+  sum.addEventListener('focus', () => {
+    if (sum.matches(':focus-visible')) peek(ticks.find((t) => t.dataset.id === current));
+  });
+  sum.addEventListener('blur', () => peek(null));
+  nav.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && box.open) {
+      e.preventDefault();
+      setOpen(false);
+      sum.focus();
+      return;
+    }
+    if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(e.key)) return;
+    const at = links.indexOf(document.activeElement);
+    if (at < 0 && e.target !== sum) return;
+    e.preventDefault();
+    if (!box.open) setOpen(true);
+    let next;
+    if (e.key === 'Home') next = links[0];
+    else if (e.key === 'End') next = links[links.length - 1];
+    else if (at < 0) next = e.key === 'ArrowDown' ? currentLink() : links[links.length - 1];
+    else next = links[Math.min(links.length - 1, Math.max(0, at + (e.key === 'ArrowDown' ? 1 : -1)))];
+    next.focus();
+  });
+  nav.addEventListener('focusout', (e) => {
+    if (box.open && e.relatedTarget && !nav.contains(e.relatedTarget)) setOpen(false);
+  });
+
+  // Choosing a section or tapping outside closes the list.
+  links.forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('pointerdown', (e) => { if (box.open && !nav.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && box.open && !nav.contains(e.target)) setOpen(false); });
+})();
 })();
 </script>
 </body>
